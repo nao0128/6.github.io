@@ -15,7 +15,7 @@ html {
   padding: 0;
 }
 body {
-  max-width: 100%;
+  width: 100vw;
   margin: 0 auto;
   font-family: 'Noto Sans JP', sans-serif;
   color: var(--gray);
@@ -128,7 +128,7 @@ header {
 }
 .mainvisual_text_wrap {
   display: block;
-  width: 60%;
+  width: 100vw;
   text-align: center;
   margin: 0 auto;
   margin-top: 70px;
