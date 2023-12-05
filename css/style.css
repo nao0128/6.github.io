@@ -1,8 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
-htmal {
+html {
   font-size: 100%;
+	-webkit-text-size-adjust: 100%;
 }
+
+*, html {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +65,7 @@ a:hover {
 }
 /*-------------ヘッダー----------------*/
 header {
-  width: 100%;
+  width: 100vw;
   height: 97px;
   display: block;
   position: fixed;
@@ -78,9 +84,6 @@ header {
   margin: 0 auto;
   padding: 30px 100px;
 }
-
-
-
 .main_navigation li {
   margin-left: 25px;
   font-weight: bold;
@@ -90,11 +93,9 @@ header {
   display: inline-block;
   height: 97px;
 }
-
-.gnavi__list_a{
+.gnavi__list_a {
   color: var(--blue1);
 }
-
 .gnavi__list_a::after {
   position: absolute;
   left: 0;
@@ -120,11 +121,9 @@ header {
   top: -18px;
   left: 0;
 }
-
-.nav,.nav_toggle{
-	display: none;
+.nav, .nav_toggle {
+  display: none;
 }
-
 /*-------------グローバルナビゲーション----------------*/
 .gnavi__list {
   position: relative;
@@ -174,14 +173,12 @@ header {
   opacity: 1;
   display: block;
 }
-
 .dropdown__list a {
   color: #fff;
   text-decoration: none;
   display: block;
   padding-top: 13px;
 }
-
 .dropdown__list {
   background-color: var(--blue3);
   width: 400px;
@@ -202,7 +199,6 @@ header {
 .dropdown__list:hover {
   background-color: #fff;
 }
-
 .dropdown__list a:hover {
   color: var(--blue1);
   opacity: 1;
@@ -213,8 +209,9 @@ header {
   padding: 90px 0 70px 0;
   position: relative;
 }
+
 .main_bg {
-  width: 100%;
+  width: 100vw;
   height: 86%;
   background-color: #EAF6FF;
   margin: 0 auto;
@@ -223,6 +220,7 @@ header {
   right: 0;
   position: absolute;
 }
+
 .mainvisual_wrap {
   max-width: 1400px;
   margin: 0 auto;
@@ -298,9 +296,7 @@ header {
 /*-------------企業ロゴスクロール----------------*/
 .sec_1 {
   padding: 50px 0;
-	width: 100%;
 }
-
 .loop_wrap {
   display: flex;
   width: 100%;
@@ -308,29 +304,10 @@ header {
   overflow: hidden;
   margin: 0 auto;
 }
-
 .loop_wrap img {
   width: auto;
   height: 100%;
 }
-@keyframes loop {
-  0% {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes loop2 {
-  0% {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-200%);
-  }
-}
-
 
 .loop_wrap img:first-child {
   animation: loop 70s -35s linear infinite;
@@ -340,18 +317,44 @@ header {
   animation: loop2 70s linear infinite;
 }
 
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+/*@keyframes loop3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}*/
+
+
+
 /*-------------TOPサービス事業内容----------------*/
 .sec_2 {
   width: 100%;
   margin: 0 auto;
   padding: 70px 0;
 }
-
-.sec_2_wrap{
-  width: 1300px;
-	margin: 0 auto;
+.sec_2_wrap {
+  width: 90%;
+  margin: 0 auto;
 }
-
 .sec_title {
   display: block;
   position: relative;
@@ -392,12 +395,10 @@ header {
   font-size: 1.5rem;
   color: var(--blue3);
 }
-
-.sec_title_4{
+.sec_title_4 {
   width: 85%;
   margin: 0 auto;
 }
-
 .sec_text p {
   line-height: 2.0em;
 }
@@ -464,7 +465,6 @@ header {
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 50px;
-	
 }
 .services_list li {
   /*width: 600px;*/
@@ -495,42 +495,32 @@ header {
 .services_list dd {
   line-height: 1.5em;
 }
-
-.services_list_detail{
-	padding: 10px 0 0 0;
-	position: relative;
+.services_list_detail {
+  padding: 10px 0 0 0;
+  position: relative;
 }
-
-.services_list_detail a{
-	font-size:1.3rem ;
-	line-height: 1.7em;
-	font-weight: 500;
-	margin-left: 45px;
-	
+.services_list_detail a {
+  font-size: 1.3rem;
+  line-height: 1.7em;
+  font-weight: 500;
+  margin-left: 45px;
 }
-
-.services_list_detail span{
-	
-}
-
+.services_list_detail span {}
 .services_list_detail .arrow {
   position: absolute;
   top: 0;
   left: 0;
   bottom: -12px;
   margin: auto;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   transition: .3s ease-in-out;
-	padding: 7px;
-	background: var(--blue3);
-
-	
+  padding: 7px;
+  background: var(--blue3);
 }
 .services_list_detail a:hover .arrow {
   left: 6px;
 }
-
 /*-------------TOPミッション会社情報----------------*/
 .sec_3 {
   width: 100%;
@@ -542,13 +532,9 @@ header {
   width: 75%;
   margin: 0 auto;
 }
-.sec_3_wrap_gr {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
-}
+
 .title_sec3 {
-  margin-right: 40px;
+  
   margin-bottom: 50px;
   min-width: 300px;
 }
@@ -559,12 +545,17 @@ header {
   margin-bottom: 25px;
 }
 .sec_3_text {
-  width: 862px;
-  margin: 0 auto;
+  width: 100%;
 }
 .sec_3_text h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: normal;
+  margin-bottom: 10px;
+  color: var(--blue3);
+}
+.sec_3_text p {
+  line-height: 1.8em;
+  font-size: 1.2rem;
 }
 .sec_3_img {
   width: 100%;
@@ -580,10 +571,10 @@ header {
 .sec_3_img img {
   position: absolute;
   top: 0;
-	right: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-	margin: auto;
+  margin: auto;
 }
 /*-------------TOP実績ACHIEVEMENTS----------------*/
 .sec_4 {
@@ -595,11 +586,9 @@ header {
   width: 75%;
   margin: 0 auto;
 }
-
-.achievements_list_flex{
-	display: flex;
+.achievements_list_flex {
+  display: flex;
 }
-
 .achievements_list {
   width: 400px;
   margin-top: 50px;
@@ -627,11 +616,9 @@ header {
   width: 75%;
   margin: 0 auto;
 }
-
-.blog_list_flex{
-	display: flex;
+.blog_list_flex {
+  display: flex;
 }
-
 .blog_list {
   width: 400px;
   margin-top: 50px;
@@ -652,7 +639,6 @@ header {
 .contact {
   width: 100%;
   background-color: var(--blue3);
-	
   /*background-image: url("file:///C:/Users/kameokna/Desktop/%E7%B7%B4%E7%BF%92%E3%81%BE%E3%81%A8%E3%82%81/%E7%B7%B4%E7%BF%928/img/contact_img.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -673,35 +659,33 @@ header {
   width: 85%;
   margin: 0 auto;
 }
-
 /*-------------フッター----------------*/
 footer {
-	width: 100%;
+  width: 100%;
   padding: 80px 0;
 }
 .footer_wrap {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   width: 85%;
   margin: 0 auto;
 }
 .footer_list {
   width: 55%;
 }
-
-
-
 .footer_logo img {
   width: 150px;
-
+}
+.footer_list {
+  justify-content: center;
 }
 
-.footer_list{
-	justify-content: center;
+.footer_list ul{
+	width: 300px;
 }
 
-.footer_list ul {
-  width: 300px;
+.footer_list ul:first-child {
+  
   margin-right: 60px;
 }
 .footer_list li {
@@ -771,7 +755,6 @@ footer small {
 .button-5 {
   width: 250px;
   height: 70px;
-  
   border: 2px solid var(--blue3);
   background-color: #fff;
   text-align: center;
@@ -848,8 +831,6 @@ footer small {
 .contact_btn:hover a {
   color: #fff;
 }
-
-
 /*-----------------------------*/
 .button-2 {
   width: 300px;
@@ -945,19 +926,16 @@ footer small {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-
-.company_table{
+.company_table {
   width: 75%;
   margin: 0 auto;
 }
-
 .company_table, .company_table td, .company_table th, .contact-form, .contact-form td, .contact-form th {
-
   border-collapse: collapse;
 }
 .company_table {
   margin-top: 30px;
-	border: 1px solid var(--gray);
+  border: 1px solid var(--gray);
 }
 .company_table tr, .contact-form tr {
   width: 70px;
@@ -966,38 +944,29 @@ footer small {
 .contact-form td, .contact-form th {
   padding: 30px 50px;
 }
-
-.company_table td, .company_table th{
+.company_table td, .company_table th {
   padding: 30px 50px;
-  
 }
-
-
 .contact-form th {
   color: var(--blue1);
   width: 300px;
   text-align: left;
-
 }
-
-.company_table th{
+.company_table th {
   background-color: var(--blue3);
   color: #fff;
   width: 200px;
   text-align: center;
   border-bottom: #fff solid 1px;
 }
-
-.company_table th:last-of-type{
-	border-bottom: var(--gray) solid 1px;
+.company_table th:last-of-type {
+  border-bottom: var(--gray) solid 1px;
 }
-
-.company_table td{
- border: solid 1px var(--gray);
-box-sizing: border-box;	
- border-left: none;
+.company_table td {
+  border: solid 1px var(--gray);
+  box-sizing: border-box;
+  border-left: none;
 }
-
 .form_btn {
   width: 200px;
   padding: 20px;
@@ -1024,7 +993,6 @@ box-sizing: border-box;
   text-align: center;
   margin-top: 25px;
   font-size: 1.0em;
-  
 }
 .inquiry input {}
 textarea, .contact-form input[type='text'], .contact-form input[type='email'], .contact-form input[type='tel'] {
@@ -1032,16 +1000,14 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   width: 400px;
   border: 1;
 }
-
-.res_contact_form{
-	display: none;
+.res_contact_form {
+  display: none;
 }
 /*-------------ダウンロードページ----------------*/
-.download_wrap{
-  padding:70px 0;
+.download_wrap {
+  padding: 70px 0;
 }
-
-.download_img{
+.download_img {
   margin: 0 auto;
   display: block;
   width: 600px;
@@ -1050,8 +1016,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   position: relative;
   margin-bottom: 50px;
 }
-
-.download_img img{
+.download_img img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1059,9 +1024,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   right: 0;
   margin: auto;
 }
-
 /*-------------メンバー紹介----------------*/
-
 .member_wrap {
   width: 85%;
   margin: 0 auto;
@@ -1075,9 +1038,9 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 }
 .ceo_img {
   margin-right: 50px;
-	width: 700px;
-	height: auto;
-	border: solid 1px #000;
+  width: 700px;
+  height: auto;
+  border: solid 1px #000;
 }
 .ceo_post {
   font-size: 1.0rem;
@@ -1098,7 +1061,6 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   width: 85%;
   margin: 0 auto;
   margin: 70px auto;
-	
 }
 .product-list {
   display: flex;
@@ -1109,7 +1071,6 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   margin-bottom: 40px;
   margin-right: 40px;
 }
-
 .product-list img {
   margin-bottom: 10px;
   vertical-align: top;
@@ -1127,11 +1088,9 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   padding: 0 20px;
 }
 /*-------------ページ読み込み時アニメーション----------------*/
-
 .fade-box {
-    display: none;
+  display: none;
 }
-
 /*-------------スクロールすると下からふわっとさせるためのコード----------------*/
 .inview {
   /* 30px下げる */
@@ -1141,7 +1100,6 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   /* 2秒かけて、変化させる */
   transition: transform 1.5s, opacity 1.5s;
 }
-
 .inview.show {
   transform: translateY(0);
   opacity: 1;
@@ -1152,12 +1110,10 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   opacity: 0;
   transition: transform 1.5s, opacity 1.5s;
 }
-
 .inview2.show2 {
   transform: translatex(0);
   opacity: 1;
 }
-
 /*-------------ローディングアニメーション----------------*/
 .loding {
   display: none;
