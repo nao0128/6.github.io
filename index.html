@@ -1,18 +1,20 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">	
 <title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
-<link rel="shortcut icon" href="img/logo.png">	
-<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:1024px)">
-<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen and (max-width:1023px)">
+<meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">	
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link rel="icon" href="img/logo.png">	
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:751px)">
+<link href="css/responsive.css" rel="stylesheet" rel="stylesheet" type="text/css"  media="screen and (max-width:750px)">	
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
@@ -20,19 +22,9 @@
 </head>
 
 <body class="fade-box">
-<div class="loding">
-  <div class="spinner-box">
-    <div class="configure-border-1">
-      <div class="configure-core"></div>
-    </div>
-    <div class="configure-border-2">
-      <div class="configure-core"></div>
-    </div>
-  </div>
-</div>
 <!---------------ナビゲーション------------------>
 <header>
-  <div class="flex header_wrap"> <a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>
+  <div class="flex header_wrap"> <div><a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a></div>
     <nav class="main_navigation">
       <ul class="flex">
         <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について</a>
@@ -66,6 +58,7 @@
         </li>
       </ul>
     </nav>
+	 
     <!---------------ナビゲーションレスポンシブ------------------>
 <span class="nav_toggle">
   <i></i>
@@ -81,9 +74,11 @@
 	  <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
     <li class="nav_menu_li"><a href="blog.html#">BLOG</a></li>
   </ul>
-</nav>  
+</nav>
+	  </div>
 </header>
 <!---------------メインビジュアル------------------>
+<main>	
 <div class="mainvisual">
   <div class="main_bg"></div>
   <div class="mainvisual_wrap">
@@ -166,9 +161,8 @@
 </section>
 
 <!---------------TOP会社紹介会社情報ミッション------------------>
-<div id="mission"></div>
 <section class="sec_3 inview">
-  <div class="sec_3_wrap ">
+  <div class="sec_3_wrap flex">
     <div class="sec_title title_sec3"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">MISSION</p>
       <p class="sec_title_2">会社について</p>
@@ -177,16 +171,12 @@
         <div class="eff-4"></div>
         <a href="company.html"> 会社概要 </a> </div>
     </div>
-    <div class="sec_3_contents">
-      <div class="sec_3_content">
-        <div class="sec_3_img"><img src="img/misson_img.png"></div>
-      </div>
-    </div>
-  </div>
-  <div class="sec_3_text inview2">
-    <h3>テキストテキスト</h3>
+	<div class="sec_3_text inview2">
+    <h3>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</h3>
     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>  
   </div>
+  
   <div id="services"></div>
 </section>
 
@@ -237,7 +227,7 @@
 <section class="sec_4 inview">
   <div class="sec_4_wrap">
     <div class="sec_title"> <img src="img/title_backgroundimg.png" class="title_bg_img">
-      <p class="sec_title_1">ACHIEVEMENTS</p>
+      <!--<p class="sec_title_1">ACHIEVEMENTS</p>-->
       <p class="sec_title_2">事例</p>
       <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> --> 
     </div>
@@ -316,7 +306,7 @@
       <a href="contact.html#">お問い合わせページ</a></div>
   </div>
 </section>
-
+</main>
 <!---------------フッター------------------>
 <footer>
   <div class="footer_wrap">
