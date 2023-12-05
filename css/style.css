@@ -1088,9 +1088,9 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   padding: 0 20px;
 }
 /*-------------ページ読み込み時アニメーション----------------*/
-.fade-box {
+/* .fade-box {
   display: none;
-}
+} */
 /*-------------スクロールすると下からふわっとさせるためのコード----------------*/
 .inview {
   /* 30px下げる */
