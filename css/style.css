@@ -529,12 +529,12 @@ header {
   /*background-color: var(--blue2);*/
 }
 .sec_3_wrap {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 
 .title_sec3 {
-  
+  margin-right: 50px;
   margin-bottom: 50px;
   min-width: 300px;
 }
