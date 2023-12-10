@@ -14,15 +14,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:500px)">
 <link href="css/responsive.css" rel="stylesheet" type="text/css"  media="screen and (max-width:501px)">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 </head>
 
 <body class="fade-box">
 <!---------------ナビゲーション------------------>
+<div class="nav_bg"></div>
 <header>
+  
   <div class="flex header_wrap">
     <div><a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a></div>
     <nav class="main_navigation">
@@ -64,7 +68,8 @@
     <span class="nav_toggle"> <i></i> <i></i> <i></i> </span>
     <nav class="nav">
       <ul class="nav_menu_ul">
-        <li class="nav_menu_li"><a href="index.html#mission">会社について</a></li>
+        <li class="nav_menu_li"><a href="index.html#mission">会社について</a>
+        </li>
         <li class="nav_menu_li"><a href="index.html#services">サービス一覧</a></li>
         <li class="nav_menu_li"><a href="contact2.html#">サービス資料</a></li>
         <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
@@ -306,7 +311,15 @@
           </dl>
         </li>
       </ul>
+      <div class="js-flickity slider-wrapper">
+        <div class="slider-cell">sample1</div>
+        <div class="slider-cell">sample2</div>
+        <div class="slider-cell">sample3</div>
+        <div class="slider-cell">sample4</div>
+        <div class="slider-cell">sample5</div>
+      </div>
     </div>
+    
     <div id="blog"></div>
   </section>
   
@@ -338,6 +351,13 @@
             </dl>
           </li>
         </ul>
+      </div>
+      <div class="js-flickity slider-wrapper">
+        <div class="slider-cell">sample1</div>
+        <div class="slider-cell">sample2</div>
+        <div class="slider-cell">sample3</div>
+        <div class="slider-cell">sample4</div>
+        <div class="slider-cell">sample5</div>
       </div>
       <br>
       <div class="button-2 m0a">
