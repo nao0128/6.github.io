@@ -5,7 +5,7 @@ $(function () {
 });
 	
 $('.nav_toggle,.nav_menu_li').on('click', function () {
-  $('.nav_toggle, .nav').toggleClass('show');
+  $('.nav_toggle, .nav,.nav_bg').toggleClass('show');
 });
 
 	$(window).on('scroll', function () {
@@ -30,4 +30,4 @@ $('.nav_toggle,.nav_menu_li').on('click', function () {
     });
   });
 	
-});// JavaScript Document
+});
