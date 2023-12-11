@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 </head>
@@ -68,14 +68,28 @@
     <span class="nav_toggle"> <i></i> <i></i> <i></i> </span>
     <nav class="nav">
       <ul class="nav_menu_ul">
-        <li class="nav_menu_li"><a href="index.html#mission">会社について</a>
+        <li class="nav_menu_li ac-parent"><a href="index.html#mission">会社について</a>
         </li>
-        <li class="nav_menu_li"><a href="index.html#services">サービス一覧</a></li>
+		<ul class="ac-child">
+		  <li class="nav_close"><a href="">ミッション</a></li>
+			<li class="nav_close"><a href="">サービス一覧</a></li>
+			<li class="nav_close"><a href="">会社情報</a></li>
+			<li class="nav_close"><a href="">メンバー</a></li>
+		  </ul>  
+		
+        <li class="nav_menu_li ac-parent"><a href="index.html#services">サービス一覧</a></li>
+		 <ul class="ac-child">
+		  <li class="nav_close"><a href="">営業代行支援</a></li>
+			<li class="nav_close"><a href="">リードセールス支援</a></li>
+			<li class="nav_close"><a href="">インサイドセールス支援</a></li>
+			<li class="nav_close"><a href="">フィールドセールス支援</a></li>
+			 <li class="nav_close"><a href="">セールスマーケティング支援</a></li>
+		  </ul> 
         <li class="nav_menu_li"><a href="contact2.html#">サービス資料</a></li>
         <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
         <li class="nav_menu_li"><a href="blog.html#">BLOG</a></li>
       </ul>
-    </nav>
+    
   </div>
 </header>
 <!---------------メインビジュアル------------------>
@@ -106,7 +120,7 @@
           </div>
         </div>
       </div>
-      <img src="img/logo6.png" class="logo2"> </div>
+      <!--<img src="img/logo6.png" class="logo2">--> </div>
   </div>
   <!---------------レスポンシブメインビジュアル------------------>
   <div class="res_mainvisual">
@@ -175,7 +189,7 @@
   <!---------------TOP会社紹介会社情報ミッション------------------>
   <section class="sec_3 inview">
     <div class="sec_3_wrap">
-      <div class="sec_title title_sec3 flex">
+      <div class="sec_title title_sec3">
         <div> 
         <img src="img/title_backgroundimg.png" class="title_bg_img">
         <p class="sec_title_1">MISSION</p>
@@ -310,6 +324,13 @@
             <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
           </dl>
         </li>
+		<li class="achievements_list">
+          <dl>
+            <dt><img src="img/image.png"></dt>
+            <dd>テキストテキスト</dd>
+            <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          </dl>
+        </li>  
       </ul>
       <div class="js-flickity slider-wrapper">
         <div class="slider-cell">sample1</div>
@@ -350,6 +371,12 @@
               <dd>テキストテキスト</dd>
             </dl>
           </li>
+		<li class="blog_list">
+            <dl>
+              <dt><img src="img/image.png"></dt>
+              <dd>テキストテキスト</dd>
+            </dl>
+          </li>	
         </ul>
       </div>
       <div class="js-flickity slider-wrapper">

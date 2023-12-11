@@ -1,27 +1,96 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">	
 <title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
-<link rel="shortcut icon" href="img/logo.png">	
-<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:1024px)">
-<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen and (max-width:1023px)">
+<meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">	
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>	
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:500px)">
+<link href="css/responsive.css" rel="stylesheet" type="text/css"  media="screen and (max-width:501px)">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
-<script src="js/jquery.inview.min.js"></script> 
-<script src="js/main.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body class="fade-box">
 <!---------------------ヘッダー------------------------->	
-
+<div class="nav_bg"></div>
+<header>
+  
+  <div class="flex header_wrap">
+    <div><a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a></div>
+    <nav class="main_navigation">
+      <ul class="flex">
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について</a>
+          <ul class="dropdown__lists">
+            <li class="dropdown__list"><a href="index.html#mission">ミッション</a></li>
+            <li class="dropdown__list"><a href="index.html#services">サービス一覧</a></li>
+            <li class="dropdown__list"><a href="company.html">会社情報</a></li>
+            <li class="dropdown__list"><a href="company.html#members">メンバー紹介</a></li>
+          </ul>
+        </li>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
+          <ul class="dropdown__lists_3">
+            <li class="dropdown__list"><a href="#">営業代行支援</a></li>
+            <li class="dropdown__list"><a href="#">リードセールス支援</a></li>
+            <li class="dropdown__list"><a href="#">インサイドセールス支援</a></li>
+            <li class="dropdown__list"><a href="#">フィールドセールス支援</a></li>
+            <li class="dropdown__list"><a href="#">セールスコンサルティング支援</a></li>
+            <li class="dropdown__list"><a href="#">セールスマーケティング支援</a></li>
+          </ul>
+        </li>
+        <li><a class="gnavi__list_a" href="index.html#achievements">事例</a></li>
+        <li  class="gnavi__list"><a class="gnavi__list_a" href="contact.html">お問い合わせ</a>
+          <ul class="dropdown__lists_3">
+            <li class="dropdown__list"><a href="contact2.html#">サービス資料</a></li>
+            <li class="dropdown__list"><a href="contact.html#">お問い合わせ</a></li>
+          </ul>
+        </li>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#blog">BLOG</a>
+          <ul class="dropdown__lists_2">
+            <li class="dropdown__list"><a href="blog.html#">BLOG一覧</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
+    <!---------------レスポンシブナビゲーション------------------> 
+    <span class="nav_toggle"> <i></i> <i></i> <i></i> </span>
+    <nav class="nav">
+      <ul class="nav_menu_ul">
+        <li class="nav_menu_li ac-parent"><a href="index.html#mission">会社について</a>
+        </li>
+		<ul class="ac-child">
+		  <li class="nav_close"><a href="">ミッション</a></li>
+			<li class="nav_close"><a href="">サービス一覧</a></li>
+			<li class="nav_close"><a href="">会社情報</a></li>
+			<li class="nav_close"><a href="">メンバー</a></li>
+		  </ul>  
+		
+        <li class="nav_menu_li ac-parent"><a href="index.html#services">サービス一覧</a></li>
+		 <ul class="ac-child">
+		  <li class="nav_close"><a href="">営業代行支援</a></li>
+			<li class="nav_close"><a href="">リードセールス支援</a></li>
+			<li class="nav_close"><a href="">インサイドセールス支援</a></li>
+			<li class="nav_close"><a href="">フィールドセールス支援</a></li>
+			 <li class="nav_close"><a href="">セールスマーケティング支援</a></li>
+		  </ul> 
+        <li class="nav_menu_li"><a href="contact2.html#">サービス資料</a></li>
+        <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
+        <li class="nav_menu_li"><a href="blog.html#">BLOG</a></li>
+      </ul>
+    
+  </div>
+</header>
 <!---------------------------------------------->	
 <main>
   <section class="blog">
@@ -111,7 +180,28 @@
     </main>    	 
 </main>
 <!---------------------フッター------------------------->	
-	
+<footer>
+  <div class="footer_wrap">
+    <div class="footer_logo"> <a href="#"><img src="img/logo.png" alt=""></a>
+      <ul class="addres">
+        <li><strong>株式会社RISING INNOVATION</strong></li>
+        <li>〒531-0072</li>
+        <li>大阪市北区豊崎3-15-5 TKビル2F</li>
+        <li>TEL：050-7586-3360</li>
+      </ul>
+    </div>
+    <div class="flex footer_list">
+      <ul>
+        <li><a href="index.html#services">サービス一覧<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a href="company.html#">会社概要<img src="img/icon_arrow.png" class="arrow"></a></li>
+      </ul>
+      <ul>
+        <li><a href="contact.html#">お問い合わせ<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a href="contact2.html#">サービス資料<img src="img/icon_arrow.png" class="arrow"></a></li>
+      </ul>
+    </div>
+  </div>
+  <small>Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small> </footer>	
 <!---------------------フッター------------------------->	
 </body>
 </html>
