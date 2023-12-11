@@ -4,8 +4,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">	
 <title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
 <link rel="shortcut icon" href="img/logo.png">	
-<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:801px)">
-<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen and (max-width:800px)">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:1024px)">
+<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen and (max-width:1023px)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -15,70 +15,24 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<script src="js/jquery.inview.min.js"></script> 
 <script src="js/main.js"></script> 
 </head>
 
 <body class="fade-box">
 <!---------------------ヘッダー------------------------->
-<header>
-  <div class="flex header_wrap">
-    <div><a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a></div>
-    <nav class="main_navigation">
-      <ul class="flex">
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について</a>
-          <ul class="dropdown__lists">
-            <li class="dropdown__list"><a href="index.html#mission">ミッション</a></li>
-            <li class="dropdown__list"><a href="index.html#services">サービス一覧</a></li>
-            <li class="dropdown__list"><a href="company.html">会社情報</a></li>
-            <li class="dropdown__list"><a href="company.html#members">メンバー紹介</a></li>
-          </ul>
-        </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
-          <ul class="dropdown__lists_3">
-            <li class="dropdown__list"><a href="#">営業代行支援</a></li>
-            <li class="dropdown__list"><a href="#">電話代行サービス</a></li>
-            <li class="dropdown__list"><a href="#">トークスクリプト構築・作成代行</a></li>
-          </ul>
-        </li>
-        <li><a class="gnavi__list_a" href="index.html#achievements">事例</a></li>
-        <li  class="gnavi__list"><a class="gnavi__list_a" href="contact.html">お問い合わせ</a>
-          <ul class="dropdown__lists_3">
-            <li class="dropdown__list"><a href="contact2.html#">サービス資料</a></li>
-            <li class="dropdown__list"><a href="contact.html#">お問い合わせ</a></li>
-          </ul>
-        </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#blog">BLOG</a>
-          <ul class="dropdown__lists_2">
-            <li class="dropdown__list"><a href="blog.html#">BLOG一覧</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    
-    <!---------------レスポンシブナビゲーション------------------> 
-    <span class="nav_toggle"> <i></i> <i></i> <i></i> </span>
-    <nav class="nav">
-      <ul class="nav_menu_ul">
-        <li class="nav_menu_li"><a href="index.html#mission">会社について</a></li>
-        <li class="nav_menu_li"><a href="index.html#services">サービス一覧</a></li>
-        <li class="nav_menu_li"><a href="contact2.html#">サービス資料</a></li>
-        <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
-        <li class="nav_menu_li"><a href="blog.html#">BLOG</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
 <!---------------------------------------------->	
 <main>
 	
-  <section class="contact_page">
+  <section class="conpany">
 	  <div class="page_title_wrap">
     <div class="page_title">
       <p class="page_title_en">DOCUMENT</p>
       <h2 class="page_title_ja">サービス資料</h2>
     </div>
 		</div>  
-    <div class="company_wrap contact_wrap">
+    <div class="company_wrap">
       <div class="company_table_wrap">
         <!--<p class="table_title">お問合せ</p>-->
         
@@ -86,39 +40,39 @@
           <div class="download_img"><img src="img/image.png"></div></div>
         <form action= "<!--<?php echo esc_url( get_home_url() ); ?>/contactdone/-->" method="post">
           <table class="contact-form">
-            <!--<tr class="inquiry">
+            <tr class="inquiry">
               <th><p>お問合せ種別
                 <span class="required">必須
                 </span></p></th>
               <td><label>
-                  <input class="form_txt" type="radio" name="select" value="お問い合せ" checked="checked" />
+                  <input type="radio" name="select" value="お問い合せ" checked="checked" />
                   <span>お問い合せ</span></label>
                 <br>
                 <label>
                   <input type="radio" name="select" value="資料請求" />
                   <span>資料請求</span></label></td>
-            </tr>-->
+            </tr>
             <tr>
               <th><p>お名前
                 <span class="required">必須
                 </spanp></p></th>
-              <td><input class="form_txt" type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）山田 太郎" required/></td>
+              <td><input type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）山田 太郎" required/></td>
             </tr>
             <tr>
               <th><p>フリガナ
                 <span class="required">必須
                 </spanp></p></th>
-              <td><input class="form_txt" type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）ヤマダ タロウ" required/></td>
+              <td><input type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）ヤマダ タロウ" required/></td>
             </tr>
             <tr>
               <th><p>電話番号</p></th>
-              <td><input class="form_txt" type="tel" name="your-tel" value="" size="40" class="" aria-invalid="false" placeholder="例）050-0000-0000" /></td>
+              <td><input type="tel" name="your-tel" value="" size="40" class="" aria-invalid="false" placeholder="例）050-0000-0000" /></td>
             </tr>
             <tr>
               <th><p>メールアドレス
-                <span class="required">必須</span></p>
-                </th>
-              <td><input class="form_txt" type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）sample@torat.jp" required/></td>
+                <span class="required">必須</p>
+                </spanp></th>
+              <td><input type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）sample@torat.jp" required/></td>
             </tr>
             <tr>
               <th><p>お問い合わせ内容
@@ -133,86 +87,11 @@
           </p>
         </form>
       </div>
-	</div>
-<!---------------------レスポンシブ------------------------->	
-	
-	<div class="res_contact_wrap">
-		 <div class="res_download_img"><img src="img/image.png"></div>
-      <form action= "<!--<?php echo esc_url( get_home_url() ); ?>/contactdone/-->" method="post">
-        <ul class="res_contact-form">
-        <!--<li><p>お問合せ種別</p><span class="required">必須</span></li>-->
-        <!--<li>
-          <label>
-            <input type="radio" name="select" value="お問い合せ" checked="checked" />
-            <span>お問い合せ</span></label>
-          <label>
-            <input type="radio" name="select" value="資料請求" />
-            <span>資料請求</span></label>
-        </li>-->	
-        <li><p>お名前</p><span class="required">必須
-          </span>
-        </li>
-        <li>
-          <input class="res_form_txt" type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）山田 太郎" required/>
-        </li>
-		<li class="contact_margin"></li>	
-        <li><p>フリガナ</p><span class="required">必須</span>
-        </li>
-		<li><input class="res_form_txt" type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）ヤマダ タロウ" required/></li>
-			<li class="contact_margin"></li>
-		<li class="contact_margin"></li>	
-        <li><p>電話番号</p></li>
-        <li>
-          <input class="res_form_txt" type="tel" name="your-tel" value="" size="40" class="" aria-invalid="false" placeholder="例）050-0000-0000" />
-        </li>
-			<li class="contact_margin"></li>
-        <li><p>メールアドレス</p><span class="required">必須
-          </span>
-        </li>
-        <li>
-          <input class="res_form_txt" type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）sample@torat.jp" required/>
-        </li>
-			<li class="contact_margin"></li>
-        <li><p>お問い合わせ内容</p><span class="required">必須
-         </span>
-        </li>
-		<li><textarea name="your-message" cols="40" rows="10" class="" aria-required="true" aria-invalid="false" placeholder="" required></textarea></li>
-        <p class="btn-check">
-          <input type="checkbox" name="acceptance" value="1" aria-invalid="false" class="spam1" required/>
-          &emsp;<a href=""><u>規約</u></a>に同意し、チェックを入れてください。<br />
-          <input type="submit" value="ダウンロード画面へ" class="form_btn_2" id="formbtn" />
-        </p>
-      </form>
-		  </div>
     </div>
-	
-	
-    
   </section>
 </main>
 <!---------------------フッター------------------------->
-<footer>
-  <div class="footer_wrap">
-    <div class="footer_logo"> <a href="#"><img src="img/logo.png" alt=""></a>
-      <ul class="addres">
-        <li><strong>株式会社RISING INNOVATION</strong></li>
-        <li>〒531-0072</li>
-        <li>大阪市北区豊崎3-15-5 TKビル2F</li>
-        <li>TEL：050-7586-3360</li>
-      </ul>
-    </div>
-    <div class="flex footer_list">
-      <ul>
-        <li><a href="index.html#services">サービス一覧<img src="img/icon_arrow.png" class="arrow"></a></li>
-        <li><a href="company.html#">会社概要<img src="img/icon_arrow.png" class="arrow"></a></li>
-      </ul>
-      <ul>
-        <li><a href="contact.html#">お問い合わせ<img src="img/icon_arrow.png" class="arrow"></a></li>
-        <li><a href="contact2.html#">サービス資料<img src="img/icon_arrow.png" class="arrow"></a></li>
-      </ul>
-    </div>
-  </div>
-  <small>Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small> </footer>
+
 <!---------------------フッター------------------------->
 </body>
 </html>
