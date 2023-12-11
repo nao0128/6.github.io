@@ -4,7 +4,7 @@ $(function () {
     $('.fade-box').fadeIn(1500); 
 });
 	
-$('.nav_toggle,.nav_menu_li').on('click', function () {
+$('.nav_toggle').on('click', function () {
   $('.nav_toggle, .nav,.nav_bg').toggleClass('show');
 });
 
@@ -28,6 +28,9 @@ $('.nav_toggle,.nav_menu_li').on('click', function () {
         $(this).addClass('show2');
       }
     });
+  });
+$('.ac-parent').on('click', function () {
+    $(this).next().slideToggle('slow');
   });
 	
 });
