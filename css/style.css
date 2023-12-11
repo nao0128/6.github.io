@@ -452,7 +452,6 @@ header {
 .sec_3 {
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0 60px 0;
   /*background-color: var(--blue2);*/
 }
 
@@ -476,31 +475,31 @@ header {
   margin-bottom: 25px;
 }
 .sec_3_text {
-  width: 55%;
+  width: 630px;
 }
 .sec_3_text h3 {
-  font-size: 1.7rem;
+  font-size: 2.0rem;
   font-weight: normal;
   margin-bottom: 10px;
   color: var(--blue3);
 }
 .sec_3_text p {
   line-height: 1.8em;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .missino_img{
-	width: 40%;
+	width: 600px;
 	height: auto;
 	overflow: hidden;
-	margin-right: 25px;
+	margin-right: 50px;
 }
 
 .res_sec_3_h3{
 	display: none;
 }
 
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 1880px) {
 	.sec_3_h3{
 		display: none;
 	}
@@ -679,7 +678,8 @@ header {
 }
 
 .achievements_list {
-  width: 450px;
+  width: 300px;
+	margin-right: 50px;
   margin-top: 50px;
 }
 .achievements_list img {
@@ -709,10 +709,11 @@ header {
 }
 .blog_list_flex {
   display: block;
-  display: flex;
+  display: flex;	
 }
 .blog_list {
-  width: 400px;
+  width: 300px;
+	margin-right: 50px;
   margin-top: 50px;
 }
 .blog_list img {
@@ -1044,7 +1045,7 @@ footer small {
   padding-bottom: 70px;
 }
 .contact-form {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -1090,8 +1091,8 @@ footer small {
   border-left: none;
 }
 .form_btn {
-  width: 200px;
-  padding: 20px;
+  width: 300px;
+  padding: 20px 0;
   border: none;
   background: var(--blue3);
   color: #fff;

@@ -302,6 +302,21 @@ header {
   font-weight: 700;
 }
 
+.ac-child {
+  display: none;
+}
+
+.ac-child li{
+  padding:20px ;
+  background-color: var(--blue2);
+  text-align: center;
+	border-bottom: solid 1px #fff;
+}
+
+.ac-child li a{
+	color: var(--gray);
+}
+
 /*-------------レスポンシブメインビジュアル----------------*/
 .mainvisual {
   display: none;
@@ -382,7 +397,7 @@ header {
 }
 
 .res_top_btn1,.res_top_btn2{
-	width: 350px;
+	width: 90%;
 	padding: 15px;
 	text-align: center;
 	font-weight: 600;
@@ -510,7 +525,7 @@ header {
 .res_sec_btn{
 	display: block;
 	font-weight: 400;
-	width:250px; 
+	width:60%; 
 	background: var(--blue3);
 	color: #fff;
 	text-align: center;
@@ -600,7 +615,7 @@ header {
   position: relative;
   overflow: hidden;
   height: auto;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 .services_list li > img {
   position: absolute;
@@ -722,11 +737,12 @@ header {
 .slider-wrapper {
   background: #EEE;
   display: block;
+	margin: 25px 0;
 }
 
 .slider-cell {
   width: 90%;
-  height: 200px;
+  height: 300px;
   background: #8C8;
   margin: 0 5px;
 }
