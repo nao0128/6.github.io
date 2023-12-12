@@ -33,14 +33,14 @@
       <ul class="flex">
         <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について</a>
           <ul class="dropdown__lists">
-            <li class="dropdown__list"><a href="index.html#mission">ミッション</a></li>
-            <li class="dropdown__list"><a href="index.html#services">サービス一覧</a></li>
-            <li class="dropdown__list"><a href="company.html">会社情報</a></li>
-            <li class="dropdown__list"><a href="company.html#members">メンバー紹介</a></li>
+            <li class="dropdown__list"><a href="index.html#mission"><span class="dropdown__list_en">MISSION</span><br><span class="dropdown__list_jp">ミッション</span></a></li>
+            <li class="dropdown__list"><a href="company.html#"><span class="dropdown__list_en">COMPANY</span><br><span class="dropdown__list_jp">会社概要</span></a></li>
+            <li class="dropdown__list"><a href="company.html#members"><span class="dropdown__list_en">MEMBERS</span><br><span class="dropdown__list_jp">メンバー</span></a></li>
           </ul>
         </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="#">サービス</a>
           <ul class="dropdown__lists_3">
+			<li class="dropdown__list"><a href="index.html#services"><span class="dropdown__list_en">SERVICES</span><br><span class="dropdown__list_jp">サービス一覧</span></a></li> 
             <li class="dropdown__list"><a href="#">営業代行支援</a></li>
             <li class="dropdown__list"><a href="#">リードセールス支援</a></li>
             <li class="dropdown__list"><a href="#">インサイドセールス支援</a></li>
@@ -50,35 +50,37 @@
           </ul>
         </li>
         <li><a class="gnavi__list_a" href="index.html#achievements">事例</a></li>
-        <li  class="gnavi__list"><a class="gnavi__list_a" href="contact.html">お問い合わせ</a>
+        <li  class="gnavi__list"><a class="gnavi__list_a" href="#">お問い合わせ</a>
           <ul class="dropdown__lists_3">
-            <li class="dropdown__list"><a href="contact2.html#">サービス資料</a></li>
-            <li class="dropdown__list"><a href="contact.html#">お問い合わせ</a></li>
+            <li class="dropdown__list"><a href="contact2.html#"><span class="dropdown__list_en">DOCUMENT</span><br><span class="dropdown__list_jp">サービス資料</span></a></li>
+            <li class="dropdown__list"><a href="contact.html#"><span class="dropdown__list_en">CONTACT</span><br><span class="dropdown__list_jp">お問合せ</span></a></li>
           </ul>
         </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#blog">BLOG</a>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="#">BLOG</a>
           <ul class="dropdown__lists_2">
-            <li class="dropdown__list"><a href="blog.html#">BLOG一覧</a></li>
+            <li class="dropdown__list"><a href="blog.html#"><span class="dropdown__list_en">BLOG</span><br><span class="dropdown__list_jp">ブログ一覧</span></a></li>
           </ul>
         </li>
       </ul>
     </nav>
     
-    <!---------------レスポンシブナビゲーション------------------> 
-    <span class="nav_toggle"> <i></i> <i></i> <i></i> </span>
+    <!---------------レスポンシブナビゲーション------------------>
+	<div class="res_nav">
+	  <a href="contact.html#"><img src="img/icon_mail.png"></a>  
+    <span class="nav_toggle"> <i></i> <i></i> <i></i> </span></div>
     <nav class="nav">
       <ul class="nav_menu_ul">
-        <li class="nav_menu_li ac-parent"><a href="index.html#mission">会社について</a>
+        <li class="nav_menu_li ac-parent"><a href="#">会社について</a>
         </li>
 		<ul class="ac-child">
-		  <li class="nav_close"><a href="">ミッション</a></li>
-			<li class="nav_close"><a href="">サービス一覧</a></li>
-			<li class="nav_close"><a href="">会社情報</a></li>
-			<li class="nav_close"><a href="">メンバー</a></li>
+		  <li class="nav_close"><a href="index.html#mission">ミッション</a></li>
+			<li class="nav_close"><a href="company.html#">会社情報</a></li>
+			<li class="nav_close"><a href="company.html#members">メンバー</a></li>
 		  </ul>  
 		
-        <li class="nav_menu_li ac-parent"><a href="index.html#services">サービス一覧</a></li>
+        <li class="nav_menu_li ac-parent"><a href="#">サービス一覧</a></li>
 		 <ul class="ac-child">
+			<li class="nav_close"><a href="index.html#services">サービス一覧</a></li> 
 		  <li class="nav_close"><a href="">営業代行支援</a></li>
 			<li class="nav_close"><a href="">リードセールス支援</a></li>
 			<li class="nav_close"><a href="">インサイドセールス支援</a></li>
@@ -89,7 +91,7 @@
         <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
         <li class="nav_menu_li"><a href="blog.html#">BLOG</a></li>
       </ul>
-    
+	  </nav>
   </div>
 </header>
 <!---------------メインビジュアル------------------>
@@ -110,7 +112,7 @@
             クライアントとの皆様と伴走しながら<br>
             サービスのスケールをご支援させて頂きます。</p>
           <br>
-          <div class="flex jcc">
+          <div class="flex">
             <div class="button-4">
               <div class="eff-4"></div>
               <a href="contact.html#">営業のご相談(無料)</a> </div>
@@ -141,9 +143,45 @@
   </div>
   <!---------------企業ロゴ------------------>
   <section class="sec_1">
-    <div class="loop_wrap"> <img src="img/logo/loop1.png"><img src="img/logo/loop2.png"> </div>
-    <div class="loop_wrap"> <img src="img/logo/loop3.png"><img src="img/logo/loop4.png"> </div>
-    <div class="loop_wrap"> <img src="img/logo/loop5.png"><img src="img/logo/loop1.png"> </div>
+   <!-- <div class="loop_wrap"><img src="img/logo/loop1.png"><img src="img/logo/loop2.png"><img src="img/logo/loop1.png"></div>-->
+	<div class="d-demo">
+   <div class="d-demo__wrap">
+       <ul class="d-demo__list d-demo__list--left">
+           <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
+           <li class="d-demo__item"><img src="img/logo/loop2.png" alt></li>
+        </ul>
+        <ul class="d-demo__list d-demo__list--left">
+           <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
+           <li class="d-demo__item"><img src="img/logo/loop2.png" alt></li>
+        </ul>
+   </div>
+</div>
+<div class="d-demo">
+   <div class="d-demo__wrap">
+       <ul class="d-demo__list d-demo__list--left">
+           <li class="d-demo__item"><img src="img/logo/loop3.png" alt></li>
+           <li class="d-demo__item"><img src="img/logo/loop4.png" alt></li>
+        </ul>
+        <ul class="d-demo__list d-demo__list--left">
+           <li class="d-demo__item"><img src="img/logo/loop3.png" alt></li>
+           <li class="d-demo__item"><img src="img/logo/loop4.png" alt></li>
+        </ul>
+   </div>
+</div> 
+<div class="d-demo">
+   <div class="d-demo__wrap">
+       <ul class="d-demo__list d-demo__list--left">
+           <li class="d-demo__item"><img src="img/logo/loop5.png" alt></li>
+           <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
+        </ul>
+        <ul class="d-demo__list d-demo__list--left">
+           <li class="d-demo__item"><img src="img/logo/loop5.png" alt></li>
+           <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
+        </ul>
+   </div>
+</div> 	  
+    <!--<div class="loop_wrap"> <img src="img/logo/loop3.png"><img src="img/logo/loop4.png"> </div>
+    <div class="loop_wrap"> <img src="img/logo/loop5.png"><img src="img/logo/loop1.png"> </div>-->
     <!-- <div class="slide">
       <ul>
         <li class="scroll-infinity__item"><img src="img/logo/12.svg" /></li>
@@ -205,12 +243,13 @@
         <div class="sec_3_text">
           <h3 class="sec_3_h3">我々はアウトバウンド営業に専門特価した<br>
             営業のプロフェッショナル集団です。</h3>
-          <h3 class="res_sec_3_h3">我々はアウトバウンド営業に専門特価した営業のプロフェッショナル集団です。</h3>
+          <h3 class="res_sec_3_h3">我々はアウトバウンド営業に専門特価した営業のプロフェッショナル集団です。</h3><div id="services"></div>
           <p>あらゆる業界の営業課題を最短最速でご支援する事がミッションでございます。リードセールス、クロージングセールス、営業組織立上げまで一気通貫でご依頼頂く事が可能でございます。「営業」で人と企業をツナグ架け橋となるようにクライアントの皆様方のサービスをスケールさせるお手伝いをさせてください。</p>
         </div>
       </div>
+		
     </div>
-    <div id="services"></div>
+    
   </section>
   <!---------------レスポンシブTOP会社紹介会社情報ミッション------------------>
   
@@ -323,13 +362,6 @@
             <dd>テキストテキスト</dd>
             <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
           </dl>
-        </li>
-		<li class="achievements_list">
-          <dl>
-            <dt><img src="img/image.png"></dt>
-            <dd>テキストテキスト</dd>
-            <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-          </dl>
         </li>  
       </ul>
       <div class="js-flickity slider-wrapper">
@@ -366,12 +398,6 @@
             </dl>
           </li>
           <li class="blog_list">
-            <dl>
-              <dt><img src="img/image.png"></dt>
-              <dd>テキストテキスト</dd>
-            </dl>
-          </li>
-		<li class="blog_list">
             <dl>
               <dt><img src="img/image.png"></dt>
               <dd>テキストテキスト</dd>
