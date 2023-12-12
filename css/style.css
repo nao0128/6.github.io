@@ -84,8 +84,8 @@ header {
 }
 .top_logo img {
   width: auto;
-  height: 80px;
-  margin-top: -20px;
+  height: 50px;
+  margin-top: -10px;
 }
 .header_wrap {
   justify-content: space-between;
@@ -96,7 +96,7 @@ header {
   margin-left: 25px;
   font-weight: bold;
 }
-.main_navigation li a {
+.gnavi__list_a {
   position: relative;
   display: inline-block;
   height: 97px;
@@ -129,7 +129,7 @@ header {
   top: -18px;
   left: 0;
 }
-.nav, .nav_toggle {
+.nav, .nav_toggle,.res_nav {
   display: none;
 }
 /*-------------グローバルナビゲーション----------------*/
@@ -185,16 +185,28 @@ header {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding-top: 13px;
+  padding: 20px 0;
 }
+
 .dropdown__list {
   background-color: var(--blue3);
   width: 400px;
-  height: 50px;
+	height: auto;
   transition: all .3s;
   position: relative;
   text-align: center;
 }
+
+
+
+.dropdown__list_en{
+	font-size: 1.5rem;
+}
+
+.dropdown__list_jp{
+	font-size: 1.0rem;
+}
+
 .dropdown__list:not(:first-child)::before {
   content: "";
   width: 400px;
@@ -216,9 +228,19 @@ header {
   .main_navigation {
   display: none;
 }
-.nav_toggle,.nav{
+.nav_toggle,.nav,.res_nav{
   display: block;
 }
+	.res_nav{
+		position: relative;
+	}
+	.res_nav img{
+		position:absolute;
+		top: -22px;
+		left: -80px;
+		width: 70px;
+		height: auto;
+	}
 
 	.nav_toggle {
   position: relative;
@@ -289,7 +311,7 @@ header {
 }
 .nav_bg{
   width: 100vw;
-  height: 100vw;
+  height: 100%;
   background-color: #fff;
   z-index: 15;
   opacity: 0;
@@ -300,6 +322,22 @@ header {
 .nav_bg.show {
   opacity: 0.7;
   visibility: visible;
+}	
+
+.ac-child {
+  display: none;
+	background-color: var(--blue2);
+}
+
+.ac-child li{
+  padding:30px ;
+  text-align: center;
+	/*border-bottom: solid 1px #fff;*/
+	font-weight: bold;
+}
+
+.ac-child li a{
+	color: var(--gray);
 }	
 	
 }
@@ -346,8 +384,7 @@ header {
 }
 .mainvisual_text_wrap {
   display: block;
-  width: 650px;
-  text-align: center;
+  width: 800px;
   margin-top: 70px;
 }
 .mainvisual_title {
@@ -357,7 +394,7 @@ header {
   margin-left: 3%;
 }
 .mainvisual_title h1 {
-  font-size: 2.7rem;
+  font-size: 3.5rem;
   color: var(--gray);
   letter-spacing: 0.01em;
   margin-bottom: 20px;
@@ -365,43 +402,85 @@ header {
 }
 .mainvisual_text1 {
   display: block;
-  width: 200px;
+  width: 250px;
   background: rgb(2, 186, 165);
   background: linear-gradient(90deg, rgba(2, 186, 165, 1) 0%, rgba(45, 45, 226, 1) 52%, rgba(19, 9, 195, 1) 100%);
   color: #fff;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   letter-spacing: 0.08em;
   margin: 10px 0 0 0;
   padding: 5px;
-  margin: 0 auto;
+	text-align: center;
 }
 .mainvisual_text2 {
   font-weight: bold;
   line-height: 1.8em;
   margin-bottom: 20px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: -10px;
 }
 .mainvisual_text3 {
   position: relative;
 }
-.mainvisual_text3::after {
+/*.mainvisual_text3::after {
   content: '';
-  width: 150px;
+  width: 500px;
   height: 152px;
-  border-bottom: solid var(--blue1) 3px;
-  /*border-top: solid var(--gold) 4px;*/
+  border-bottom: solid var(--gray) 1px;
+  border-top: solid var(--gold) 4px;
   position: absolute;
   bottom: -20px;
   left: 0;
-  right: 0;
   margin: auto;
-}
+}*/
 /*-------------企業ロゴスクロール----------------*/
 .sec_1 {
-  padding: 50px 0;
+  padding:0 0 70px 0;
+	margin-top: -30px;
 }
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*
+IE11対策
+----------------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.d-demo {
+  display: -ms-grid;
+  overflow: hidden;
+}
+/*----------------------------*/
+
+.d-demo__wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.d-demo__list {
+  display: flex;
+  list-style: none;
+}
+
+.d-demo__list--left{
+animation :infinity-scroll-left 60s infinite linear 0.5s both;
+}
+
+.d-demo__item {
+  width: 1200px;
+}
+.d-demo__item > img{
+   height: 90%;
+	width: auto;
+}
+/*
 .loop_wrap {
   display: flex;
   width: 100%;
@@ -415,16 +494,20 @@ header {
 }
 
 .loop_wrap img:first-child {
-  animation: loop 70s -35s linear infinite;
+  animation: loop 70s  linear infinite;
+}
+
+.loop_wrap img:nth-child(2) {
+  animation: loop2 70s -35s linear infinite;
 }
 
 .loop_wrap img:last-child {
-  animation: loop2 70s linear infinite;
+  animation: loop3 70s -35s linear infinite;
 }
 
 @keyframes loop {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   to {
     transform: translateX(-100%);
@@ -432,12 +515,22 @@ header {
 }
 @keyframes loop2 {
   0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-200%);
+    transform: translateX(-300%);
   }
 }
+*/
 
 /*@keyframes loop3 {
   from {
@@ -485,7 +578,7 @@ header {
 }
 .sec_3_text p {
   line-height: 1.8em;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .missino_img{
@@ -612,9 +705,18 @@ header {
   position: relative;
   overflow: hidden;
   height: auto;
-  margin-right: 50px;
+  
   margin-bottom: 50px;
 }
+
+.services_list li:nth-last-child(even){
+	margin-right: 25px;
+}
+
+.services_list li:nth-last-child(odd){
+	margin-left: 25px;
+}
+
 .services_list li > img {
   position: absolute;
   top: 0;
@@ -677,21 +779,21 @@ header {
   display: flex;
 }
 
-.achievements_list {
-  width: 300px;
-	margin-right: 50px;
+.achievements_list,.blog_list {
+  width: calc(100%/3);
+	margin-right: 20px;
   margin-top: 50px;
 }
-.achievements_list img {
+.achievements_list img,.blog_list img {
   width: 100%;
 }
-.achievements_list dl {
+.achievements_list dl,.blog_list dl {
   margin-left: 30px;
 }
-.achievements_list dt {
+.achievements_list dt,.blog_list dt {
   border: solid 1px #000;
-  width: 300px;
-  height: 250px;
+  width: calc(100%/3-20px);
+  height: auto;
 }
 .achievements_list dd {
   margin: 10px;
@@ -710,25 +812,6 @@ header {
 .blog_list_flex {
   display: block;
   display: flex;	
-}
-.blog_list {
-  width: 300px;
-	margin-right: 50px;
-  margin-top: 50px;
-}
-.blog_list img {
-  width: 100%;
-}
-.blog_list dl {
-  margin-left: 30px;
-}
-.blog_list dt {
-  border: solid 1px #000;
-  width: 300px;
-  height: 250px;
-}
-.blog_list dd {
-  margin: 10px;
 }
 
 .blog_btn{

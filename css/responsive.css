@@ -124,13 +124,23 @@ header {
   top: -18px;
   left: 0;
 }
-.nav, .nav_toggle {
+.nav_toggle,.nav,.res_nav{
   display: block;
 }
+	.res_nav{
+		position: relative;
+	}
+	.res_nav img{
+		position:absolute;
+		top: -13px;
+		left: -60px;
+		width: 50px;
+		height: auto;
+	}
 
 .nav_bg{
   width: 100vw;
-  height: 100vw;
+  height: 100%;
   background-color: #fff;
   z-index: 25;
   opacity: 0;
@@ -227,10 +237,90 @@ header {
   .main_navigation {
   display: none;
 }
-.nav_toggle{
+.nav_toggle {
+  position: relative;
+  width: 1.75rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.nav_toggle i {
   display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform .5s, opacity .5s;
 }
+.nav_toggle i:nth-child(1) {
+  top: 0;
 }
+.nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 97px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+.nav.show {
+  opacity: 1;
+  visibility: visible;
+}
+.nav_menu_li {
+  padding: 30px 0;
+  width: 100%;
+  background-color: var(--blue3);
+	
+  display: block;
+  /*border-bottom: solid 1px var(--blue1);*/
+}
+.nav_menu_li:hover a {
+  opacity: 0.7;
+}
+.nav_menu_li a {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.ac-child {
+  display: none;
+}
+
+.ac-child li{
+  padding:20px ;
+  background-color: var(--blue2);
+  text-align: center;
+	/*border-bottom: solid 1px #fff;*/
+}
+
+.ac-child li a{
+	color: var(--gray);
+}	
+}
+
 /*-------------レスポンシブハンバーガーメニュー----------------*/
 
 .nav_toggle {
@@ -429,7 +519,49 @@ header {
 .sec_1 {
   padding:0 0 50px 0;
 }
-.loop_wrap {
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*
+IE11対策
+----------------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.d-demo {
+  display: -ms-grid;
+  overflow: hidden;
+}
+/*----------------------------*/
+
+.d-demo__wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.d-demo__list {
+  display: flex;
+  list-style: none;
+}
+
+.d-demo__list--left{
+animation :infinity-scroll-left 60s infinite linear 0.5s both;
+}
+
+.d-demo__item {
+  width: 650px;
+	margin-bottom: -40px;
+}
+.d-demo__item > img{
+   height: 50%;
+	width: auto;
+}
+/*.loop_wrap {
   display: flex;
   width: 100%;
   height: 70px;
@@ -464,7 +596,7 @@ header {
   to {
     transform: translateX(-200%);
   }
-}
+}*/
 /*-------------レスポンシブTOPミッション会社情報----------------*/
 .sec_3 {
   display: none;
@@ -1126,7 +1258,7 @@ footer small {
   border-left: none;
 }
 .form_btn {
-  width: 190px;
+  width: 50%;
   padding: 10px;
   border: none;
   background: var(--blue3);
@@ -1139,7 +1271,7 @@ footer small {
 }
 
 .form_btn_2{
-	width: 350px;
+	width: 70%;
   padding: 10px;
   border: none;
   background: var(--blue3);
