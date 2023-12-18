@@ -79,8 +79,8 @@ header {
 }
 .top_logo img {
   width: auto;
-  height: 60px;
-  margin-top: -20px;
+  height: 50px;
+  margin-top: -10px;
 }
 .header_wrap {
   justify-content: space-between;
@@ -554,7 +554,7 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
 }
 
 .d-demo__item {
-  width: 650px;
+  width: 660px;
 	margin-bottom: -40px;
 }
 .d-demo__item > img{
@@ -702,7 +702,7 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
 }
 .sec_title_1 {
   font-size: 3.7rem;
-  text-align: center;
+  /*text-align: center;*/
   color: var(--blue3);
   letter-spacing: 0.08em;
 	
@@ -710,7 +710,7 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
 .sec_title_2 {
   font-size: 1.5rem;
   color: var(--blue3);
-	text-align: center;
+	/*text-align: center;*/
 }
 .sec_title_4 {
   width: 85%;
@@ -792,6 +792,14 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
 }
 .services_list_detail a:hover .arrow {
   left: 6px;
+}
+
+.services_list li:nth-last-child(even){
+	margin-right: 0px;
+}
+
+.services_list li:nth-last-child(odd){
+	margin-left: 0px;
 }
 
 /*-------------レスポンシブTOP実績ACHIEVEMENTS----------------*/
@@ -1183,11 +1191,11 @@ footer small {
 }
 .page_title_wrap {
   width: 100%;
-  background-color: var(--blue2);
+  background-color: #f1f4fc;
   margin: 0 auto;
 }
 .page_title {
-  padding: 210px 0 50px 0;
+  padding: 150px 0 50px 0;
   margin: 0 auto;
   width: 85%;
 }

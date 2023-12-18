@@ -45,10 +45,11 @@ a:hover {
   justify-content: center;
 }
 :root {
-  --gold: #ffd700;
+  --gold: #c89628;
   --blue1: #120D69;
   --blue2: #EAF6FF;
   --blue3: #285ac8;
+	--blue4:#f1f4fc;
   --gray: #2D2D2D;
 }
 .fl {
@@ -356,7 +357,7 @@ header {
 .main_bg {
   width: 100vw;
   height: 86%;
-  background-color: #EAF6FF;
+  background-color: #f1f4fc;
   margin: 0 auto;
   z-index: -1;
   top: 0;
@@ -365,7 +366,8 @@ header {
 }
 
 .mainvisual_wrap {
-  max-width: 1400px;
+  /*max-width: 1400px;*/
+	width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -391,7 +393,7 @@ header {
   display: block;
   margin: 0 auto;
   z-index: 5;
-  margin-left: 3%;
+  /*margin-left: 3%;*/
 }
 .mainvisual_title h1 {
   font-size: 3.5rem;
@@ -436,7 +438,7 @@ header {
 }*/
 /*-------------企業ロゴスクロール----------------*/
 .sec_1 {
-  padding:0 0 70px 0;
+  padding:30px 0 70px 0;
 	margin-top: -30px;
 }
 
@@ -462,6 +464,7 @@ _:-ms-lang(x)::-ms-backdrop,
 .d-demo__wrap {
   display: flex;
   overflow: hidden;
+	margin-bottom: -20px;
 }
 
 .d-demo__list {
@@ -474,10 +477,10 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
 }
 
 .d-demo__item {
-  width: 1200px;
+  width: 1050px;
 }
 .d-demo__item > img{
-   height: 90%;
+   height: 80%;
 	width: auto;
 }
 /*
@@ -633,13 +636,22 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
   border: solid var(--blue3) 2px;
 }
 .title_bg_img {
-	display: none;
+	/*display: none;*/
   position: absolute;
   z-index: -1;
-  top: -40px;
-  left: -30px;
-  opacity: .2;
-  width: 300px;
+  top: 0px;
+  right: -100px;
+  width: 600px;
+  height: auto;
+}
+
+.title_bg_img2 {
+	/*display: none;*/
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: -100px;
+  width: 600px;
   height: auto;
 }
 .sec_title p {
@@ -701,7 +713,8 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
   margin-top: 50px;
 }
 .services_list li {
-  /*width: 600px;*/
+  width: calc(100%/2-25px);
+	
   position: relative;
   overflow: hidden;
   height: auto;
@@ -772,7 +785,7 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
   padding: 100px 0 120px 0;
 }
 .sec_4_wrap {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 .achievements_list_flex {
@@ -806,7 +819,7 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
   /*background-color: var(--blue2);*/
 }
 .sec_5_wrap {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 .blog_list_flex {
@@ -826,25 +839,25 @@ animation :infinity-scroll-left 60s infinite linear 0.5s both;
 /*-------------TOPコンタクト----------------*/
 .contact {
   width: 100%;
-  background-color: var(--blue3);
-  /*background-image: url("file:///C:/Users/kameokna/Desktop/%E7%B7%B4%E7%BF%92%E3%81%BE%E3%81%A8%E3%82%81/%E7%B7%B4%E7%BF%928/img/contact_img.png");
+  /*background-color: var(--blue3);*/
+  background-image: url("file:///C:/Users/kameokna/Desktop/%E7%B7%B4%E7%BF%92%E3%81%BE%E3%81%A8%E3%82%81/%E7%B7%B4%E7%BF%928/img/contact_img2.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;*/
-  padding: 120px 0;
+	background-size: cover;
+  padding: 50px 0;
 }
 .contact_title_1 {
-  font-size: 3rem;
+  font-size: 4.0rem;
   margin-right: 20px;
   color: #fff;
   font-weight: bold;
 }
 .contact_title_2 {
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   color: #fff;
 }
 .contact_title {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 /*-------------フッター----------------*/
@@ -1071,44 +1084,70 @@ footer small {
 .conpany,.contact_page {
   margin: 0 auto;
 }
-.company_wrap {
+/*.company_wrap {
   width: 100%;
   padding: 70px 0 0 0;
-}
+}*/
 
-.res_contact_wrap,.res_company_wrap{
+.res_contact_wrap{
 	display: none;
 }
 
+.res_company_table{
+	width: 60%;
+	margin: 70px auto;
+}
+
+.res_company_table dt,.res_company_table dd{
+	border-bottom: 1px solid #fff;
+	padding: 20px
+}
+
+.res_company_table dd:last-child{
+	border-bottom: none;
+}
+
+.res_company_table dt{
+	background: var(--blue4);
+	color: var(--gray);
+	font-weight: 600;
+}
+
+
+/*
 .company_table_wrap {
   width: 85%;
   margin: 0 auto;
 }
+*/
 
 .contact_wrap{
 	max-width: 1200px;
 	margin: 0 auto;
+	margin-top: 70px;
 }
 
 .page_title_wrap {
   width: 100%;
-  background-color: var(--blue2);
+  /*background-color: var(--blue3);*/
   margin: 0 auto;
 }
 .page_title {
-  padding: 210px 0 50px 0;
+  padding: 150px 0 50px 0;
   margin: 0 auto;
   width: 85%;
+	
 }
 .page_title2 {
   padding: 100px 0 70px 0;
   margin: 0 auto;
   width: 85%;
   position: relative;
+	
 }
 .page_title_en {
   font-weight: bold;
-  font-size: 4em;
+  font-size: 5em;
   line-height: 1.2em;
   color: var(--blue3);
 }
@@ -1128,21 +1167,21 @@ footer small {
   padding-bottom: 70px;
 }
 .contact-form {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.company_table {
+/*.company_table {
   width: 75%;
   margin: 0 auto;
-}
+}*/
 .company_table, .company_table td, .company_table th, .contact-form, .contact-form td, .contact-form th {
   border-collapse: collapse;
 }
-.company_table {
+/*.company_table {
   margin-top: 30px;
   border: 1px solid #fff;
-}
+}*/
 .company_table tr, .contact-form tr {
   width: 70px;
   height: 25px;
@@ -1158,7 +1197,7 @@ footer small {
   width: 600px;
   text-align: left;
 }
-.company_table th {
+/*.company_table th {
   background-color: var(--blue3);
   color: #fff;
   width: 200px;
@@ -1172,7 +1211,7 @@ footer small {
   border: solid 1px #fff;
   box-sizing: border-box;
   border-left: none;
-}
+}*/
 .form_btn {
   width: 300px;
   padding: 20px 0;
@@ -1219,7 +1258,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 
 /*-------------ダウンロードページ----------------*/
 .download_wrap {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .download_img {
   margin: 0 auto;
@@ -1228,7 +1267,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   height: 350px;
   border: solid #000 1px;
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .download_img img {
   position: absolute;
