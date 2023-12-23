@@ -91,14 +91,25 @@ header {
   margin-left: 25px;
   font-weight: bold;
 }
-.main_navigation li a {
-  position: relative;
-  display: inline-block;
-  height: 97px;
-}
+
 .gnavi__list_a {
   color: var(--blue1);
 }
+
+.gnavi__list_a {
+  position: relative;
+  display: inline-block;
+  height: 110px;
+	text-align: center;
+	color: var(--blue1);
+}
+
+.gnavi__list_a span{
+	color: #b0c4de;
+	display: block;
+	margin-top: -5px;
+}
+
 .gnavi__list_a::after {
   position: absolute;
   left: 0;
@@ -965,6 +976,22 @@ footer {
 .footer_list li:hover .arrow {
   right: 0;
 }
+
+.addres li:last-child{
+	margin-top: 40px;
+	
+}
+
+.sns{
+	justify-content: center;
+}
+
+.sns img{
+	width: 50px;
+	height: auto;
+	margin-right: 10px;
+}
+
 footer small {
   display: block;
   text-align: center;
