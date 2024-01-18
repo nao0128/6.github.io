@@ -25,70 +25,79 @@
 <!---------------ナビゲーション------------------>
 <div class="nav_bg"></div>
 <header>
-  
   <div class="flex header_wrap">
-    <div><a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a></div>
+    <div><a href="index.html#" class="top_logo"><!--<img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>--></div>
     <nav class="main_navigation">
       <ul class="flex">
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について</a>
-          <ul class="dropdown__lists">
-            <li class="dropdown__list"><a href="index.html#mission">ミッション</a></li>
-            <li class="dropdown__list"><a href="index.html#services">サービス一覧</a></li>
-            <li class="dropdown__list"><a href="company.html">会社情報</a></li>
-            <li class="dropdown__list"><a href="company.html#members">メンバー紹介</a></li>
-          </ul>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について<br>
+          <span>company</span></a>
+          <div class="dropdown__lists">
+            <ul>
+              <li class="dropdown__list"><a href="index.html#mission"><img src="img/icon_arrow3.png" class="arrow_nav">会社について</a></li>
+              <li class="dropdown__list"><a href="company.html#"><img src="img/icon_arrow3.png" class="arrow_nav">会社概要</a></li>
+              <li class="dropdown__list"><a href="company.html#members"><img src="img/icon_arrow3.png" class="arrow_nav">メンバー紹介</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
-          <ul class="dropdown__lists_3">
-            <li class="dropdown__list"><a href="#">営業代行支援</a></li>
-            <li class="dropdown__list"><a href="#">リードセールス支援</a></li>
-            <li class="dropdown__list"><a href="#">インサイドセールス支援</a></li>
-            <li class="dropdown__list"><a href="#">フィールドセールス支援</a></li>
-            <li class="dropdown__list"><a href="#">セールスコンサルティング支援</a></li>
-            <li class="dropdown__list"><a href="#">セールスマーケティング支援</a></li>
-          </ul>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="#">サービス<br>
+          <span>services</span></a>
+          <div class="dropdown__lists_3">
+            <ul>
+              <li class="dropdown__list"><a href="index.html#services"><img src="img/icon_arrow3.png" class="arrow_nav">サービス一覧</a></li>
+              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">営業代行支援</a></li>
+              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">リードセールス支援</a></li>
+              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">インサイドセールス支援</a></li>
+              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">フィールドセールス支援</a></li>
+              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">セールスコンサルティング支援</a></li>
+              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">セールスマーケティング支援</a></li>
+            </ul>
+          </div>
         </li>
-        <li><a class="gnavi__list_a" href="index.html#achievements">事例</a></li>
-        <li  class="gnavi__list"><a class="gnavi__list_a" href="contact.html">お問い合わせ</a>
-          <ul class="dropdown__lists_3">
-            <li class="dropdown__list"><a href="contact2.html#">サービス資料</a></li>
-            <li class="dropdown__list"><a href="contact.html#">お問い合わせ</a></li>
-          </ul>
+        <li><a class="gnavi__list_a" href="index.html#achievements">事例<br>
+          <span>case</span></a></li>
+        <li  class="gnavi__list"><a class="gnavi__list_a" href="contact.html#">お問い合わせ<br>
+          <span>contact</span></a>
+          <div class="dropdown__lists_2">
+            <ul>
+              <li class="dropdown__list"><a href="contact.html#"><img src="img/icon_arrow3.png" class="arrow_nav">おい問合せフォーム</a></li>
+              <li class="dropdown__list"><a href="contact2.html#"><img src="img/icon_arrow3.png" class="arrow_nav">サービス資料(無料)</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#blog">BLOG</a>
-          <ul class="dropdown__lists_2">
-            <li class="dropdown__list"><a href="blog.html#">BLOG一覧</a></li>
-          </ul>
-        </li>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="blog.html#">ブログ<br>
+          <span>blog</span></a> </li>
       </ul>
     </nav>
     
-    <!---------------レスポンシブナビゲーション------------------> 
-    <span class="nav_toggle"> <i></i> <i></i> <i></i> </span>
+    <!---------------レスポンシブナビゲーション------------------>
+    <div class="res_nav"> <a href="contact.html#"><img src="img/icon_mail.png"></a> <span class="nav_toggle"> <i></i> <i></i> <i></i> </span></div>
     <nav class="nav">
       <ul class="nav_menu_ul">
-        <li class="nav_menu_li ac-parent"><a href="index.html#mission">会社について</a>
+        <li class="nav_menu_li ac-parent"><a href="#">会社について</a> </li>
+        <ul class="ac-child">
+          <li class="nav_close"><a href="index.html#mission">会社について</a></li>
+          <li class="nav_close"><a href="company.html#">会社情報</a></li>
+          <li class="nav_close"><a href="company.html#members">メンバー紹介</a></li>
+        </ul>
+        <li class="nav_menu_li ac-parent"><a href="#">サービス一覧</a></li>
+        <ul class="ac-child">
+          <li class="nav_close ac_services"><a href="index.html#services">サービス一覧</a></li>
+          <li class="nav_close"><a href="">営業代行支援</a></li>
+          <li class="nav_close"><a href="">リードセールス支援</a></li>
+          <li class="nav_close"><a href="">インサイドセールス支援</a></li>
+          <li class="nav_close"><a href="">フィールドセールス支援</a></li>
+          <li class="nav_close"><a href="">セールスマーケティング支援</a></li>
+        </ul>
+        <li class="nav_menu_li"><a href="contact2.html#">サービス資料(無料)</a></li>
+        <li class="nav_menu_li"><a href="contact.html#">お問い合わせフォーム</a></li>
+        <li class="nav_menu_li"><a href="blog.html#">ブログ一覧</a><br>
+          <br>
         </li>
-		<ul class="ac-child">
-		  <li class="nav_close"><a href="">ミッション</a></li>
-			<li class="nav_close"><a href="">サービス一覧</a></li>
-			<li class="nav_close"><a href="">会社情報</a></li>
-			<li class="nav_close"><a href="">メンバー</a></li>
-		  </ul>  
-		
-        <li class="nav_menu_li ac-parent"><a href="index.html#services">サービス一覧</a></li>
-		 <ul class="ac-child">
-		  <li class="nav_close"><a href="">営業代行支援</a></li>
-			<li class="nav_close"><a href="">リードセールス支援</a></li>
-			<li class="nav_close"><a href="">インサイドセールス支援</a></li>
-			<li class="nav_close"><a href="">フィールドセールス支援</a></li>
-			 <li class="nav_close"><a href="">セールスマーケティング支援</a></li>
-		  </ul> 
-        <li class="nav_menu_li"><a href="contact2.html#">サービス資料</a></li>
-        <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
-        <li class="nav_menu_li"><a href="blog.html#">BLOG</a></li>
+        <li class="nav_menu_li"><br>
+          <div class="sns flex jcc"><img src="img/ico-logo-x.png"><img src="img/ico-logo-facebook.png"><img src="img/ico-logo-line.png"></div>
+        </li>
       </ul>
-    
+    </nav>
   </div>
 </header>
 <!---------------------ヘッダー------------------------->	
@@ -213,6 +222,9 @@
         <li>〒531-0072</li>
         <li>大阪市北区豊崎3-15-5 TKビル2F</li>
         <li>TEL：050-7586-3360</li>
+        <li>
+          <div class="sns flex"><img src="img/ico-logo-x.png"><img src="img/ico-logo-facebook.png"><img src="img/ico-logo-line.png"></div>
+        </li>
       </ul>
     </div>
     <div class="flex footer_list">
