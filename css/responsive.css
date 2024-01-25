@@ -426,17 +426,17 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
 }
 
 /*-------------レスポンシブTOPミッション会社情報----------------*/
-.sec_3 {
+.topicsission {
   display: none;
 }
-.res_sec_3 {
+.res_topicsission {
   display: block;
   width: 100vw;
   margin: 0 auto;
   padding: 50px 0 50px 0;
   /*background-color: var(--blue2);*/
 }
-.sec_3_wrap {
+.topicsission_wrap {
   width: 75%;
   margin: 0 auto;
 }
@@ -444,33 +444,33 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
   margin: 0 auto;
   margin-bottom: 10px;
 }
-.sec_3_contents {
+.topicsission_contents {
   width: 100%;
 }
-.sec_3_content {
+.topicsission_content {
   margin-bottom: 25px;
 }
-.sec_3_text {
+.topicsission_text {
   width: 100%;
 }
-.sec_3_text h3 {
+.topicsission_text h3 {
   font-size: 1.7rem;
   font-weight: normal;
   margin-bottom: 10px;
   color: var(--blue3);
 }
-.sec_3_text p {
+.topicsission_text p {
   line-height: 1.6em;
   font-size: 1.0rem;
 }
-.sec_3_img {
+.topicsission_img {
   width: 100%;
   height: 250px;
   margin-bottom: 10px;
   position: relative;
   overflow: hidden;
 }
-.sec_3_img img {
+.topicsission_img img {
   position: absolute;
   top: 0;
   right: 0;
@@ -649,7 +649,7 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
 .achievements_list dd {
   margin: 10px;
 }
-/*-------------レスポンシブTOPブログ----------------*/
+/*-------------レスポンシブTOPトピックス----------------*/
 .sec_5 {
   width: 100vw;
   margin: 0 auto;
@@ -1159,7 +1159,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 .staff_name {
   font-size: 1.5rem;
 }
-/*-------------ブログ一覧----------------*/
+/*-------------トピックス一覧----------------*/
 .blog_wrap {
   width: 85%;
   margin: 0 auto;

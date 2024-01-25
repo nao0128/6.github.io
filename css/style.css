@@ -20,6 +20,7 @@ body {
 p, h1, h2, h3, h4 {
   text-autospace: no-autospace;
   /*word-break: auto-phrase;*/
+	
 }
 a, p, li, dd, th, td {
   font-size: clamp(1.1rem, 1.1vw, 1.1rem);
@@ -51,7 +52,16 @@ a:hover {
   --blue3: #080969; /*メインカラー*/
   --blue4: #f1f4fc;
   --gray: #404040;
+  --yellow: #f4eb8f;
 }
+
+.marker_2{
+  display: inline;
+  background:linear-gradient(transparent 60%, #ffffe0 60%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}/*黄色マーカー*/
+
 .fl {
   float: left;
 }
@@ -67,6 +77,72 @@ a:hover {
 .m0a {
   margin: 0 auto;
 }
+.wb {
+  word-break: auto-phrase;
+}
+.title_bg_img {
+  display: none;
+  position: absolute;
+  z-index: -10;
+  top: 30px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  background: #f1f4fc;
+}
+.title_bg_img2 {
+  /*display: none;*/
+  position: absolute;
+  z-index: -10;
+  top: 40px;
+  left: -100px;
+  width: 50vw;
+  height: 800px;
+  /*background-color:#f1f4fc;*/
+  background: rgb(241, 244, 252);
+  background: linear-gradient(180deg, rgba(241, 244, 252, 1) 30%, rgba(255, 255, 255, 1) 72%);
+}
+
+.title_bg_img4 {
+  position: absolute;
+  z-index: -10;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 95%;
+  height: 350px;
+  /*background-color:#dfdfdf;*/
+  background: rgb(241, 244, 252);
+  background: linear-gradient(180deg, rgba(241, 244, 252, 1) 30%, rgba(255, 255, 255, 1) 72%);
+}
+
+.title_bg_img6 {
+  position: absolute;
+  z-index: -10;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 95%;
+  height: 1000px;
+  /*background-color:#dfdfdf;*/
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(241,244,252,1) 100%);
+}
+
+.title_bg_img5 {
+  position: absolute;
+  z-index: -10;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 95%;
+  /*height: 350px;*/
+  background-color: #f1f4fc;
+}
+
 /*-------------ヘッダー----------------*/
 header {
   width: 100vw;
@@ -89,38 +165,7 @@ header {
   padding: 30px 70px;
 }
 /*-------------グローバルナビゲーション----------------*/
-/*.gnavi__list_a {
-  position: relative;
-  display: inline-block;
-  height: 110px;
-  text-align: center;
-  color: var(--gray);
-  font-size: 1.0em;
-  font-weight: bold;
-  margin-left: 60px;
-}
-.gnavi__list_a span {
-  color: var(--blue3);
-  display: block;
-  margin-top: -5px;
-  font-size: 0.8em;
-  font-weight: normal;
-}
-.gnavi__list_a::after {
-  position: absolute;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: var(--blue3);
-  bottom: 29px;
-  transform: scale(0, 1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
-.gnavi__list_a:hover::after {
-  transform: scale(1, 1);
-}*/
+
 .nav_mail {
   position: relative;
 }
@@ -134,81 +179,14 @@ header {
 .nav, .nav_toggle, .navigation {
   display: none;
 }
-/*.dropdown__list {
-  position: relative;
-}
-.dropdown__list a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 25px;
-  font-weight: normal;
-  text-align: center;
-}
-.dropdown__list img {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: -20px;
-  margin: auto;
-  opacity: 0;
-  transition: all .3s;
-}
-.dropdown__list a:hover {
-  opacity: 0.7;
-}
-.dropdown__list a:hover .arrow_nav {
-  opacity: 1;
-  left: -10px;
-}
-.gnavi__list {
-  position: relative;
-}
-.gnavi__list > .dropdown__lists, .gnavi__list > .dropdown__lists_2, .gnavi__list > .dropdown__lists_3 {
-  padding: 30px 40px 10px 40px;
-  background: var(--blue3);
-  opacity: 0;
-  top: 100px;
-  transition: .3s;
-  position: absolute;
-}
-.gnavi__list > .dropdown__lists {
-  right: -70px;
-  z-index: 1;
-  width: 250px;
-}
-.gnavi__list > .dropdown__lists_2 {
-  right: -100px;
-  z-index: 0;
-  width: 300px;
-}
-.gnavi__list > .dropdown__lists_3 {
-  right: -150px;
-  width: 350px;
-}
-.gnavi__list:hover .dropdown__lists {
-  opacity: 1;
-  top: 90px;
-}
-.gnavi__list:hover .dropdown__lists_2 {
-  opacity: 1;
-  top: 90px;
-}
-.gnavi__list:hover .dropdown__lists_3 {
-  opacity: 1;
-  top: 90px;
-}*/
+
 /*----------------------------*/
-/*.main_navigation {
-  display: none;
-}*/
+
 .nav_toggle, .nav, .navigation {
   display: block;
 }
 .navigation {
   position: relative;
-	
 }
 .navigation img {
   position: absolute;
@@ -216,27 +194,22 @@ header {
   left: -70px;
   width: 70px;
   height: auto;
-	transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-
-.navigation img:hover{
-	opacity: 0.7;
+.navigation img:hover {
+  opacity: 0.7;
 }
-
 .nav_toggle {
   position: relative;
   width: 3.2rem;
   height: 3.2rem;
   cursor: pointer;
-	transition: 0.3s ease;
-	border-radius: 50%;
-	
+  transition: 0.3s ease;
+  border-radius: 50%;
 }
-
-.nav_toggle:hover{
-	background-color:rgba(241,244,252,0.9);
+.nav_toggle:hover {
+  background-color: rgba(241, 244, 252, 0.9);
 }
-
 .nav_toggle i {
   display: block;
   width: 1.75rem;
@@ -247,22 +220,22 @@ header {
 }
 .nav_toggle i:nth-child(1) {
   top: 15px;
-	right: 0;
-	left: 0;
-	margin: auto;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 .nav_toggle i:nth-child(2) {
   top: 0;
   bottom: 0;
-	right: 0;
-	left: 0;
+  right: 0;
+  left: 0;
   margin: auto;
 }
 .nav_toggle i:nth-child(3) {
   bottom: 15px;
-	right: 0;
-	left: 0;
-	margin: auto;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 .nav_toggle.show i:nth-child(1) {
   transform: translateY(11px) rotate(-45deg);
@@ -274,7 +247,8 @@ header {
   transform: translateY(-8px) rotate(45deg);
 }
 .nav {
-  width: 700px;
+  width: 80%;
+	
   position: fixed;
   top: 100px;
   right: 0;
@@ -288,6 +262,14 @@ header {
   padding: 50px 70px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
+
+.nav_wrap{
+	width: 70%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
 .nav.show {
   opacity: 1;
   visibility: visible;
@@ -295,18 +277,21 @@ header {
 .nav_menu_li {
   padding-bottom: 30px;
   display: block;
+	margin-bottom: 30px;
 }
 .nav_menu_li:hover a {
   /*opacity: 0.7;*/
 }
 .nav_menu_li span {
   color: var(--blue3);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+	 
 }
 .nav_menu_li a {
   font-size: 0.8rem;
   color: var(--gray);
   font-weight: bold;
+	white-space: nowrap;
 }
 .nav_menu_li:last-child {
   position: relative;
@@ -322,12 +307,15 @@ header {
   right: 0;
   margin: auto;
 }
-.nav_menu_ul2 li {
-  padding-right: 70px;
+
+.nav_menu_li{
+	width: calc(100%/3);
 }
-.nav_menu_ul3 div {
-  margin-right: 100px;
+
+.nav_menu_div{
+	width: calc(100%/3);
 }
+
 .nav_bg {
   width: 100vw;
   height: 100%;
@@ -342,6 +330,7 @@ header {
   opacity: 0.7;
   visibility: visible;
 }
+
 .hov-parent1, .hov-parent2 {
   position: relative;
 }
@@ -355,20 +344,18 @@ header {
 }
 .hov-child1 {
   width: 300px;
-  right: -280px;
+  left: 0px;
 }
 .hov-child2 {
   width: 600px;
-  right: -600px;
+  left: 0px;
 }
-
-.hov-child2 li,.hov-child1 li{
-	position: relative;
-	margin-left: 50px;
+.hov-child2 li, .hov-child1 li {
+  position: relative;
+  margin-left: 50px;
 }
-
-.hov-child2 .arrow,.hov-child1 .arrow{
-	position: absolute;
+.hov-child2 .arrow, .hov-child1 .arrow {
+  position: absolute;
   top: 0;
   left: -40px;
   bottom: -10px;
@@ -378,17 +365,12 @@ header {
   border-radius: 50%;
   transition: .3s ease-in-out;
   padding: 3px;
-  background: var(--blue3); 
+  background: var(--blue3);
 }
 
-/*.hov-child2 .arrow6{
-	background: green;
-}*/
-
-.hov-child2 a:hover .arrow,.hov-child1 a:hover .arrow {
+.hov-child2 a:hover .arrow, .hov-child1 a:hover .arrow {
   left: -35px;
 }
-
 .hov-child1 a, .hov-child2 a {
   font-size: 1.0rem;
 }
@@ -396,60 +378,13 @@ header {
   margin-bottom: 20px;
 }
 
-
-
-/*.ac-parent {
-  position: relative;
-}
-.ac-child {
-  display: none;
-  background-color: var(--blue4);
-}
-.ac-child li {
-  padding: 30px 50px;
-  border-bottom: solid 1px #fff;
-}
-.ac-child li a {
-  color: var(--gray);
-}*/
 .sns_nav {
   width: 80%;
   margin: 0 auto;
+	margin-top: 50px;
   border-top: solid var(--gray) 1px;
 }
-/*.ac-parent::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background-color: var(--gray);
-  position: absolute;
-  left: -40px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: opacity .5s;
-}
-.ac-parent::after {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background-color: var(--gray);
-  position: absolute;
-  left: -40px;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-  transition: transform .5s;
-}*/
-/*.ac-parent.show::before {
-  opacity: 0;
-}
-.ac-parent.show::after {
-  transform: translateY(-50%) rotate(180deg);
-}*/
-/*.ac_services{
-		background-color:#ffffea;
-	}*/
+
 /*-------------メインビジュアル----------------*/
 .mainvisual {
   width: 100%;
@@ -524,81 +459,154 @@ header {
 .mainvisual_text3 {
   position: relative;
 }
-/*-------------企業ロゴスクロール----------------*/
-.sec_1 {
-  padding: 50px 0 70px 0;
-  margin-top: -30px;
+
+/*-------------アワードセクション----------------*/
+.sec_award {
+  width: 100%;
+  margin: 50px 0 50px 0;
+  /*background-color: var(--blue3);*/
 }
-@keyframes infinity-scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.sec_award_wrap {
+  width: 90%;
+  margin: 0 auto;
 }
-/*IE11対策*/
-_:-ms-lang(x)::-ms-backdrop, .d-demo {
-  display: -ms-grid;
-  overflow: hidden;
-}
-/*----------------------------*/
-.d-demo__wrap {
+.sec_award_wrap ul {
   display: flex;
-  overflow: hidden;
-  margin-bottom: -20px;
+  justify-content: center;
 }
-.d-demo__list {
-  display: flex;
-  list-style: none;
-  margin-bottom: -10px;
+.sec_award_wrap ul li {
+  margin-right: 15px;
+	
 }
-.d-demo__list--left {
-  animation: infinity-scroll-left 60s infinite linear 0.5s both;
+.sec_award_wrap ul li img {
+  width: 150px;
+  height: auto;
 }
-.d-demo__item {
-  width: 926px;
+.sec_award_wrap ul li:last-child img {
+  width: auto;
+  height: 150px;
 }
-.d-demo__item > img {
-  height: 70%;
+.award_text {
+  margin-top: 30px;
+  word-break: auto-phrase;
+}
+/*-------------取引企業一覧----------------*/
+.sec_suppliers {
+  width: 100%;
+  margin: 50px 0 70px 0;
+  /*background-color: var(--blue4);*/
+  background: linear-gradient(135deg, rgba(241, 244, 252, 1) 0%, rgba(230, 232, 239, 1) 51%, rgba(255, 255, 255, 1) 63%, rgba(241, 244, 252, 1) 74%, rgba(235, 238, 244, 1) 85%, rgba(241, 244, 252, 1) 87%, rgba(230, 232, 239, 1) 100%);
+}
+.sec_suppliers_wrap {
+  width: 90%;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+/*----企業一覧スライダー-----*/
+.main_slider-wrapper {
+  background: #EEE;
+  display: block;
+  margin: 25px 0;
+}
+.main_slider-cell {
+  height: 200px;
+  width: 800px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 20px;
+  background: #fff;
+  margin: 0 5px;
+  padding: 30px;
+}
+.main_slider-cell img {
+  height: 70px;
   width: auto;
 }
+/*-------------問題定義セクション----------------*/
+.sec_problem {
+  width: 100%;
+  margin: 50px 0 70px 0;
+  /*background-color: var(--blue3);*/
+}
+.sec_problem_wrap {
+  width: 90%;
+  margin: 0 auto;
+	background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23B1B1B1'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
 
+.sec_problem_wrap__{
+	padding: 30px 0;
+}
 
-/*-------------TOP会社について----------------*/
-.sec_3 {
+.sec_problem_wrap ul {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 20px;
+}
+.sec_problem_wrap ul li {
+  width: 460px;
+  padding: 15px 10px;
+  text-align: center;
+  margin-right: 15px;
+  background: #fff;
+  border-radius: 10px;
+}
+.sec_problem_wrap ul li:last-child {
+  margin-right: 0px;
+}
+.problem_text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/*-------------私たちにお任せくださいセクション----------------*/
+.sec_reason {
   width: 100%;
   margin: 0 auto;
   /*background-color: var(--blue3);*/
+  margin-bottom: 70px;
 }
-.res_sec_3 {
+.res_sec_reason {
   display: none;
 }
-.sec_3_wrap {
-  width: 80%;
+
+.sec_reason_wrap{
+	width: 80%;
   margin: 0 auto;
+}
+
+.sec_reason_wrap2 {
+	padding: 20px 0;
+	 background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23DCF6FC'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.07'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 .title_sec3 {
   margin-right: 50px;
   margin-bottom: 50px;
   min-width: 300px;
 }
-.sec_3_contents {
+.sec_reason_contents {
   width: 100%;
 }
-.sec_3_content {
+.sec_reason_content {
   margin-bottom: 25px;
 }
-.sec_3_text {
+.sec_reason_text {
   width: 70%;
 }
-.sec_3_h3 {
+.sec_reason_h3 {
   font-size: 2.0rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: var(--blue3);
 }
-.sec_3_text p {
+.sec_reason_text p {
   line-height: 2.0em;
   font-size: 1.1rem;
 }
@@ -608,14 +616,14 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
   overflow: hidden;
   margin-right: 50px;
 }
-.res_sec_3_h3 {
+.res_sec_reason_h3 {
   display: none;
 }
 @media screen and (max-width: 1880px) {
-  .sec_3_h3 {
+  .sec_mission_h3 {
     display: none;
   }
-  .res_sec_3_h3 {
+  .res_sec_mission_h3 {
     font-size: 2.0rem;
     display: block;
     font-size: 2.0rem;
@@ -623,10 +631,68 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
     margin-bottom: 10px;
     color: var(--blue3);
   }
-  .sec_3_text p {
+  .sec_mission_text p {
     line-height: 1.6em;
   }
 }
+.sec_reason_1wr li {
+  width: calc(100%/3);
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+	text-align: center;
+	border-radius:5px;
+	box-shadow: 0px 5px 15px 0px rgba(73, 75, 154, 0.35);
+}
+.sec_reason_1wr li > div {
+  overflow: hidden;
+}
+.sec_reason_1wr li > div > img {
+  width: 350px;
+}
+.sec_reason_1wr li > p {
+  display: block;
+	color: var(--blue3);
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 20px;
+	word-break: auto-phrase;
+	border-top: solid #000 1px;
+}
+
+
+
+/*-------------RISING INNOVATIONが選ばれる理由セクション----------------*/
+
+.sec_reason_2wr{
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+.sec_reason_2wr figure{
+	overflow: hidden;
+	border: solid #000 1px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: relative;
+}
+
+
+
+.sec_reason_2wr li p{
+	display: block;
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-top: 25px;
+	
+	/*white-space: nowrap;*/
+}
+
+
+
 /*-------------TOPサービス事業内容----------------*/
 .sec_2 {
   width: 100%;
@@ -641,40 +707,26 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
   display: block;
   position: relative;
   z-index: 0;
+  width: /*text-align: center;*/
+}
+.sec_title_width {
+  width: 80%;
+  margin: 0 auto;
 }
 .sec_title_border {
+  display: none;
   position: relative;
 }
 .sec_title_border::after {
   content: '';
   display: block;
-  width: 100px;
+  width: 50px;
   position: absolute;
-  bottom: -40px;
+  bottom: -25px;
   left: 0;
-  border: solid var(--blue3) 2px;
-}
-.title_bg_img {
-  display: none;
-  position: absolute;
-  z-index: -10;
-  top: 30px;
-  right: -100px;
-  width: 600px;
-  height: 600px;
-  background: #f1f4fc;
-}
-.title_bg_img2 {
-  /*display: none;*/
-  position: absolute;
-  z-index: -10;
-  top: 40px;
-  left: -100px;
-  width: 70vw;
-  height: 800px;
-  /*background-color:#f1f4fc;*/
-  background: rgb(241, 244, 252);
-  background: linear-gradient(180deg, rgba(241, 244, 252, 1) 30%, rgba(255, 255, 255, 1) 72%);
+  right: 0;
+  margin: 0 auto;
+  border: solid var(--blue3) 1px;
 }
 .sec_title p {
   font-weight: bold;
@@ -682,21 +734,30 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
 }
 .sec_title_1 {
   font-size: 3.5rem;
-  margin-right: 50px;
   color: var(--blue3);
-  /* color: rgb(40,90,200);
-background:linear-gradient(0deg, rgba(40,90,200,1) 0%, rgba(51,95,192,1) 43%, rgba(254,247,231,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
   letter-spacing: 0.08em;
 }
 .sec_title_2 {
   font-size: 1.3em;
   color: var(--blue3);
 }
+.sec_title_3 {
+  font-size: 1.9rem;
+  position: relative;
+}
 .sec_title_4 {
   width: 85%;
   margin: 0 auto;
+}
+.sec_title_5 {
+  font-weight: bold;
+  text-align: center;
+}
+.sec_title_6 {
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: var(--blue3);
+  margin-bottom: 20px;
 }
 .sec_text p {
   line-height: 2.0em;
@@ -716,7 +777,6 @@ background:linear-gradient(0deg, rgba(40,90,200,1) 0%, rgba(51,95,192,1) 43%, rg
 .sec_2_img {
   width: 100%;
   height: 250px;
-  /* border: solid 1px var(--blue1); */
   position: relative;
   overflow: hidden;
 }
@@ -815,24 +875,26 @@ background:linear-gradient(0deg, rgba(40,90,200,1) 0%, rgba(51,95,192,1) 43%, rg
   padding: 100px 0 120px 0;
 }
 .sec_4_wrap {
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
 }
+.sec_4_wrap > .sec_title {}
 .achievements_list_flex {
   display: flex;
+  justify-content: center;
 }
-.achievements_list, .blog_list {
-  width: calc(100%/3);
+.achievements_list, .topics_list {
+  width: calc(80%/3);
   margin-right: 20px;
   margin-top: 50px;
 }
-.achievements_list img, .blog_list img {
+.achievements_list img, .topics_list img {
   width: 100%;
 }
-.achievements_list dl, .blog_list dl {
+.achievements_list dl, .topics_list dl {
   margin-left: 30px;
 }
-.achievements_list dt, .blog_list dt {
+.achievements_list dt, .topics_list dt {
   border: solid 1px #000;
   width: calc(100%/3-20px);
   height: auto;
@@ -840,36 +902,99 @@ background:linear-gradient(0deg, rgba(40,90,200,1) 0%, rgba(51,95,192,1) 43%, rg
 .achievements_list dd {
   margin: 10px;
 }
-/*-------------TOPブログ----------------*/
+/*-------------TOPトピックス----------------*/
 .sec_5 {
   width: 100%;
   margin: 0 auto;
   padding: 0 0 150px 0;
-  /*background-color: var(--blue3);*/
 }
 .sec_5_wrap {
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
 }
-.blog_list_flex {
+.topics_list_flex {
   display: block;
   display: flex;
+  justify-content: center;
 }
-.blog_btn {
+.topics_btn {
   display: none;
 }
 /*-------------スライダー----------------*/
 .slider-wrapper {
   display: none;
 }
+
+/*-------------TOP会社について----------------*/
+.sec_mission {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  /*background-color: var(--blue3);*/
+}
+.res_sec_mission {
+  display: none;
+}
+.sec_mission_wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+.title_sec3 {
+  margin-right: 50px;
+  margin-bottom: 50px;
+  min-width: 300px;
+}
+.sec_mission_contents {
+  width: 100%;
+}
+.sec_mission_content {
+  margin-bottom: 25px;
+}
+/*.sec_mission_text {
+  width: 70%;
+}*/
+.sec_mission_h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--blue3);
+}
+.sec_mission_text p {
+  line-height: 2.0em;
+  font-size: 1.1rem;
+}
+.mission_img {
+  /*width: 650px;*/
+  height: auto;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.res_sec_mission_h3 {
+  display: none;
+}
+@media screen and (max-width: 1880px) {
+  .sec_mission_h3 {
+    display: none;
+  }
+  .res_sec_mission_h3 {
+    font-size: 2.0rem;
+    display: block;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--blue3);
+  }
+  .sec_mission_text p {
+    line-height: 1.6em;
+  }
+}
+
+
 /*-------------TOPコンタクト----------------*/
 .contact {
   width: 100%;
-  background-color: var(--blue4);
-  /*background-image: url("file:///C:/Users/kameokna/Desktop/%E7%B7%B4%E7%BF%92%E3%81%BE%E3%81%A8%E3%82%81/%E7%B7%B4%E7%BF%928/img/contact_img2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;*/
+  /*background-color: var(--blue4);*/
+  background: linear-gradient(135deg, rgba(241, 244, 252, 1) 0%, rgba(230, 232, 239, 1) 51%, rgba(255, 255, 255, 1) 63%, rgba(241, 244, 252, 1) 74%, rgba(235, 238, 244, 1) 85%, rgba(241, 244, 252, 1) 87%, rgba(230, 232, 239, 1) 100%);
   padding: 50px 0;
   position: relative;
 }
@@ -880,8 +1005,9 @@ background:linear-gradient(0deg, rgba(40,90,200,1) 0%, rgba(51,95,192,1) 43%, rg
   font-weight: bold;
 }
 .contact_title_2 {
-  font-size: 1.0rem;
+  font-size: 1.2rem;
   color: var(--blue3);
+  font-weight: bold;
 }
 .contact_title {
   width: 75%;
@@ -1151,6 +1277,7 @@ footer small {
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
+  border-radius: 50px;
   overflow: hidden;
   z-index: 0;
   margin: 0;
@@ -1190,6 +1317,56 @@ footer small {
 }
 .contact_btn:hover a {
   color: #fff;
+}
+.contact_btn2 {
+  width: 250px;
+  height: 70px;
+  border: 1px solid var(--blue3);
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 0;
+  margin: 0;
+  margin-right: 15px;
+}
+.contact_btn2 a {
+  font-size: 16px;
+  color: var(--blue3);
+  text-decoration: none;
+  line-height: 65px;
+  transition: all .5s ease;
+  z-index: 2;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.contact_btn2 a::after {
+  content: '→';
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: -35px;
+}
+.eff-contact2 {
+  width: 250px;
+  height: 70px;
+  left: -250px;
+  background-color: #f4eb8f;
+  position: absolute;
+  transition: all .5s ease;
+  z-index: 1;
+}
+.contact_btn2:hover .eff-contact2 {
+  left: 0;
+}
+.contact_btn2:hover a {
+  color: var(--gray);
 }
 /*------------------*/
 .button-2 {
@@ -1378,9 +1555,6 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 }
 .form_txt {
   height: 50px;
-  /*background: var(--blue3);
-	border: var(--gray) 0.5px solid;
-	border-radius: 5px;*/
 }
 /*-------------下層ページダウンロードページ-----------------------*/
 .download_wrap {
@@ -1403,7 +1577,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   right: 0;
   margin: auto;
 }
-.dl {}
+
 /*-------------下層ページメンバー紹介---------------------------*/
 .member_wrap {
   width: 70%;
@@ -1439,8 +1613,8 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 .staff_name {
   font-size: 1.5rem;
 }
-/*-------------下層ページブログ一覧----------------------------*/
-.blog_wrap {
+/*-------------下層ページトピックス一覧----------------------------*/
+.topics_wrap {
   width: 90%;
   margin: 0 auto;
   margin: 70px auto;
@@ -1511,33 +1685,101 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   transition: all 0.3s ease; /* マーカーを引く速度 */
   cursor: pointer; /* ホバー時のカーソルをポインターにする */
 }
+
 /* マーカーホバー時 */
 .marker:hover {
   background-size: 100% 40%; /* マーカーの横幅を100%にする */
 }
 /*-------------スクロールダウン----------------*/
+
+.container {
+	margin: 0 auto;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+	top:-50px;
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: var(--blue3);
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(45px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(60px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+/*-------------スクロールダウン(サイド)----------------*/
 /* アニメーション設定 */
 .arrowWrap {
   display: none;
   position: fixed;
-  right: 0px;
+  right: -50px;
   top: 40%;
   height: 200px;
   z-index: 20;
 }
 .arrowInner p {
-  font-size: 25px;
+  font-size: 40px;
   letter-spacing: 0.5rem;
   color: var(--blue4);
   text-align: end;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   font-weight: bold;
+  opacity: 0.7;
 }
 .arrow4 {
   width: 1px;
   height: 100px;
-  margin: 100px auto 0;
+  margin: 130px auto 0;
   background-color: #eee;
   position: relative;
   overflow: hidden;
