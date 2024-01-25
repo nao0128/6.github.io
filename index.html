@@ -6,17 +6,17 @@
 <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="img/logo.png">
-<!--------------フォント------------------>	
+<!--------------フォント------------------>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-<!-------------------------------->	
+<!-------------------------------->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:500px)">
 <link href="css/responsive.css" rel="stylesheet" type="text/css"  media="screen and (max-width:501px)">
-<!-------------------------------->	
+<!-------------------------------->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
@@ -36,58 +36,20 @@
 <header>
 <div class="flex header_wrap">
 <div><a href="index.html#" class="top_logo"><!--<img src="img/logo.png" alt="株式会社ライジングイノベーション">-->&emsp;</a></div>
-<!---------------旧ナビゲーション------------------> 
-<!--<nav class="main_navigation">
-      <ul class="flex">
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について<br>
-          <span>company</span></a>
-          <div class="dropdown__lists">
-            <ul>
-              <li class="dropdown__list"><a href="index.html#mission"><img src="img/icon_arrow3.png" class="arrow_nav">会社について</a></li>
-              <li class="dropdown__list"><a href="company.html#"><img src="img/icon_arrow3.png" class="arrow_nav">会社概要</a></li>
-              <li class="dropdown__list"><a href="company.html#members"><img src="img/icon_arrow3.png" class="arrow_nav">メンバー紹介</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="#">サービス<br>
-          <span>services</span></a>
-          <div class="dropdown__lists_3">
-            <ul>
-              <li class="dropdown__list"><a href="index.html#services"><img src="img/icon_arrow3.png" class="arrow_nav">サービス一覧</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">営業代行支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">リードセールス支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">インサイドセールス支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">フィールドセールス支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">セールスコンサルティング支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">セールスマーケティング支援</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a class="gnavi__list_a" href="index.html#achievements">事例<br>
-          <span>case</span></a></li>
-        <li  class="gnavi__list"><a class="gnavi__list_a" href="contact.html#">お問い合わせ<br>
-          <span>contact</span></a>
-          <div class="dropdown__lists_2">
-            <ul>
-              <li class="dropdown__list"><a href="contact.html#"><img src="img/icon_arrow3.png" class="arrow_nav">おい問合せフォーム</a></li>
-              <li class="dropdown__list"><a href="contact2.html#"><img src="img/icon_arrow3.png" class="arrow_nav">サービス資料(無料)</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="blog.html#">ブログ<br>
-          <span>blog</span></a> </li>
-      </ul>
-    </nav>--> 
-
 <!---------------ナビゲーション------------------>
 <div class="navigation"> <a href="contact.html#"><img src="img/icon_mail.png"></a> <span class="nav_toggle"> <i></i> <i></i> <i></i> </span></div>
-<nav class="nav" id="nav">
-  <ul class="nav_menu_ul">
+<nav class="nav" id="nav"> <a><strong>RISING INNOVATION</strong></a>
+	<div class="nav_wrap">
+  <ul class="nav_menu_ul nav_menu_ul2 flex">
     <li class="nav_menu_li"><a href="index.html#" class="hov-child__"><span>HOME</span><br>
       トップページ</a></li>
+    <li class="nav_menu_li"><a href="contact2.html#"><span class="green_text">DOCUMENT</span><br>
+      サービス資料(無料)</a></li>
+    <li class="nav_menu_li"><a href="contact.html#"><span class="green_text">CONTACT</span><br>
+      お問い合わせフォーム</a></li>
   </ul>
   <ul class="nav_menu_ul nav_menu_ul3 flex">
-    <div>
+    <div class="nav_menu_div">
       <li class="nav_menu_li hov-parent1" id="js-hover1"><a href="#"><span>COMPANY</span><br>
         会社について</a>
         <div class="hov-child1">
@@ -99,13 +61,9 @@
         </div>
       </li>
       
-      <!--<ul class="ac-child">
-          <li class="nav_close"><a href="index.html#mission">会社について</a></li>
-          <li class="nav_close"><a href="company.html#">会社情報</a></li>
-          <li class="nav_close"><a href="company.html#members">メンバー紹介</a></li>
-        </ul>--> 
-    </div>
-    <div>
+    
+    </div >
+    <div class="nav_menu_div">
       <li class="nav_menu_li hov-parent2" id="js-hover2"><a href="#"><span>SURVISE</span><br>
         サービス一覧</a>
         <div class="hov-child2">
@@ -115,39 +73,30 @@
             <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>リードセールス支援</a></li>
             <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
           </ul>
-			<ul class="fl">
+          <ul class="fl">
             <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
             <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>フィールドセールス支援</a></li>
-            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>セールスマーケティング支援</a></li>	
+            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>セールスマーケティング支援</a></li>
           </ul>
         </div>
       </li>
-		<div style="clear: both;"></div>
-      <!--<ul class="ac-child flex">
-          <li class="nav_close ac_services"><a href="index.html#services">サービス一覧</a></li>
-          <li class="nav_close"><a href="">営業代行支援</a></li>
-          <li class="nav_close"><a href="">リードセールス支援</a></li>
-          <li class="nav_close"><a href="">インサイドセールス支援</a></li>
-          <li class="nav_close"><a href="">フィールドセールス支援</a></li>
-          <li class="nav_close"><a href="">セールスマーケティング支援</a></li>
-        </ul>--> 
+      <div style="clear: both;"></div>
+     
     </div>
-    <li class="nav_menu_li"><a href="blog.html#"><span>BLOG</span><br>
-      ブログ一覧</a><br>
+	<div>  
+    <li class="nav_menu_li"><a href="topics.html#"><span>TOPICS</span><br>
+      トピックス一覧</a><br>
     </li>
-  </ul>
-  <ul class="nav_menu_ul nav_menu_ul2 flex">
-    <li class="nav_menu_li"><a href="contact2.html#"><span class="green_text">DOCUMENT</span><br>
-      サービス資料(無料)</a></li>
-    <li class="nav_menu_li"><a href="contact.html#"><span class="green_text">CONTACT</span><br>
-      お問い合わせフォーム</a></li>
+	</div>	
   </ul>
   <div class="sns sns_nav flex jcc"><img src="img/ico-logo-x.png"><img src="img/ico-logo-facebook.png"><img src="img/ico-logo-line.png"> </div>
+</div>		
 </nav>
+	
 </header>
 <!---------------メインビジュアル------------------>
-<main> 
-  <!--<div class="mainvisual">
+<main>
+<!--<div class="mainvisual">
     <div class="main_bg"></div>
     <div class="mainvisual_wrap">
       <div class="mainvisual_title">
@@ -175,8 +124,8 @@
       </div>
       </div>
   </div>--> 
-  <!---------------レスポンシブメインビジュアル------------------> 
-  <!--<div class="res_mainvisual">
+<!---------------レスポンシブメインビジュアル------------------> 
+<!--<div class="res_mainvisual">
     <div class="main_bg"></div>
     <div class="mainvisual_wrap">
       <div class="mainvisual_title">
@@ -192,51 +141,85 @@
       </div>
       <img src="img/logo6.png" class="logo2"> </div>
   </div>--> 
-  <img src="img/main_1.png" style="width: 100%;height: auto;"> 
-  <!---------------企業ロゴ------------------>
-  <section class="sec_1">
-    <div class="d-demo">
-      <div class="d-demo__wrap">
-        <ul class="d-demo__list d-demo__list--left">
-          <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
-          <li class="d-demo__item"><img src="img/logo/loop2.png" alt></li>
-        </ul>
-        <ul class="d-demo__list d-demo__list--left">
-          <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
-          <li class="d-demo__item"><img src="img/logo/loop2.png" alt></li>
-        </ul>
-      </div>
+<img src="img/main_1.png" style="width: 100%;height: auto;"> 
+
+ 
+<!---------------アワードセクション------------------>
+<section class="sec_award">
+  <div class="sec_award_wrap flex">
+    <ul>
+      <li><img src="img/imitsu2022.png"></li>
+      <li><img src="img/imitsu2023.png"></li>
+      <li><img src="img/imitsu2.png"></li>
+    </ul>
+    <br>
+    <div>
+      <p class="award_text">日本最大級のビジネスマッチングサイトにおいて、2年連続で受賞を達成。<wbr>
+        2,500社以上の優良パートナー企業の中から、卓越した実績と発注企業からの高い評価を受ける受注企業として、私たちのサービスが表彰されました。<wbr>
+        上位約2%に裏付けされた、質の高い営業代行サービスを、ぜひご体感ください。</p>
     </div>
-    <div class="d-demo">
-      <div class="d-demo__wrap">
-        <ul class="d-demo__list d-demo__list--left">
-          <li class="d-demo__item"><img src="img/logo/loop3.png" alt></li>
-          <li class="d-demo__item"><img src="img/logo/loop4.png" alt></li>
-        </ul>
-        <ul class="d-demo__list d-demo__list--left">
-          <li class="d-demo__item"><img src="img/logo/loop3.png" alt></li>
-          <li class="d-demo__item"><img src="img/logo/loop4.png" alt></li>
-        </ul>
-      </div>
+  </div>
+</section>
+<!---------------取引先一覧------------------>
+<section class="sec_suppliers">
+<div class="sec_suppliers_wrap">
+<div class="sec_title_5">
+  <p class="sec_title_6">取引先一覧</p>
+</div>
+<!----①------->
+<div class="js-flickity main_slider-wrapper" data-flickity-options='{ "wrapAround": true, "autoPlay": 3000 }'>
+  <div class="main_slider-cell"><img src="img/logo/3.png"><img src="img/logo/4.png"><img src="img/logo/5.png"><img src="img/logo/6.png"><img src="img/logo/7.png"><img src="img/logo/8.png"></div>
+  <!----②------->
+  <div class="main_slider-cell"><img src="img/logo/15.svg"><img src="img/logo/10.png"><img src="img/logo/11.webp"><img src="img/logo/12.svg"><img src="img/logo/13.png"><img src="img/logo/14.png"></div>
+  <!----③------->
+  <div class="main_slider-cell"><img src="img/logo/16.png"><img src="img/logo/17.png"><img src="img/logo/18.webp"><img src="img/logo/22.png"><img src="img/logo/20.png"><img src="img/logo/21.png"></div>
+  <!----④------->
+  <div class="main_slider-cell"><img src="img/logo/23.png"><img src="img/logo/24.png"><img src="img/logo/25.png"><img src="img/logo/29.png"><img src="img/logo/27.png"><img src="img/logo/28.png"></div>
+  <!----⑤------->
+  <div class="main_slider-cell"><img src="img/logo/30.png"><img src="img/logo/31.gif"><img src="img/logo/32.png" style="height: 40px;"><img src="img/logo/19.png"><img src="img/logo/26.jpg"><img src="img/logo/9.png"></div>
+</div>
+</section>
+<!---------------問題定義セクション------------------>
+<section class="sec_problem inview">
+  <div class="sec_problem_wrap">
+	<div class="sec_problem_wrap__">  
+    <div class="sec_title_5">
+      <p class="sec_title_3">こんな課題はございませんか？</p>
+      <!--<figure class="title_bg_img3"></figure>-->
     </div>
-    <div class="d-demo">
-      <div class="d-demo__wrap">
-        <ul class="d-demo__list d-demo__list--left">
-          <li class="d-demo__item"><img src="img/logo/loop5.png" alt></li>
-          <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
-        </ul>
-        <ul class="d-demo__list d-demo__list--left">
-          <li class="d-demo__item"><img src="img/logo/loop5.png" alt></li>
-          <li class="d-demo__item"><img src="img/logo/loop1.png" alt></li>
-        </ul>
-      </div>
-    </div>
-    <div id="mission"></div>
-  </section>
-  
-<!---------------TOP会社紹介会社情報ミッション------------------>
+    <ul>
+      <li>
+        <p class="problem_text">営業人員リソース不足</p>
+      </li>
+      <li>
+        <p class="problem_text">新規開拓のリソース不足</p>
+      </li>
+      <li>
+        <p class="problem_text">営業マネジメントスキル不足</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p class="problem_text">営業戦略の課題</p>
+      </li>
+      <li>
+        <p class="problem_text">営業チームの構築</p>
+      </li>
+      <li>
+        <p class="problem_text">リスト、スクリプトなどの事前準備</p>
+      </li>
+    </ul>
+  </div>
+	  </div>
+</section>
 <!---------スクロールダウンアニメ------------>
-	<div class="box">
+<div class="container inview">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
+<!---------スクロールダウンアニメ(サイド)------------>
+<div class="box">
   <div class="arrowWrap">
     <div class="arrowInner">
       <p>READ MORE</p>
@@ -244,222 +227,325 @@
     </div>
   </div>
 </div>
-<!---------スクロールダウンアニメ------------>	
-  <section class="sec_3 inview">
-    <div class="sec_3_wrap">
-      <div class="sec_title title_sec3">
-        <div>
-          <figure class="title_bg_img2"></figure>
-          <p class="sec_title_1">MISSION</p>
-          <p class="sec_title_2">会社について</p>
-        </div>
-        <br>
-        <div class="btn__ btn_reverse_02"> <a href="company.html"><span class="text">会社概要</span></a> </div>
-        <!--<div class="button-4">
-          <div class="eff-4"></div>
-          <a href="company.html"> 会社概要 </a> </div>--> 
-      </div>
-      <div class="inview2 flex">
-        <div class="mission_img"><img src="img/misson_img.png"></div>
-        <div class="sec_3_text">
-          <h3 class="sec_3_h3">我々はアウトバウンド営業に専門特価した<wbr>
-            営業のプロフェッショナル集団です。</h3>
-          <h3 class="res_sec_3_h3">我々はアウトバウンド営業に専門特価した営業のプロフェッショナル集団です。</h3>
-          <div id="services"></div>
-          <p>あらゆる業界の営業課題を最短最速でご支援する事がミッションでございます。リードセールス、クロージングセールス、営業組織立上げまで一気通貫でご依頼頂く事が可能でございます。「営業」で人と企業をツナグ架け橋となるようにクライアントの皆様方のサービスをスケールさせるお手伝いをさせてください。</p>
-        </div>
-      </div>
+<!---------スクロールダウンアニメ------------> 
+<!---------------問題解決セクション------------------>
+<section class="sec_reason inview">
+<div class="sec_reason_wrap">
+<!---------私たちにお任せください------------>
+<div class="tac">
+  <p class="sec_title_6"><span class="marker_2">私たちにお任せください</span></p>
+  <figure class="title_bg_img6"></figure>
+  <p class="wb"><b>クライアント専属の営業チームを構築させアウトバウンド領域でリード獲得からクロージングまで全てワンストップで営業課題をご支援。<wbr>
+    唯一無二の営業チームで企業のビジネスをフルサポート致します。</b></p>
+</div>
+<br>
+<br>
+<ul class="sec_reason_1wr flex jcc">
+  <li>
+    <div><img src="img/image.png"></div>
+    <p>唯一無二の強力なセールスの構築</p>
+  </li>
+  <li>
+    <div><img src="img/image.png"></div>
+    <p>課題解決の可視化×<wbr>
+      実行×改善×PDCA業務のリソース解消</p>
+  </li>
+  <li>
+    <div><img src="img/image.png"></div>
+    <p>売上拡大、販路拡大、新規開拓の<wbr>
+      早期回収</p>
+  </li>
+</ul>
+<ul class="sec_reason_1wr flex jcc">
+  <li>
+    <div><img src="img/image.png"></div>
+    <p>営業リソースに困らない、雇用、営業職の<wbr>
+      課題解決</p>
+  </li>
+  <li>
+    <div><img src="img/image.png"></div>
+    <p>インバウンド型集客では達成不可能な領域がアウトバウンドで<wbr>
+      実現可能</p>
+  </li>
+</ul>
+</section>
+<!---------選ばれる理由------------>
+<section class="sec_reason inview">
+  <div class="sec_reason_wrap sec_reason_wrap2">
+    <div class="tac">
+      <p class="sec_title_6"><span class="marker_2">RISING INNOVATIONが選ばれる理由</span></p>
+      
     </div>
-  </section>
-  <!---------------レスポンシブTOP会社紹介会社情報ミッション------------------>
-  
-  <section class="res_sec_3 inview">
-    <div class="sec_3_wrap">
-      <div class="sec_title title_sec3">
-        <figure class="title_bg_img"></figure>
-        <p class="sec_title_1">MISSION</p>
-        <p class="sec_title_2">会社について</p>
-        <br>
+    <br>
+    <ul class="sec_reason_2wr">
+      <li>
+        <p>営業に特化したトップセールスが多数在籍</p>
+      </li>
+      <li>
+        <p>質の高いリード獲得、商談対応をお約束いたします。</p>
+      </li>
+      <li>
+        <p>リスト作成て・スクリプト作成・提案資料まですべて一貫してサポート</p>
+      </li>
+      <li>
+        <p>マーケティング×分析×リサーチ実施前の高度な営業戦略</p>
+      </li>
+      <li>
+        <p>リード獲得+商談対応まで全てワントップで対応可能。<br>
+          クロージング対応まで引き受けます。</p>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <div class="tac">
+      <p class="wb">クライアントのビジネスパートナーとして<wbr>
+        唯一無二のセールスチームの構築新規開拓×販路拡大×売上拡大のを最大限にご支援させて頂きます。</p>
+    </div>
+  </div>
+</section>
+<!---------------TOPコンタクト①------------------>
+<section class="contact tac" id="contact">
+  <div class="contact_title">
+    <p class="contact_title_3">テキストテキストテキストテキストテキストテキスト</p>
+    <p class="contact_title_1">CONTACT</p>
+    <p class="contact_title_2">お問い合わせ</p>
+    <br>
+    <div class="flex jcc">
+      <div class="contact_btn">
+        <div class="eff-contact"></div>
+        <a href="contact.html#">TEXTTEXT</a></div>
+      <div class="contact_btn2">
+        <div class="eff-contact2"></div>
+        <a href="contact.html#">営業のご相談(無料)</a></div>
+      <div class="contact_btn2">
+        <div class="eff-contact2"></div>
+        <a href="contact.html#">サービス資料(無料)</a></div>
+    </div>
+    <!---------------レスポンシブTOPコンタクト------------------>
+    <div class="res_btn_wrap"><a class="res_top_btn2" href="contact.html#">営業のご相談(無料)</a><a class="res_top_btn2" href="contact2.html#">サービス資料(無料)</a></div>
+  </div>
+</section>
+
+<!---------------TOPサービス一覧------------------>
+<section class="sec_2 inview">
+  <div class="sec_2_wrap">
+    <div class="sec_title sec_title_4">
+      <figure class="title_bg_img2"></figure>
+      <p class="sec_title_1">SERVICES</p>
+      <p class="sec_title_2">サービス一覧</p>
+      <div class="sec_title_border"></div>
+      <br>
+    </div>
+    <ul class="services_list">
+      <li>
+        <dl>
+          <dt class="services_img"><img src="img/bunner1.png" /></dt>
+          <dt class="inview2">営業代行支援</dt>
+          <dd class="inview2">テキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="services_img"><img src="img/bunner2.png" /></dt>
+          <dt class="inview2">リードセールス支援</dt>
+          <dd class="inview2">テキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="services_img"><img src="img/bunner3.png" /></dt>
+          <dt class="inview2">インサイドセールス支援</dt>
+          <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="services_img"><img src="img/bunner3.png" /></dt>
+          <dt class="inview2">フィールドセールス支援</dt>
+          <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="services_img"><img src="img/bunner3.png" /></dt>
+          <dt class="inview2">セールスコンサルティング</dt>
+          <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="services_img"><img src="img/bunner3.png" /></dt>
+          <dt class="inview2">セールスマーケティング支援</dt>
+          <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+</section>
+<div class="sec_2_img"><img src="img/insert_img.png"></div>
+<div id="achievements"></div>
+<!---------------TOP実績------------------>
+<section class="sec_4 inview">
+  <div class="sec_4_wrap">
+    <div class="sec_title sec_title_width">
+      <figure class="title_bg_img5"></figure>
+      <p class="sec_title_1">CASE</p>
+      <p class="sec_title_2">事例一覧</p>
+      <div class="sec_title_border"></div>
+    </div>
+    <ul class="achievements_list_flex inview2">
+      <li class="achievements_list">
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+          <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </li>
+      <li class="achievements_list">
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+          <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </li>
+      <li class="achievements_list">
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+          <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </li>
+    </ul>
+    <!---------------レスポンシブTOP実績------------------>
+    <div class="js-flickity slider-wrapper">
+      <div class="slider-cell">sample1</div>
+      <div class="slider-cell">sample2</div>
+      <div class="slider-cell">sample3</div>
+      <div class="slider-cell">sample4</div>
+      <div class="slider-cell">sample5</div>
+    </div>
+  </div>
+  <div id="topics"></div>
+</section>
+
+<!---------------トピックス------------------>
+<section class="sec_5 inview">
+  <div class="sec_5_wrap">
+    <div class="sec_title sec_title_width">
+      <p class="sec_title_1">TOPICS</p>
+      <p class="sec_title_2">トピックス</p>
+      <figure class="title_bg_img2"></figure>
+      <div class="sec_title_border"></div>
+    </div>
+    <div class="topics_list_wrap">
+      <ul class="topics_list_flex inview2">
+        <li class="topics_list">
+          <dl>
+            <dt><img src="img/image.png"></dt>
+            <dd>テキストテキスト</dd>
+          </dl>
+        </li>
+        <li class="topics_list">
+          <dl>
+            <dt><img src="img/image.png"></dt>
+            <dd>テキストテキスト</dd>
+          </dl>
+        </li>
+        <li class="topics_list">
+          <dl>
+            <dt><img src="img/image.png"></dt>
+            <dd>テキストテキスト</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <!---------------レスポンシブTOPトピックス------------------>
+    <div class="js-flickity slider-wrapper">
+      <div class="slider-cell">sample1</div>
+      <div class="slider-cell">sample2</div>
+      <div class="slider-cell">sample3</div>
+      <div class="slider-cell">sample4</div>
+      <div class="slider-cell">sample5</div>
+    </div>
+    <br>
+    <br>
+    
+    <div class="btn__ btn_reverse_02 m0a"> <a href="company.html"><span class="text">トピックス一覧</span></a> </div>
+  </div>
+  <a class="res_sec_btn" href="topics.html#">トピックス一覧</a> </section>
+<!---------------TOP会社紹介会社情報------------------>
+<section class="sec_mission inview">
+  <div class="sec_mission_wrap">
+    <div class="sec_title title_sec3">
+      <div>
+        <p class="sec_title_1">COMPANY</p>
+        <p class="sec_title_2">わたしたちについて</p>
       </div>
-      <div class="sec_3_text inview2">
-        <h3>我々はアウトバウンド営業に専門特価した営業のプロフェッショナル集団です。</h3>
+      <div class="sec_title_border"></div>
+      <br>
+      <div class="btn__ btn_reverse_02"> <a href="company.html"><span class="text">会社概要</span></a> </div>
+    </div>
+    <div class="inview2 flex">
+      <div class="mission_img"><img src="img/misson_img.png"></div>
+      <div class="sec_reason_text">
+        <h3 class="sec_reason_h3">我々はアウトバウンド営業に専門特価した<wbr>
+          営業のプロフェッショナル集団です。</h3>
+        <h3 class="res_sec_reason_h3">我々はアウトバウンド営業に専門特価した営業のプロフェッショナル集団です。</h3>
+        <div id="services"></div>
         <p>あらゆる業界の営業課題を最短最速でご支援する事がミッションでございます。リードセールス、クロージングセールス、営業組織立上げまで一気通貫でご依頼頂く事が可能でございます。「営業」で人と企業をツナグ架け橋となるようにクライアントの皆様方のサービスをスケールさせるお手伝いをさせてください。</p>
       </div>
     </div>
-    <a class="res_sec_btn" href="company.html"> 会社概要 </a>
+  </div>
+</section>
+<!---------------レスポンシブTOP会社紹介会社情報------------------>
+
+<section class="res_sec_mission inview">
+<div class="sec_mission_wrap">
+<div class="sec_title title_sec3">
+  <p class="sec_title_1">COMPANY</p>
+  <p class="sec_title_2">会社について</p>
+  <a class="res_sec_btn" href="company.html"> 会社概要 </a> <br>
+</div>
+<div class="inview2 flex">
+  <div class="mission_img"><img src="img/misson_img.png"></div>
+  <div class="sec_reason_text">
+    <h3 class="sec_reason_h3">我々はアウトバウンド営業に専門特価した<wbr>
+      営業のプロフェッショナル集団です。</h3>
+    <h3 class="res_sec_reason_h3">我々はアウトバウンド営業に専門特価した営業のプロフェッショナル集団です。</h3>
     <div id="services"></div>
-  </section>
-  <!---------------TOPサービス一覧------------------>
-  <section class="sec_2 inview">
-    <div class="sec_2_wrap">
-      <div class="sec_title sec_title_4"> 
-        <!--<figure class="title_bg_img2"></figure>-->
-        <p class="sec_title_1">SERVICES</p>
-        <p class="sec_title_2">サービス一覧</p>
-        <br>
-      </div>
-      <ul class="services_list">
-        <li>
-          <dl>
-            <dt class="services_img"><img src="img/bunner1.png" /></dt>
-            <dt class="inview2">営業代行支援</dt>
-            <dd class="inview2">テキストテキストテキストテキストテキストテキストテキスト</dd>
-            <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
-          </dl>
-        </li>
-        <li>
-          <dl>
-            <dt class="services_img"><img src="img/bunner2.png" /></dt>
-            <dt class="inview2">リードセールス支援</dt>
-            <dd class="inview2">テキストテキストテキストテキストテキストテキストテキスト</dd>
-            <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
-          </dl>
-        </li>
-        <li>
-          <dl>
-            <dt class="services_img"><img src="img/bunner3.png" /></dt>
-            <dt class="inview2">インサイドセールス支援</dt>
-            <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-            <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
-          </dl>
-        </li>
-        <li>
-          <dl>
-            <dt class="services_img"><img src="img/bunner3.png" /></dt>
-            <dt class="inview2">フィールドセールス支援</dt>
-            <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-            <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
-          </dl>
-        </li>
-        <li>
-          <dl>
-            <dt class="services_img"><img src="img/bunner3.png" /></dt>
-            <dt class="inview2">セールスコンサルティング</dt>
-            <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-            <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
-          </dl>
-        </li>
-        <li>
-          <dl>
-            <dt class="services_img"><img src="img/bunner3.png" /></dt>
-            <dt class="inview2">セールスマーケティング支援</dt>
-            <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-            <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span><span class="marker">view more</span></a></dd>
-          </dl>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <div class="sec_2_img"><img src="img/insert_img.png"></div>
-  <div id="achievements"></div>
-  <!---------------TOP実績------------------>
-  <section class="sec_4 inview">
-    <div class="sec_4_wrap">
-      <div class="sec_title">
-        <figure class="title_bg_img2"></figure>
-        <p class="sec_title_1">CASE</p>
-        <p class="sec_title_2">事例</p>
-      </div>
-      <ul class="achievements_list_flex inview2">
-        <li class="achievements_list">
-          <dl>
-            <dt><img src="img/image.png"></dt>
-            <dd>テキストテキスト</dd>
-            <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-          </dl>
-        </li>
-        <li class="achievements_list">
-          <dl>
-            <dt><img src="img/image.png"></dt>
-            <dd>テキストテキスト</dd>
-            <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-          </dl>
-        </li>
-        <li class="achievements_list">
-          <dl>
-            <dt><img src="img/image.png"></dt>
-            <dd>テキストテキスト</dd>
-            <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-          </dl>
-        </li>
-      </ul>
-<!---------------レスポンシブTOP実績------------------>		
-      <div class="js-flickity slider-wrapper">
-        <div class="slider-cell">sample1</div>
-        <div class="slider-cell">sample2</div>
-        <div class="slider-cell">sample3</div>
-        <div class="slider-cell">sample4</div>
-        <div class="slider-cell">sample5</div>
-      </div>
-    </div>
-    <div id="blog"></div>
-  </section>
+    <p>あらゆる業界の営業課題を最短最速でご支援する事がミッションでございます。リードセールス、クロージングセールス、営業組織立上げまで一気通貫でご依頼頂く事が可能でございます。「営業」で人と企業をツナグ架け橋となるようにクライアントの皆様方のサービスをスケールさせるお手伝いをさせてください。</p>
+  </div>
+</div>
+</section>
+
+<!---------------TOPコンタクト②------------------>
+<section class="contact tac" id="contact">
+<div class="contact_title">
+  <p class="contact_title_3">テキストテキストテキストテキストテキストテキスト</p>
+  <p class="contact_title_1">CONTACT</p>
+  <p class="contact_title_2">お問い合わせ</p>
+  <br>
+  <div class="flex jcc">
+    <div class="contact_btn">
+      <div class="eff-contact"></div>
+      <a href="contact.html#">TEXTTEXT</a></div>
+    <div class="contact_btn2">
+      <div class="eff-contact2"></div>
+      <a href="contact.html#">営業のご相談(無料)</a></div>
+    <div class="contact_btn2">
+      <div class="eff-contact2"></div>
+      <a href="contact.html#">サービス資料(無料)</a></div>
+  </div>
   
-  <!---------------ブログ------------------>
-  <section class="sec_5 inview">
-    <div class="sec_5_wrap">
-      <div class="sec_title"> 
-        <!-- <figure class="title_bg_img2"></figure>-->
-        <p class="sec_title_1">BLOG</p>
-        <p class="sec_title_2">ブログ</p>
-      </div>
-      <div class="blog_list_wrap">
-        <ul class="blog_list_flex inview2">
-          <li class="blog_list">
-            <dl>
-              <dt><img src="img/image.png"></dt>
-              <dd>テキストテキスト</dd>
-            </dl>
-          </li>
-          <li class="blog_list">
-            <dl>
-              <dt><img src="img/image.png"></dt>
-              <dd>テキストテキスト</dd>
-            </dl>
-          </li>
-          <li class="blog_list">
-            <dl>
-              <dt><img src="img/image.png"></dt>
-              <dd>テキストテキスト</dd>
-            </dl>
-          </li>
-        </ul>
-      </div>
-<!---------------レスポンシブTOPブログ------------------>			
-      <div class="js-flickity slider-wrapper">
-        <div class="slider-cell">sample1</div>
-        <div class="slider-cell">sample2</div>
-        <div class="slider-cell">sample3</div>
-        <div class="slider-cell">sample4</div>
-        <div class="slider-cell">sample5</div>
-      </div>
-      <br>
-      <br>
-      <!--<div class="button-2 m0a">
-        <div class="eff-2"></div>
-        <a href="blog.html#"> ブログ一覧 </a> </div>-->
-      <div class="btn__ btn_reverse_02 m0a"> <a href="company.html"><span class="text">ブログ一覧</span></a> </div>
-    </div>
-    <a class="res_sec_btn" href="blog.html#">ブログ一覧</a> </section>
-  
-  <!---------------TOPコンタクト------------------>
-  <section class="contact" id="contact">
-    <div class="contact_title">
-      <p class="contact_title_1">CONTACT</p>
-      <p class="contact_title_2">お問い合わせ</p>
-      <br>
-      <div class="flex">
-        <div class="contact_btn">
-          <div class="eff-contact"></div>
-          <a href="contact.html#">営業のご相談(無料)</a></div>
-        <div class="contact_btn">
-          <div class="eff-contact"></div>
-          <a href="contact.html#">サービス資料(無料)</a></div>
-      </div>
-      <!---------------レスポンシブTOPコンタクト------------------>
-      <div class="res_btn_wrap"><a class="res_top_btn2" href="contact.html#">営業のご相談(無料)</a><a class="res_top_btn2" href="contact2.html#">サービス資料(無料)</a></div>
-    </div>
-  </section>
+  <!---------------レスポンシブTOPコンタクト------------------>
+  <div class="res_btn_wrap"><a class="res_top_btn2" href="contact.html#">営業のご相談(無料)</a><a class="res_top_btn2" href="contact2.html#">サービス資料(無料)</a></div>
+</div>
 </main>
 <!---------------フッター------------------>
 <footer>
@@ -487,11 +573,22 @@
     </div>
   </div>
   <small>プライバシーポリシー<br>
-Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small> </footer>
+  Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small> </footer>
 
 <!--
 -------------TOPにもどるボタン----------------	
 -->
 <p class="pagetop"><a href="#wrap"><img src="img/icon_arrow_2.png"></a></p>
+<script>// スライドコンテンツを後ほど操作するための配列 (グローバル変数)
+var flickitySyncer = [];
+
+// ページ内の[.flickity-syncer]のエレメントを取得する
+var elms = document.getElementsByClassName( "flickity-syncer" ) ;
+
+// [elms]全てに、ループ処理でFlickityを適用する
+for( var i=0,l=elms.length; l>i; i++ )
+{
+	flickitySyncer[i] = new Flickity( elms[i] , {contain: true} ) ;
+}</script>
 </body>
 </html>

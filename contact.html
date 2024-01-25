@@ -1,104 +1,98 @@
-<html>
+<!doctype html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
 <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="img/logo.png">
+<!--------------フォント------------------>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<!-------------------------------->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:500px)">
 <link href="css/responsive.css" rel="stylesheet" type="text/css"  media="screen and (max-width:501px)">
+<!-------------------------------->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+<!---------------ハンバーガーメニュー------------------> 
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
+<!---------------ナビゲーションホバーイベント------------------> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 <script src="js/main.js"></script>
 </head>
 
 <body class="fade-box">
-<!---------------ナビゲーション------------------>
+<!---------------ヘッダー------------------>
 <div class="nav_bg"></div>
 <header>
-  <div class="flex header_wrap">
-    <div><a href="index.html#" class="top_logo"><!--<img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>--></div>
-    <nav class="main_navigation">
-      <ul class="flex">
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">会社について<br>
-          <span>company</span></a>
-          <div class="dropdown__lists">
-            <ul>
-              <li class="dropdown__list"><a href="index.html#mission"><img src="img/icon_arrow3.png" class="arrow_nav">会社について</a></li>
-              <li class="dropdown__list"><a href="company.html#"><img src="img/icon_arrow3.png" class="arrow_nav">会社概要</a></li>
-              <li class="dropdown__list"><a href="company.html#members"><img src="img/icon_arrow3.png" class="arrow_nav">メンバー紹介</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="#">サービス<br>
-          <span>services</span></a>
-          <div class="dropdown__lists_3">
-            <ul>
-              <li class="dropdown__list"><a href="index.html#services"><img src="img/icon_arrow3.png" class="arrow_nav">サービス一覧</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">営業代行支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">リードセールス支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">インサイドセールス支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">フィールドセールス支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">セールスコンサルティング支援</a></li>
-              <li class="dropdown__list"><a href="#"><img src="img/icon_arrow3.png" class="arrow_nav">セールスマーケティング支援</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a class="gnavi__list_a" href="index.html#achievements">事例<br>
-          <span>case</span></a></li>
-        <li  class="gnavi__list"><a class="gnavi__list_a" href="contact.html#">お問い合わせ<br>
-          <span>contact</span></a>
-          <div class="dropdown__lists_2">
-            <ul>
-              <li class="dropdown__list"><a href="contact.html#"><img src="img/icon_arrow3.png" class="arrow_nav">おい問合せフォーム</a></li>
-              <li class="dropdown__list"><a href="contact2.html#"><img src="img/icon_arrow3.png" class="arrow_nav">サービス資料(無料)</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="blog.html#">ブログ<br>
-          <span>blog</span></a> </li>
-      </ul>
-    </nav>
+<div class="flex header_wrap">
+<div><a href="index.html#" class="top_logo"><!--<img src="img/logo.png" alt="株式会社ライジングイノベーション">-->&emsp;</a></div>
+<!---------------ナビゲーション------------------>
+<div class="navigation"> <a href="contact.html#"><img src="img/icon_mail.png"></a> <span class="nav_toggle"> <i></i> <i></i> <i></i> </span></div>
+<nav class="nav" id="nav"> <a><strong>RISING INNOVATION</strong></a>
+	<div class="nav_wrap">
+  <ul class="nav_menu_ul nav_menu_ul2 flex">
+    <li class="nav_menu_li"><a href="index.html#" class="hov-child__"><span>HOME</span><br>
+      トップページ</a></li>
+    <li class="nav_menu_li"><a href="contact2.html#"><span class="green_text">DOCUMENT</span><br>
+      サービス資料(無料)</a></li>
+    <li class="nav_menu_li"><a href="contact.html#"><span class="green_text">CONTACT</span><br>
+      お問い合わせフォーム</a></li>
+  </ul>
+  <ul class="nav_menu_ul nav_menu_ul3 flex">
+    <div class="nav_menu_div">
+      <li class="nav_menu_li hov-parent1" id="js-hover1"><a href="#"><span>COMPANY</span><br>
+        会社について</a>
+        <div class="hov-child1">
+          <ul>
+            <li><a href="index.html#mission" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社について</a></li>
+            <li><a href="company.html#"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社情報</a></li>
+            <li><a href="company.html#members"><span><img src="img/icon_arrow2.png" class="arrow"></span>メンバー紹介</a></li>
+          </ul>
+        </div>
+      </li>
+      
     
-    <!---------------レスポンシブナビゲーション------------------>
-    <div class="res_nav"> <a href="contact.html#"><img src="img/icon_mail.png"></a> <span class="nav_toggle"> <i></i> <i></i> <i></i> </span></div>
-    <nav class="nav">
-      <ul class="nav_menu_ul">
-        <li class="nav_menu_li ac-parent"><a href="#">会社について</a> </li>
-        <ul class="ac-child">
-          <li class="nav_close"><a href="index.html#mission">会社について</a></li>
-          <li class="nav_close"><a href="company.html#">会社情報</a></li>
-          <li class="nav_close"><a href="company.html#members">メンバー紹介</a></li>
-        </ul>
-        <li class="nav_menu_li ac-parent"><a href="#">サービス一覧</a></li>
-        <ul class="ac-child">
-          <li class="nav_close ac_services"><a href="index.html#services">サービス一覧</a></li>
-          <li class="nav_close"><a href="">営業代行支援</a></li>
-          <li class="nav_close"><a href="">リードセールス支援</a></li>
-          <li class="nav_close"><a href="">インサイドセールス支援</a></li>
-          <li class="nav_close"><a href="">フィールドセールス支援</a></li>
-          <li class="nav_close"><a href="">セールスマーケティング支援</a></li>
-        </ul>
-        <li class="nav_menu_li"><a href="contact2.html#">サービス資料(無料)</a></li>
-        <li class="nav_menu_li"><a href="contact.html#">お問い合わせフォーム</a></li>
-        <li class="nav_menu_li"><a href="blog.html#">ブログ一覧</a><br>
-          <br>
-        </li>
-        <li class="nav_menu_li"><br>
-          <div class="sns flex jcc"><img src="img/ico-logo-x.png"><img src="img/ico-logo-facebook.png"><img src="img/ico-logo-line.png"></div>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    </div >
+    <div class="nav_menu_div">
+      <li class="nav_menu_li hov-parent2" id="js-hover2"><a href="#"><span>SURVISE</span><br>
+        サービス一覧</a>
+        <div class="hov-child2">
+          <ul class="fl">
+            <li><a href="index.html#services" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow arrow6"></span>サービス一覧</a></li>
+            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>営業代行支援</a></li>
+            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>リードセールス支援</a></li>
+            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
+          </ul>
+          <ul class="fl">
+            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
+            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>フィールドセールス支援</a></li>
+            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>セールスマーケティング支援</a></li>
+          </ul>
+        </div>
+      </li>
+      <div style="clear: both;"></div>
+     
+    </div>
+	<div>  
+    <li class="nav_menu_li"><a href="topics.html#"><span>TOPICS</span><br>
+      トピックス一覧</a><br>
+    </li>
+	</div>	
+  </ul>
+  <div class="sns sns_nav flex jcc"><img src="img/ico-logo-x.png"><img src="img/ico-logo-facebook.png"><img src="img/ico-logo-line.png"> </div>
+</div>		
+</nav>
+	
 </header>
 <!---------------------ヘッダー------------------------->	
 <main>
