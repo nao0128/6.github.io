@@ -20,7 +20,6 @@ body {
 p, h1, h2, h3, h4 {
   text-autospace: no-autospace;
   /*word-break: auto-phrase;*/
-	
 }
 a, p, li, dd, th, td {
   font-size: clamp(1.1rem, 1.1vw, 1.1rem);
@@ -55,12 +54,6 @@ a:hover {
   --yellow: #f4eb8f;
 }
 
-.marker_2{
-  display: inline;
-  background:linear-gradient(transparent 60%, #ffffe0 60%);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}/*黄色マーカー*/
 
 .fl {
   float: left;
@@ -102,7 +95,6 @@ a:hover {
   background: rgb(241, 244, 252);
   background: linear-gradient(180deg, rgba(241, 244, 252, 1) 30%, rgba(255, 255, 255, 1) 72%);
 }
-
 .title_bg_img4 {
   position: absolute;
   z-index: -10;
@@ -116,7 +108,6 @@ a:hover {
   background: rgb(241, 244, 252);
   background: linear-gradient(180deg, rgba(241, 244, 252, 1) 30%, rgba(255, 255, 255, 1) 72%);
 }
-
 .title_bg_img6 {
   position: absolute;
   z-index: -10;
@@ -127,10 +118,9 @@ a:hover {
   width: 95%;
   height: 1000px;
   /*background-color:#dfdfdf;*/
-  background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(241,244,252,1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(241, 244, 252, 1) 100%);
 }
-
 .title_bg_img5 {
   position: absolute;
   z-index: -10;
@@ -142,7 +132,30 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(241,244,252,1) 10
   /*height: 350px;*/
   background-color: #f1f4fc;
 }
-
+.ttl_3d2 {
+  padding: 0.5em 0.5em;
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 5px 5px var(--gray);
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+}
+.ttl_3d3 {
+  padding: 0.2em 0.2em;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 4px 4px #4b4ce3;
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+}
+.ttl_3d4 {
+  padding: 0.3em 0.3em;
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 4px 4px #4b4ce3;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
 /*-------------ヘッダー----------------*/
 header {
   width: 100vw;
@@ -155,9 +168,7 @@ header {
   margin: 0 auto;
 }
 .top_logo img {
-  width: auto;
-  height: 50px;
-  margin-top: 0px;
+  margin-top: 15px;
 }
 .header_wrap {
   justify-content: space-between;
@@ -165,7 +176,6 @@ header {
   padding: 30px 70px;
 }
 /*-------------グローバルナビゲーション----------------*/
-
 .nav_mail {
   position: relative;
 }
@@ -179,9 +189,10 @@ header {
 .nav, .nav_toggle, .navigation {
   display: none;
 }
-
+.nav a:hover {
+  opacity: 0.6;
+}
 /*----------------------------*/
-
 .nav_toggle, .nav, .navigation {
   display: block;
 }
@@ -206,6 +217,7 @@ header {
   cursor: pointer;
   transition: 0.3s ease;
   border-radius: 50%;
+  z-index: 50;
 }
 .nav_toggle:hover {
   background-color: rgba(241, 244, 252, 0.9);
@@ -248,9 +260,8 @@ header {
 }
 .nav {
   width: 80%;
-	
   position: fixed;
-  top: 100px;
+  top: 50px;
   right: 0;
   left: 0;
   margin: auto;
@@ -262,14 +273,12 @@ header {
   padding: 50px 70px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
-
-.nav_wrap{
-	width: 70%;
-	max-width: 700px;
-	margin: 0 auto;
-	padding-top: 100px;
+.nav_wrap {
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
-
 .nav.show {
   opacity: 1;
   visibility: visible;
@@ -277,7 +286,7 @@ header {
 .nav_menu_li {
   padding-bottom: 30px;
   display: block;
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .nav_menu_li:hover a {
   /*opacity: 0.7;*/
@@ -285,13 +294,12 @@ header {
 .nav_menu_li span {
   color: var(--blue3);
   font-size: 1.6rem;
-	 
 }
 .nav_menu_li a {
   font-size: 0.8rem;
   color: var(--gray);
   font-weight: bold;
-	white-space: nowrap;
+  white-space: nowrap;
 }
 .nav_menu_li:last-child {
   position: relative;
@@ -307,15 +315,12 @@ header {
   right: 0;
   margin: auto;
 }
-
-.nav_menu_li{
-	width: calc(100%/3);
+.nav_menu_li {
+  width: calc(100%/3);
 }
-
-.nav_menu_div{
-	width: calc(100%/3);
+.nav_menu_div {
+  width: calc(100%/3);
 }
-
 .nav_bg {
   width: 100vw;
   height: 100%;
@@ -330,7 +335,6 @@ header {
   opacity: 0.7;
   visibility: visible;
 }
-
 .hov-parent1, .hov-parent2 {
   position: relative;
 }
@@ -367,7 +371,6 @@ header {
   padding: 3px;
   background: var(--blue3);
 }
-
 .hov-child2 a:hover .arrow, .hov-child1 a:hover .arrow {
   left: -35px;
 }
@@ -377,27 +380,43 @@ header {
 .hov-child1 > ul > li, .hov-child2 > ul > li {
   margin-bottom: 20px;
 }
-
 .sns_nav {
   width: 80%;
   margin: 0 auto;
-	margin-top: 50px;
+  margin-top: 50px;
   border-top: solid var(--gray) 1px;
 }
-
 /*-------------メインビジュアル----------------*/
 .mainvisual {
   width: 100%;
   padding: 90px 0 70px 0;
   position: relative;
 }
+.curtain {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--blue4);
+  animation: open-curtain 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.3s;
+}
+@keyframes open-curtain {
+  0% {
+    height: 650px;
+  }
+  100% {
+    height: 0px;
+  }
+}
 .res_mainvisual {
   display: none;
 }
 .main_bg {
   width: 100vw;
-  height: 86%;
-  background-color: #f1f4fc;
+  height: 650px;
   margin: 0 auto;
   z-index: -1;
   top: 0;
@@ -405,69 +424,115 @@ header {
   position: absolute;
 }
 .mainvisual_wrap {
-  /*max-width: 1400px;*/
-  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
-.logo2 {
-  width: 700px;
+.logo2 img {
+  width: 450px;
   height: auto;
   position: absolute;
-  bottom: 110px;
-  right: 1%;
+  top: 30%;
+  right: 15%;
   z-index: -1;
-  opacity: 0.85;
+  animation: blur-anim 1.3s linear forwards;
+  animation-delay: 0.7s;
+  filter: blur(100px);
+}
+.main_side_img {
+  position: absolute;
+  top: 130px;
+  right: 100px;
+  animation: blur-anim 1.7s linear forwards;
+  animation-delay: 0.7s;
+  filter: blur(100px);
+}
+@keyframes blur-anim {
+  0% {
+    filter: blur(100px);
+  }
+  100% {
+    filter: blur(0px)
+  }
+  ;
 }
 .mainvisual_text_wrap {
   display: block;
   width: 800px;
-  margin-top: 70px;
+  margin-top: 30px;
 }
-.mainvisual_title {
-  display: block;
-  margin: 0 auto;
-  z-index: 5;
-  /*margin-left: 3%;*/
-}
-.mainvisual_title h1 {
-  font-size: 3.5rem;
-  color: var(--gray);
-  letter-spacing: 0.01em;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-.mainvisual_text1 {
-  display: block;
-  width: 250px;
-  background: var(--blue3);
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.8rem;
-  letter-spacing: 0.08em;
-  margin: 10px 0 0 0;
-  padding: 5px;
-  text-align: center;
-}
-.mainvisual_text2 {
-  font-weight: 500;
-  line-height: 1.8em;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  margin-top: -10px;
+.mainvisual_text_wrap img {
+  margin: 0;
+  padding: 0;
 }
 .mainvisual_text3 {
+  font-size: 3.8rem;
+  color: var(--blue3);
+  letter-spacing: 0.15em;
+  margin-top: 10px;
   position: relative;
+  opacity: 0;
+  animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 1s;
+}
+.mainvisual_text2 {
+  font-size: 2.2rem;
+  color: var(--blue3);
+  font-weight: bold;
+  opacity: 0;
+  animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 1s;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%, 100% {
+    opacity: 1;
+  }
+}
+.mainvisual_text4 {
+  font-size: 3.9rem;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  color: #DA8E00;
+  background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 3px 3px rgba(255, 255, 255, 0.4);
+  position: relative;
+  opacity: 0;
+  animation: slideIn-2 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 1.5s;
+}
+@keyframes slideIn-2 {
+  0% {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%, 100% {
+    opacity: 1;
+  }
 }
 
+.mainvisual_text4 span{
+	font-size: 2.3rem;
+}
 /*-------------アワードセクション----------------*/
 .sec_award {
   width: 100%;
-  margin: 50px 0 50px 0;
+  margin: 60px 0 50px 0;
   /*background-color: var(--blue3);*/
 }
 .sec_award_wrap {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 .sec_award_wrap ul {
@@ -476,7 +541,6 @@ header {
 }
 .sec_award_wrap ul li {
   margin-right: 15px;
-	
 }
 .sec_award_wrap ul li img {
   width: 150px;
@@ -487,8 +551,9 @@ header {
   height: 150px;
 }
 .award_text {
-  margin-top: 30px;
+  padding-top: 20px;
   word-break: auto-phrase;
+  letter-spacing: 0.2em;
 }
 /*-------------取引企業一覧----------------*/
 .sec_suppliers {
@@ -532,36 +597,40 @@ header {
 .sec_problem_wrap {
   width: 90%;
   margin: 0 auto;
-	background-color: #ffffff;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(7deg, rgba(255, 255, 255, 0) 0%, rgba(157, 157, 158, 1) 28%, rgba(58, 58, 60, 1) 100%);
+  /*background-color: #ffffff;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23B1B1B1'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
 background-attachment: fixed;
-background-size: cover;
+background-size: cover;*/
 }
-
-.sec_problem_wrap__{
-	padding: 30px 0;
+.sec_problem_wrap__ {
+  padding: 40px 10px;
 }
-
 .sec_problem_wrap ul {
   display: flex;
   justify-content: center;
   position: relative;
-  margin: 20px;
+}
+.sec_problem_wrap ul:first-of-type {
+  margin: 40px 0 10px 0;
 }
 .sec_problem_wrap ul li {
-  width: 460px;
+  width: 400px;
   padding: 15px 10px;
   text-align: center;
   margin-right: 15px;
   background: #fff;
-  border-radius: 10px;
+  border-left: 25px solid var(--gray);
+  display: grid;
+  place-items: center;
 }
 .sec_problem_wrap ul li:last-child {
   margin-right: 0px;
 }
 .problem_text {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 /*-------------私たちにお任せくださいセクション----------------*/
 .sec_reason {
@@ -573,18 +642,9 @@ background-size: cover;
 .res_sec_reason {
   display: none;
 }
-
-.sec_reason_wrap{
-	width: 80%;
+.sec_reason_wrap {
+  width: 60%;
   margin: 0 auto;
-}
-
-.sec_reason_wrap2 {
-	padding: 20px 0;
-	 background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23DCF6FC'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.07'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
 }
 .title_sec3 {
   margin-right: 50px;
@@ -636,63 +696,115 @@ background-size: cover;
   }
 }
 .sec_reason_1wr li {
-  width: calc(100%/3);
+  width: calc(80%/3);
   height: auto;
   margin-right: 20px;
   margin-bottom: 20px;
   background: #fff;
-	text-align: center;
-	border-radius:5px;
-	box-shadow: 0px 5px 15px 0px rgba(73, 75, 154, 0.35);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(73, 75, 154, 0.35);
+  overflow: hidden;
 }
 .sec_reason_1wr li > div {
   overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 150px;
 }
 .sec_reason_1wr li > div > img {
-  width: 350px;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
 }
 .sec_reason_1wr li > p {
   display: block;
-	color: var(--blue3);
-  font-size: 1.4rem;
+  color: var(--blue3);
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 20px;
-	word-break: auto-phrase;
-	border-top: solid #000 1px;
+  word-break: auto-phrase;
+  letter-spacing: 0.08em;
 }
-
-
-
 /*-------------RISING INNOVATIONが選ばれる理由セクション----------------*/
-
-.sec_reason_2wr{
-	width: 60%;
-	margin: 0 auto;
+.sec_reason_2wr {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
 }
-
-
-.sec_reason_2wr figure{
-	overflow: hidden;
-	border: solid #000 1px;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	position: relative;
+.sec_reason_wrap2 {
+  width: 70%;
+  padding: 20px;
+  /*background: linear-gradient(135deg, rgba(241, 244, 252, 1) 0%, rgba(230, 232, 239, 1) 51%, rgba(255, 255, 255, 1) 63%, rgba(241, 244, 252, 1) 74%, rgba(235, 238, 244, 1) 85%, rgba(241, 244, 252, 1) 87%, rgba(230, 232, 239, 1) 100%);*/
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23DCF6FC'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.07'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
-
-
-
-.sec_reason_2wr li p{
-	display: block;
-	font-weight: bold;
-	font-size: 1.4rem;
-	margin-top: 25px;
-	
-	/*white-space: nowrap;*/
+.sec_reason_2wr li p {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-left: 100px;
+  padding: 15px 0;
+  /*white-space: nowrap;*/
 }
-
-
-
+.sec_reason_2wr li:last-child p {
+  font-size: 1rem;
+  margin-left: 30px;
+}
+.sec_reason_2wr li:last-child {
+  margin-top: 50px;
+}
+.sec_title_7 {
+  display: block;
+  width: 65%;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: var(--blue3);
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.sec_text_1 {
+  line-height: 1.3em;
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+}
+.reason_bg {
+  background-color: rgba(255, 255, 255, 0.55);
+}
+.heading {
+  position: relative;
+  padding-left: 60px;
+  letter-spacing: 0.08em;
+}
+.heading::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  color: rgba(73, 75, 154, 0.35);
+  font-size: 60px;
+  font-weight: bold;
+}
+.heading::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: -60px;
+  width: 200px;
+  height: 1px;
+  background-color: rgba(73, 75, 154, 0.35);
+}
 /*-------------TOPサービス事業内容----------------*/
 .sec_2 {
   width: 100%;
@@ -742,7 +854,7 @@ background-size: cover;
   color: var(--blue3);
 }
 .sec_title_3 {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   position: relative;
 }
 .sec_title_4 {
@@ -755,9 +867,24 @@ background-size: cover;
 }
 .sec_title_6 {
   font-weight: bold;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   color: var(--blue3);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.sec_title_ul {
+  position: relative;
+}
+.sec_title_ul::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background: var(--gray);
+  position: absolute;
+  top: 58px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
 .sec_text p {
   line-height: 2.0em;
@@ -906,7 +1033,7 @@ background-size: cover;
 .sec_5 {
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 150px 0;
+  padding: 0 0 70px 0;
 }
 .sec_5_wrap {
   width: 95%;
@@ -924,7 +1051,6 @@ background-size: cover;
 .slider-wrapper {
   display: none;
 }
-
 /*-------------TOP会社について----------------*/
 .sec_mission {
   width: 100%;
@@ -988,8 +1114,6 @@ background-size: cover;
     line-height: 1.6em;
   }
 }
-
-
 /*-------------TOPコンタクト----------------*/
 .contact {
   width: 100%;
@@ -1009,6 +1133,12 @@ background-size: cover;
   color: var(--blue3);
   font-weight: bold;
 }
+
+.contact_title_3{
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
 .contact_title {
   width: 75%;
   margin: 0 auto;
@@ -1027,6 +1157,11 @@ footer {
 .footer_list {
   width: 55%;
 }
+
+.footer_logo{
+	margin-left: 50px;
+}
+
 .footer_logo img {
   width: 150px;
 }
@@ -1180,7 +1315,7 @@ footer small {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .button-4 a {
   font-size: 16px;
@@ -1231,6 +1366,7 @@ footer small {
   overflow: hidden;
   margin: 0;
   z-index: 0;
+  margin-right: 10px;
 }
 .button-5 a {
   font-size: 16px;
@@ -1256,7 +1392,7 @@ footer small {
   width: 250px;
   height: 70px;
   left: -250px;
-  background-color: var(--blue3);
+  background-color: var(--yellow);
   position: absolute;
   transition: all .5s ease;
   z-index: 1;
@@ -1264,15 +1400,12 @@ footer small {
 .button-5:hover .eff-5 {
   left: 0;
 }
-.button-5:hover a {
-  color: #fff;
-}
 /*----------------*/
 .contact_btn {
   width: 250px;
   height: 70px;
   border: 1px solid var(--blue3);
-  background-color: #fff;
+  background-color: var(--blue3);
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -1285,7 +1418,7 @@ footer small {
 }
 .contact_btn a {
   font-size: 16px;
-  color: var(--blue3);
+  color: #fff;
   text-decoration: none;
   line-height: 65px;
   transition: all .5s ease;
@@ -1307,7 +1440,7 @@ footer small {
   width: 250px;
   height: 70px;
   left: -250px;
-  background-color: var(--blue3);
+  background-color: #fff;
   position: absolute;
   transition: all .5s ease;
   z-index: 1;
@@ -1316,7 +1449,7 @@ footer small {
   left: 0;
 }
 .contact_btn:hover a {
-  color: #fff;
+  color: var(--blue3);
 }
 .contact_btn2 {
   width: 250px;
@@ -1419,6 +1552,7 @@ footer small {
   width: 100%;
   /*background-color: var(--blue3);*/
   margin: 0 auto;
+  background: linear-gradient(135deg, rgba(241, 244, 252, 1) 0%, rgba(230, 232, 239, 1) 51%, rgba(255, 255, 255, 1) 63%, rgba(241, 244, 252, 1) 74%, rgba(235, 238, 244, 1) 85%, rgba(241, 244, 252, 1) 87%, rgba(230, 232, 239, 1) 100%);
 }
 .page_title {
   padding: 150px 0 50px 0;
@@ -1577,7 +1711,6 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   right: 0;
   margin: auto;
 }
-
 /*-------------下層ページメンバー紹介---------------------------*/
 .member_wrap {
   width: 70%;
@@ -1675,7 +1808,9 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   transform: translatex(0);
   opacity: 1;
 }
-/*---------ホバーマーカーアニメーション---------*/
+}
+/*------------------*/
+/*---------マーカーアニメーション---------*/
 .marker {
   display: inline;
   background-image: linear-gradient(90deg, #fcf69f, #fcf69f); /* マーカーの色を指定 */
@@ -1685,22 +1820,51 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   transition: all 0.3s ease; /* マーカーを引く速度 */
   cursor: pointer; /* ホバー時のカーソルをポインターにする */
 }
-
 /* マーカーホバー時 */
 .marker:hover {
   background-size: 100% 40%; /* マーカーの横幅を100%にする */
 }
-/*-------------スクロールダウン----------------*/
+/*------------------*/
+.marker_slide {
+  background-image: linear-gradient(transparent 50%, #ccbc8d, #ccbc8d 50%);
+  background-repeat: no-repeat;
+  background-size: 0% 50%;
+  background-position: 0 100%;
+  display: inline;
+  animation: slide-marker 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 1.5s;
+}
+@keyframes slide-marker {
+  0% {
+    background-size: 0% 50%;
+  }
+  100% {
+    background-size: 100% 50%;
+  }
+}
+/*------------------*/
+.marker_2 {
+  display: inline;
+  background-image: linear-gradient(transparent 60%, #f4eb8f, #f4eb8f 40%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+	background-size: 0% 100%;
+	transition: 2s;
+} /*黄色マーカー*/
 
+.marker_2.on {
+  /* 横方向を100%にして、マーカーを引く */
+  background-size: 100% 100%;
+}
+/*-------------スクロールダウン----------------*/
 .container {
-	margin: 0 auto;
+  margin: 0 auto;
   position: relative;
   width: 24px;
   height: 24px;
 }
-
 .chevron {
-	top:-50px;
+  top: -50px;
   position: absolute;
   width: 50px;
   height: 8px;
@@ -1708,40 +1872,32 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
 }
-
 .chevron:first-child {
   animation: move 3s ease-out 1s infinite;
 }
-
 .chevron:nth-child(2) {
   animation: move 3s ease-out 2s infinite;
 }
-
-.chevron:before,
-.chevron:after {
+.chevron:before, .chevron:after {
   content: ' ';
   position: absolute;
   top: 0;
   height: 100%;
   width: 51%;
-  background: var(--blue3);
+  background: #e3eafa;
 }
-
 .chevron:before {
   left: 0;
   transform: skew(0deg, 30deg);
 }
-
 .chevron:after {
   right: 0;
   width: 50%;
   transform: skew(0deg, -30deg);
 }
-
 @keyframes move {
   25% {
     opacity: 1;
-
   }
   33% {
     opacity: 1;
@@ -1844,4 +2000,31 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   filter: alpha(opacity=50);
   -moz-opacity: 0.5;
   opacity: 0.5;
+}
+.kirari-text {
+  color: transparent;
+  background-color: var(--blue3);
+  background-image: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 75%);
+  background-repeat: no-repeat;
+  background-size: 0em 0em;
+  background-position: 0% 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation-name: demo_kirari;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes demo_kirari {
+  0% {
+    background-size: 0em 0em;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-size: 2.5em 2.5em;
+  }
+  100% {
+    background-size: 0em 0em;
+    background-position: 100% 50%;
+  }
 }
