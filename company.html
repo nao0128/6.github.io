@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-------------------------------->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">	
 <!-------------------------------->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:500px)">
 <link href="css/responsive.css" rel="stylesheet" type="text/css"  media="screen and (max-width:501px)">
@@ -29,259 +29,288 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 <script src="js/main.js"></script>
 </head>
-
+<!----------------------------------------------------------------------->
 <body class="fade-box">
 <!---------------ヘッダー------------------>
 <div class="nav_bg"></div>
 <header>
 <div class="flex header_wrap">
-<div><a href="index.html#" class="top_logo"><!--<img src="img/logo.png" alt="株式会社ライジングイノベーション">-->&emsp;</a></div>
+<div><a href="index.html#" class="top_logo"><img src="img/Rising innovation.png" alt="株式会社ライジングイノベーション"></a></div>
 <!---------------ナビゲーション------------------>
 <div class="navigation"> <a href="contact.html#"><img src="img/icon_mail.png"></a> <span class="nav_toggle"> <i></i> <i></i> <i></i> </span></div>
-<nav class="nav" id="nav"> <a><strong>RISING INNOVATION</strong></a>
-	<div class="nav_wrap">
-  <ul class="nav_menu_ul nav_menu_ul2 flex">
-    <li class="nav_menu_li"><a href="index.html#" class="hov-child__"><span>HOME</span><br>
-      トップページ</a></li>
-    <li class="nav_menu_li"><a href="contact2.html#"><span class="green_text">DOCUMENT</span><br>
-      サービス資料(無料)</a></li>
-    <li class="nav_menu_li"><a href="contact.html#"><span class="green_text">CONTACT</span><br>
-      お問い合わせフォーム</a></li>
-  </ul>
-  <ul class="nav_menu_ul nav_menu_ul3 flex">
-    <div class="nav_menu_div">
-      <li class="nav_menu_li hov-parent1" id="js-hover1"><a href="#"><span>COMPANY</span><br>
-        会社について</a>
-        <div class="hov-child1">
+<nav class="nav" id="nav"> <a class="logo3"><strong>RISING INNOVATION</strong></a>
+  <div class="nav_wrap">
+    <ul class="nav_menu_ul nav_menu_ul2 flex">
+      <li class="nav_menu_li"><a href="index.html#" class="hov-child__"> <span>HOME</span><br>
+        トップページ</a></li>
+      <li class="nav_menu_li"><a href="contact2.html#" class="hov-child__"><span class="green_text">DOCUMENT</span><br>
+        サービス資料(無料)</a></li>
+      <li class="nav_menu_li"><a href="contact.html#" class="hov-child__"><span class="green_text">CONTACT</span><br>
+        お問い合わせフォーム</a></li>
+    </ul>
+    <ul class="nav_menu_ul nav_menu_ul3 flex">
+      <div class="nav_menu_div">
+        <li class="nav_menu_li hov-parent1" id="js-hover1"><a href="#" class="hov-child__"><span>COMPANY</span><br>
+          会社について</a>
+          <div class="hov-child1">
+            <ul>
+              <!--<li><a href="index.html#mission" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社について</a></li>-->
+              <li><a href="company.html#" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社情報</a></li>
+              <li><a href="company.html#members" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>メンバー紹介</a></li>
+            </ul>
+          </div>
+        </li>
+      </div >
+      <div class="nav_menu_div">
+        <li class="nav_menu_li hov-parent2" id="js-hover2"><a href="#" class="hov-child__"><span>SURVISE</span><br>
+          サービス一覧</a>
+          <div class="hov-child2">
+            <ul class="fl">
+              <li><a href="index.html#services" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow arrow6"></span>サービス一覧</a></li>
+              <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>営業代行支援</a></li>
+              <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>リードセールス支援</a></li>
+              <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
+            </ul>
+            <ul class="fl">
+              <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
+              <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>フィールドセールス支援</a></li>
+              <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>セールスマーケティング支援</a></li>
+            </ul>
+          </div>
+        </li>
+        <div style="clear: both;"></div>
+      </div>
+      <div>
+        <li class="nav_menu_li"><a href="topics.html#" class="hov-child__"><span>TOPICS</span><br>
+          トピックス一覧</a><br>
+        </li>
+      </div>
+    </ul>
+    <!---------------レスポンシブナビゲーション------------------>
+    <div class="accordion">
+      <div class="option"> <a href="index.html#" class="hov-child__">HOME</a> </div>
+      <div class="option">
+        <input type="checkbox" id="toggle1" class="toggle">
+        <label class="title" for="toggle1">COMPANY</label>
+        <div class="content">
           <ul>
-            <li><a href="index.html#mission" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社について</a></li>
-            <li><a href="company.html#"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社情報</a></li>
-            <li><a href="company.html#members"><span><img src="img/icon_arrow2.png" class="arrow"></span>メンバー紹介</a></li>
+            <!--<li><a href="index.html#mission" class="hov-child__">会社について</a></li>-->
+            <li><a href="company.html#" class="hov-child__">会社情報</a></li>
+            <li><a href="company.html#members" class="hov-child__">メンバー紹介</a></li>
           </ul>
         </div>
-      </li>
-      
-    
-    </div >
-    <div class="nav_menu_div">
-      <li class="nav_menu_li hov-parent2" id="js-hover2"><a href="#"><span>SURVISE</span><br>
-        サービス一覧</a>
-        <div class="hov-child2">
-          <ul class="fl">
-            <li><a href="index.html#services" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow arrow6"></span>サービス一覧</a></li>
-            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>営業代行支援</a></li>
-            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>リードセールス支援</a></li>
-            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
-          </ul>
-          <ul class="fl">
-            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>インサイドセールス支援</a></li>
-            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>フィールドセールス支援</a></li>
-            <li><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>セールスマーケティング支援</a></li>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="toggle2" class="toggle">
+        <label class="title" for="toggle2">SURVISE</label>
+        <div class="content">
+          <ul>
+            <li><a href="#" class="hov-child__">サービス一覧</a></li>
+            <li><a href="#" class="hov-child__">営業代行支援</a></li>
+            <li><a href="#" class="hov-child__">リードセールス支援</a></li>
+            <li><a href="#" class="hov-child__">インサイドセールス支援</a></li>
+            <li><a href="#" class="hov-child__">フィールドセールス支援</a></li>
+            <li><a href="#" class="hov-child__">セールスマーケティング支援</a></li>
           </ul>
         </div>
-      </li>
-      <div style="clear: both;"></div>
-     
+      </div>
+      <div class="option"> <a href="topics.html#" class="hov-child__">TOPICS</a> </div>
+      <div class="option"> <a href="contact2.html#" class="hov-child__">DOCUMENT</a> </div>
+      <div class="option"> <a href="contact.html#" class="hov-child__">CONTACT</a> </div>
     </div>
-	<div>  
-    <li class="nav_menu_li"><a href="topics.html#"><span>TOPICS</span><br>
-      トピックス一覧</a><br>
-    </li>
-	</div>	
-  </ul>
-  <div class="sns sns_nav flex jcc"><img src="img/ico-logo-x.png"><img src="img/ico-logo-facebook.png"><img src="img/ico-logo-line.png"> </div>
-</div>		
+    <!---------------レスポンシブナビゲーション------------------>
+    <div class="sns sns_nav flex jcc"><img src="img/ico-logo-x.png"><img src="img/ico-logo-facebook.png"><img src="img/ico-logo-line.png"> </div>
+  </div>
 </nav>
-	
 </header>
-<!---------------------------------------------->	
+<!---------------------------------------------->
 <main>
-  <section class="conpany">
-	 <div class="page_title_wrap"> 
-    <div class="page_title">
-      <p class="page_title_en">COMPANY</p>
-      <h2 class="page_title_ja">&emsp;会社概要</h2>
-    </div>
-		</div> 
-    <!---------------------会社情報------------------------->	
-    <div class="company_wrap">
-      <div class="company_table_wrap">
-        <table class="company_table">
-          <tr>
-            <th>会社名</th>
-            <td>株式会社RISING INNOVATION</td>
-          </tr>
-          <tr>
-            <th>大阪本社</th>
-            <td>〒531-0072<br>
-              大阪市北区豊崎3-15-5 TKビル2F</td>
-          </tr>
-          <tr>
-            <th>TEL</th>
-            <td>050-7586-3360</td>
-          </tr>
-          <tr>
-            <th>代表取締役</th>
-            <td>山本 俊</td>
-          </tr>
-          <tr>
-            <th>事業内容</th>
-            <td>カフェ専門ポータルサイト運営 / 全国ストリートかふぇkaffe<br>
-              光触媒コーティングCutalyst販売事業<br>
-              光触媒除菌専門店 / プレミアムEXコーティング</td>
-          </tr>
-			
-          <tr>
-            <th>主要取引先</th>
-            <td>株式会社2Bbetter / 株式会社スマートサプライ / 有限会社ショウカ</td>
-          </tr>
-          <tr>
-            <th>取引銀行</th>
-            <td>大阪シティ信用金庫・住信SBIネット銀行</td>
-          </tr>
-          <tr>
-            <th>公式サイト</th>
-            <td>【公式】全国ストリートカフェ専門Kaffe<br>
-              【公式】光触媒Cutalyst<br>
-              【公式】光触媒専門除菌 プレミアムEXコーティング</td>
-          </tr>
-          <tr>
-            <th>TEL</th>
-            <td>050-7586-3360</td>
-          </tr>
-          <tr>
-            <th>採用情報</th>
-            <td>採用は下記サイトからご応募ください。<br>
-              ■エンゲージ<br>
-              応募採用についてのお電話でのお問い合わせはTEL：050-7586-3360までご連絡ください。</td>
-          </tr>
-        </table>
-      </div>
-		</div>
-   <!---------------------レスポンシブ会社情報------------------------->	
-    <div class="res_company_wrap">
-      <div class="company_table_wrap">
-        <!-- <p class="table_title">- 会社情報 -</p> -->
-        
-        <!-- <p class="table_text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+<section class="conpany">
+<div class="page_title_wrap">
+  <div class="page_title">
+    <p class="page_title_en">COMPANY</p>
+    <h2 class="page_title_ja">&emsp;会社概要</h2>
+  </div>
+</div>
+<!---------------------会社情報------------------------->
+<div class="company_wrap">
+  <div class="company_table_wrap">
+    <table class="company_table">
+      <tr>
+        <th>会社名</th>
+        <td>株式会社RISING INNOVATION</td>
+      </tr>
+      <tr>
+        <th>大阪本社</th>
+        <td>〒531-0072<br>
+          大阪市北区豊崎3-15-5 TKビル2F</td>
+      </tr>
+      <tr>
+        <th>TEL</th>
+        <td>050-7586-3360</td>
+      </tr>
+      <tr>
+        <th>代表取締役</th>
+        <td>山本 俊</td>
+      </tr>
+      <tr>
+        <th>事業内容</th>
+        <td>カフェ専門ポータルサイト運営 / 全国ストリートかふぇkaffe<br>
+          光触媒コーティングCutalyst販売事業<br>
+          光触媒除菌専門店 / プレミアムEXコーティング</td>
+      </tr>
+      <tr>
+        <th>主要取引先</th>
+        <td>株式会社2Bbetter / 株式会社スマートサプライ / 有限会社ショウカ</td>
+      </tr>
+      <tr>
+        <th>取引銀行</th>
+        <td>大阪シティ信用金庫・住信SBIネット銀行</td>
+      </tr>
+      <tr>
+        <th>公式サイト</th>
+        <td>【公式】全国ストリートカフェ専門Kaffe<br>
+          【公式】光触媒Cutalyst<br>
+          【公式】光触媒専門除菌 プレミアムEXコーティング</td>
+      </tr>
+      <tr>
+        <th>TEL</th>
+        <td>050-7586-3360</td>
+      </tr>
+      <tr>
+        <th>採用情報</th>
+        <td>採用は下記サイトからご応募ください。<br>
+          ■エンゲージ<br>
+          応募採用についてのお電話でのお問い合わせはTEL：050-7586-3360までご連絡ください。</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!---------------------レスポンシブ会社情報------------------------->
+<div class="res_company_wrap">
+<div class="company_table_wrap"> 
+  <!-- <p class="table_title">- 会社情報 -</p> --> 
+  
+  <!-- <p class="table_text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
           テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
-        <dl class="res_company_table">
-		<dt>会社名</dt>
-		<dd>株式会社RISING INNOVATION</dd>
-			<dt>大阪本社</dt>
-		<dd>〒531-0072<br>
-              大阪市北区豊崎3-15-5 TKビル2F</dd>
-			<dt>TEL</dt>
-		<dd>050-7586-3360</dd>
-			<dt>代表取締役</dt>
-		<dd>山本 俊</dd>
-			<dt>事業内容</dt>
-		<dd>株式会社RISING INNOVATION</dd>
-			<dt>主要取引先</dt>
-		<dd>株式会社2Bbetter / 株式会社スマートサプライ / 有限会社ショウカ</dd>
-			<dt>取引銀行</dt>
-		<dd>大阪シティ信用金庫・住信SBIネット銀行</dd>
-			<dt>採用情報</dt>
-		<dd>株式会社RISING INNOVATION</dd>
-		</dl>
-      </div>
-  </section>
-  <div id="members"></div><br><br>
- <!---------------------メンバー紹介------------------------->
- <section class="member">
-  <div class="page_title2">
-    <img src="img/title_backgroundimg.png" class="title_bg_img">
-	<div class="tac">  
-    <p class="page_title_en">MEMBERS</p>
-    <h2 class="page_title_ja">メンバー紹介</h2>
+  <dl class="res_company_table">
+    <dt>会社名</dt>
+    <dd>株式会社RISING INNOVATION</dd>
+    <dt>大阪本社</dt>
+    <dd>〒531-0072<br>
+      大阪市北区豊崎3-15-5 TKビル2F</dd>
+    <dt>TEL</dt>
+    <dd>050-7586-3360</dd>
+    <dt>代表取締役</dt>
+    <dd>山本 俊</dd>
+    <dt>事業内容</dt>
+    <dd>株式会社RISING INNOVATION</dd>
+    <dt>主要取引先</dt>
+    <dd>株式会社2Bbetter / 株式会社スマートサプライ / 有限会社ショウカ</dd>
+    <dt>取引銀行</dt>
+    <dd>大阪シティ信用金庫・住信SBIネット銀行</dd>
+    <dt>採用情報</dt>
+    <dd>株式会社RISING INNOVATION</dd>
+  </dl>
+</div>
+</section>
+<div id="members"></div>
+<br>
+<br>
+<!---------------------メンバー紹介------------------------->
+<section class="member">
+  <div class="page_title2"> <img src="img/title_backgroundimg.png" class="title_bg_img">
+    <div class="tac">
+      <p class="page_title_en">MEMBERS</p>
+      <h2 class="page_title_ja">メンバー紹介</h2>
+    </div>
+  </div>
+  <div class="member_wrap">
+    <div class="ceo flex">
+      <div class="ceo_img"><img src="img/image.png" /></div>
+      <div class="ceo_text">
+        <h2>SHUN YAMAMOTO<br>
+          <span class="ceo_post">代表取締役社長</span> </h2>
+        <br>
+        <ul>
+          <li>PM（プロジェクトマネージャー）</li>
+          <li>セールスディレクター</li>
+          <li>セールスコンサルタント</li>
+          <li>SV (スーパーバイザー)</li>
+          <li>営業戦略構築</li>
+        </ul>
+		</div>
 	</div>	
+        <div class="ceo">
+        <p class="wb">「伴走型の営業支援」をモットーにクライアント様と共に新規開拓や販路拡大を目指す営業スタイルでご支援させて頂きます。<span class="marker_2 js-markerScrollAnimation">一番は不安を感じさせない事、ブラックボックス化をしない可視化した管理体制の元、他力本願ではなく寄り添いながら共にクライアント様の営業チームとして、稼働する事をお約束致します。</span>山本社長にお願いして良かったと、言って頂けるように努めて参ります。 些細な事でも結構です。アウトバウンド営業でお困りであればお気軽にご相談ください。</p>
+      </div>
+    
+    <ul class="staff flex jcc">
+      <li>
+        <div class="staff_img"><img src="img/image.png" /></div>
+        <br>
+        <p class="staff_name">Hayato Ooishi</p>
+        <p class="post">セールス事業部 営業統括責任者</p>
+      </li>
+      <li>
+        <div class="staff_img"><img src="img/image.png" /></div>
+        <br>
+        <p class="staff_name">Sayaka Yata</p>
+        <p class="post">セールス事業部チームサブディレクター</p>
+      </li>
+      <li>
+        <div class="staff_img"><img src="img/image.png" /></div>
+        <br>
+        <p class="staff_name">Tomoki Isoyama</p>
+        <p class="post">マーケティング事業部 責任者</p>
+      </li>
+    </ul>
   </div>
- <div class="member_wrap"> 
-<div class="ceo flex">
-  <div class="ceo_img"><img src="img/image.png" /></div>
-  <div class="ceo_text">
-  <h2>SHUN YAMAMOTO<br>
-  <span class="ceo_post">代表取締役社長</span>
-  </h2><br>
-  <ul>
-    <li>PM（プロジェクトマネージャー）</li>
-    <li>セールスディレクター</li>
-    <li>セールスコンサルタント</li>
-    <li>SV (スーパーバイザー)</li>
-    <li>営業戦略構築</li>
-  </ul><br>
-  <p>「伴走型の営業支援」をモットーにクライアント様と共に新規開拓や販路拡大を目指す営業スタイルでご支援させて頂きます。一番は不安を感じさせない事、ブラックボックス化をしない可視化した管理体制の元、他力本願ではなく寄り添いながら共にクライアント様の営業チームとして、稼働する事をお約束致します。山本社長にお願いして良かったと、言って頂けるように努めて参ります。 些細な事でも結構です。アウトバウンド営業でお困りであればお気軽にご相談ください。</p>  
+  
+  <!---------------------レスポンシブメンバー紹介------------------------->
+  <div class="res_member_wrap">
+    <div class="ceo">
+      <div class="ceo_img"><img src="img/image.png" /></div>
+      <div class="ceo_text">
+        <h2>SHUN YAMAMOTO<br>
+          <span class="ceo_post">代表取締役社長</span> </h2>
+        <br>
+        <ul>
+          <li>PM（プロジェクトマネージャー）</li>
+          <li>セールスディレクター</li>
+          <li>セールスコンサルタント</li>
+          <li>SV (スーパーバイザー)</li>
+          <li>営業戦略構築</li>
+        </ul>
+        <br>
+        <p class="wb">「伴走型の営業支援」をモットーにクライアント様と共に新規開拓や販路拡大を目指す営業スタイルでご支援させて頂きます。<br>一番は不安を感じさせない事、ブラックボックス化をしない可視化した管理体制の元、他力本願ではなく寄り添いながら共にクライアント様の営業チームとして、稼働する事をお約束致します。<br>山本社長にお願いして良かったと、言って頂けるように努めて参ります。 些細な事でも結構です。アウトバウンド営業でお困りであればお気軽にご相談ください。</p>
+      </div>
+    </div>
+    <ul class="staff">
+      <li>
+        <div class="staff_img"><img src="img/image.png" /></div>
+        <br>
+        <p class="staff_name">Hayato Ooishi</p>
+        <p class="post">セールス事業部 営業統括責任者</p>
+      </li>
+      <li>
+        <div class="staff_img"><img src="img/image.png" /></div>
+        <br>
+        <p class="staff_name">Sayaka Yata</p>
+        <p class="post">セールス事業部チームサブディレクター</p>
+      </li>
+      <li>
+        <div class="staff_img"><img src="img/image.png" /></div>
+        <br>
+        <p class="staff_name">Tomoki Isoyama</p>
+        <p class="post">マーケティング事業部 責任者</p>
+      </li>
+    </ul>
   </div>
-</div>
-  <ul class="staff flex jcc">
-    <li>
-      <div class="staff_img"><img src="img/image.png" /></div><br>
-      <p class="staff_name">Hayato Ooishi</p>
-		<p class="post">セールス事業部 営業統括責任者</p>
-      
-    </li>
-    <li>
-      <div class="staff_img"><img src="img/image.png" /></div><br>
-      <p class="staff_name">Sayaka Yata</p>
-		<p class="post">セールス事業部チームサブディレクター</p>
-      
-    </li>
-    <li>
-      <div class="staff_img"><img src="img/image.png" /></div><br>
-      <p class="staff_name">Tomoki Isoyama</p>
-		<p class="post">マーケティング事業部 責任者</p>
-      
-    </li>
-
-  </ul>
-
-</div>
-	 
-<!---------------------レスポンシブメンバー紹介------------------------->	 
-<div class="res_member_wrap"> 
-<div class="ceo">
-  <div class="ceo_img"><img src="img/image.png" /></div>
-  <div class="ceo_text">
-  <h2>SHUN YAMAMOTO<br>
-  <span class="ceo_post">代表取締役社長</span>
-  </h2><br>
-  <ul>
-    <li>PM（プロジェクトマネージャー）</li>
-    <li>セールスディレクター</li>
-    <li>セールスコンサルタント</li>
-    <li>SV (スーパーバイザー)</li>
-    <li>営業戦略構築</li>
-  </ul><br>
-  <p>「伴走型の営業支援」をモットーにクライアント様と共に新規開拓や販路拡大を目指す営業スタイルでご支援させて頂きます。一番は不安を感じさせない事、ブラックボックス化をしない可視化した管理体制の元、他力本願ではなく寄り添いながら共にクライアント様の営業チームとして、稼働する事をお約束致します。山本社長にお願いして良かったと、言って頂けるように努めて参ります。 些細な事でも結構です。アウトバウンド営業でお困りであればお気軽にご相談ください。</p>  
-  </div>
-</div>
-  <ul class="staff">
-    <li>
-      <div class="staff_img"><img src="img/image.png" /></div><br>
-      <p class="staff_name">Hayato Ooishi</p>
-		<p class="post">セールス事業部 営業統括責任者</p>
-      
-    </li>
-    <li>
-      <div class="staff_img"><img src="img/image.png" /></div><br>
-      <p class="staff_name">Sayaka Yata</p>
-		<p class="post">セールス事業部チームサブディレクター</p>
-      
-    </li>
-    <li>
-      <div class="staff_img"><img src="img/image.png" /></div><br>
-      <p class="staff_name">Tomoki Isoyama</p>
-		<p class="post">マーケティング事業部 責任者</p>
-      
-    </li>
-
-  </ul>
-
-</div>	 
-<div class="sec_2_img"><img src="img/insert_img4.png"></div>	 
- </section>	 
+  <div class="sec_2_img"><img src="img/insert_img4.png"></div>
+</section>
 </main>
-<!---------------------フッター------------------------->	
+<!---------------------フッター------------------------->
 <footer>
   <div class="footer_wrap">
     <div class="footer_logo"> <a href="#"><img src="img/logo.png" alt=""></a>
@@ -306,7 +335,7 @@
       </ul>
     </div>
   </div>
-  <small>Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small> </footer>	
-<!---------------------フッター------------------------->	
+  <small>Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small> </footer>
+<!---------------------フッター------------------------->
 </body>
 </html>
