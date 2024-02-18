@@ -11,6 +11,12 @@ html {
   margin: 0;
   padding: 0;
 }
+.montserrat-<uniquifier > {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
 body {
   max-width: 100%;
   margin: 0 auto;
@@ -53,8 +59,6 @@ a:hover {
   --gray: #404040;
   --yellow: #f4eb8f;
 }
-
-
 .fl {
   float: left;
 }
@@ -168,14 +172,42 @@ header {
   margin: 0 auto;
 }
 .top_logo img {
+	
   margin-top: 15px;
 }
+
+.top_logo{
+	display: block;
+	background-color: transparent;
+	position: relative;
+}
+
+.top_logo:before{
+  content: '';
+  background-color: transparent;
+  -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
+  -o-filter: blur(100px);
+  -ms-filter: blur(100px);
+  filter: blur(100px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  
+}
+
 .header_wrap {
   justify-content: space-between;
   margin: 0 auto;
   padding: 30px 70px;
 }
 /*-------------グローバルナビゲーション----------------*/
+.logo3 {
+  font-size: 1.5rem;
+	background:
+}
 .nav_mail {
   position: relative;
 }
@@ -193,6 +225,9 @@ header {
   opacity: 0.6;
 }
 /*----------------------------*/
+.accordion {
+  display: none;
+}
 .nav_toggle, .nav, .navigation {
   display: block;
 }
@@ -416,7 +451,7 @@ header {
 }
 .main_bg {
   width: 100vw;
-  height: 650px;
+  height: 750px;
   margin: 0 auto;
   z-index: -1;
   top: 0;
@@ -460,6 +495,7 @@ header {
   display: block;
   width: 800px;
   margin-top: 30px;
+  padding-bottom: 50px;
 }
 .mainvisual_text_wrap img {
   margin: 0;
@@ -521,19 +557,37 @@ header {
     opacity: 1;
   }
 }
-
-.mainvisual_text4 span{
-	font-size: 2.3rem;
+.mainvisual_text4 span {
+  font-size: 2.3rem;
 }
 /*-------------アワードセクション----------------*/
 .sec_award {
   width: 100%;
-  margin: 60px 0 50px 0;
+  padding: 60px 0 0px 0;
   /*background-color: var(--blue3);*/
 }
 .sec_award_wrap {
   width: 80%;
   margin: 0 auto;
+  position: relative;
+  padding-bottom: 20px;
+}
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0.2;
+  z-index: 0;
+  width: 100%;
+}
+.res_award_img {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 720px;
+  z-index: 5;
 }
 .sec_award_wrap ul {
   display: flex;
@@ -551,23 +605,27 @@ header {
   height: 150px;
 }
 .award_text {
+  text-align: center;
   padding-top: 20px;
   word-break: auto-phrase;
   letter-spacing: 0.2em;
+  font-weight: bold;
+}
+.sec_award {
+  padding: 50px 0 50px 0;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 /*-------------取引企業一覧----------------*/
+/*----企業一覧スライダー-----*/
 .sec_suppliers {
   width: 100%;
-  margin: 50px 0 70px 0;
+  margin: 0px 0 70px 0;
   /*background-color: var(--blue4);*/
   background: linear-gradient(135deg, rgba(241, 244, 252, 1) 0%, rgba(230, 232, 239, 1) 51%, rgba(255, 255, 255, 1) 63%, rgba(241, 244, 252, 1) 74%, rgba(235, 238, 244, 1) 85%, rgba(241, 244, 252, 1) 87%, rgba(230, 232, 239, 1) 100%);
 }
-.sec_suppliers_wrap {
-  width: 90%;
-  padding: 50px 30px;
-  margin: 0 auto;
-}
-/*----企業一覧スライダー-----*/
 .main_slider-wrapper {
   background: #EEE;
   display: block;
@@ -588,6 +646,43 @@ header {
   height: 70px;
   width: auto;
 }
+.sec_1 {
+  padding: 50px 0 70px 0;
+  margin-top: -30px;
+}
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
+  display: -ms-grid;
+  overflow: hidden;
+}
+/*----------------------------*/
+.d-demo__wrap {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: -20px;
+}
+.d-demo__list {
+  display: flex;
+  list-style: none;
+  margin-bottom: -10px;
+}
+.d-demo__list--left {
+  animation: infinity-scroll-left 100s infinite linear 0.5s both;
+}
+.d-demo__item {
+  width: 926px;
+}
+.d-demo__item > img {
+  height: 70%;
+  width: auto;
+}
 /*-------------問題定義セクション----------------*/
 .sec_problem {
   width: 100%;
@@ -595,14 +690,22 @@ header {
   /*background-color: var(--blue3);*/
 }
 .sec_problem_wrap {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   background: rgb(255, 255, 255);
-  background: linear-gradient(7deg, rgba(255, 255, 255, 0) 0%, rgba(157, 157, 158, 1) 28%, rgba(58, 58, 60, 1) 100%);
-  /*background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23B1B1B1'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;*/
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(219, 218, 218, 1) 23%, rgba(158, 154, 154, 0.8827906162464986) 100%);
+  overflow: hidden;
+}
+.sec_problem_wrap::after {
+  position: absolute;
+  width: 95%;
+  margin: 0 auto;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0 0 15px 15px #fff;
 }
 .sec_problem_wrap__ {
   padding: 40px 10px;
@@ -630,7 +733,10 @@ background-size: cover;*/
 }
 .problem_text {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 /*-------------私たちにお任せくださいセクション----------------*/
 .sec_reason {
@@ -638,12 +744,14 @@ background-size: cover;*/
   margin: 0 auto;
   /*background-color: var(--blue3);*/
   margin-bottom: 70px;
+	
 }
 .res_sec_reason {
   display: none;
 }
 .sec_reason_wrap {
-  width: 60%;
+  width: 70%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .title_sec3 {
@@ -674,26 +782,12 @@ background-size: cover;*/
   /*width: 650px;*/
   height: auto;
   overflow: hidden;
-  margin-right: 50px;
+  
 }
+
+
 .res_sec_reason_h3 {
   display: none;
-}
-@media screen and (max-width: 1880px) {
-  .sec_mission_h3 {
-    display: none;
-  }
-  .res_sec_mission_h3 {
-    font-size: 2.0rem;
-    display: block;
-    font-size: 2.0rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: var(--blue3);
-  }
-  .sec_mission_text p {
-    line-height: 1.6em;
-  }
 }
 .sec_reason_1wr li {
   width: calc(80%/3);
@@ -709,101 +803,101 @@ background-size: cover;*/
 .sec_reason_1wr li > div {
   overflow: hidden;
   position: relative;
-  width: 100%;
-  height: 150px;
+  width: 80%;
+  margin: 0 auto;
+  height: 145px;
 }
 .sec_reason_1wr li > div > img {
+  display: none;
   position: absolute;
-  top: 25%;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  width: 100px;
+  top: 55px;
+  bottom: 0;
+  right: 20px;
+  width: 90px;
   height: auto;
 }
 .sec_reason_1wr li > p {
   display: block;
-  color: var(--blue3);
-  font-size: 1.2rem;
+  color: var(--gary);
   font-weight: bold;
-  padding: 20px;
   word-break: auto-phrase;
-  letter-spacing: 0.08em;
+}
+.reason_number_2 {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  margin: 0 auto;
+  font-size: 5.5rem;
+  font-weight: bold;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 0px 8px 9px #c4b59d, 0px -2px 1px #fff;
+  line-height: 0.5em;
+}
+.reason_number_2 span {
+  font-size: 1.8rem;
+}
+.point_1, .point_2, .point_3, .point_4, .point_5 {
+  display: block;
+}
+.point_1, .point_3, .point_4 {
+  padding: 30px 20px 20px 20px;
+}
+.point_2, .point_5 {
+  padding: 20px 20px 20px 20px;
 }
 /*-------------RISING INNOVATIONが選ばれる理由セクション----------------*/
-.sec_reason_2wr {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 20px;
+
+.sec_reason_2{
+	background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.7' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
-.sec_reason_wrap2 {
-  width: 70%;
-  padding: 20px;
-  /*background: linear-gradient(135deg, rgba(241, 244, 252, 1) 0%, rgba(230, 232, 239, 1) 51%, rgba(255, 255, 255, 1) 63%, rgba(241, 244, 252, 1) 74%, rgba(235, 238, 244, 1) 85%, rgba(241, 244, 252, 1) 87%, rgba(230, 232, 239, 1) 100%);*/
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23DCF6FC'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.07'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-}
-.sec_reason_2wr li p {
-  display: block;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 25px;
-  margin-left: 100px;
-  padding: 15px 0;
-  /*white-space: nowrap;*/
-}
-.sec_reason_2wr li:last-child p {
-  font-size: 1rem;
-  margin-left: 30px;
-}
-.sec_reason_2wr li:last-child {
-  margin-top: 50px;
-}
-.sec_title_7 {
-  display: block;
-  width: 65%;
-  font-weight: bold;
-  font-size: 2.2rem;
-  color: var(--blue3);
-  position: relative;
-  margin: 0 auto;
-  margin-top: 30px;
+
+.sec_reason_wrap3 .sec_title_6 {
   text-align: center;
 }
-.sec_text_1 {
-  line-height: 1.3em;
-  font-size: 1.1rem;
-  letter-spacing: 0.2em;
+.sec_reason_wrap3 {
+  width: 70%;
+  margin: 0 auto;
 }
-.reason_bg {
-  background-color: rgba(255, 255, 255, 0.55);
+.reason_number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--blue3);
 }
-.heading {
-  position: relative;
-  padding-left: 60px;
-  letter-spacing: 0.08em;
+.point_wrap {
+  display: flex;
+  justify-content: center;
 }
-.heading::before {
-  content: attr(data-number);
-  position: absolute;
-  top: 50%;
-  left: -60px;
-  transform: translateY(-50%);
-  color: rgba(73, 75, 154, 0.35);
-  font-size: 60px;
+.point_wrap p {
   font-weight: bold;
 }
-.heading::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: -60px;
-  width: 200px;
-  height: 1px;
-  background-color: rgba(73, 75, 154, 0.35);
+.point {
+  width: calc(100%/3);
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(90deg, rgba(168, 202, 240, 1), rgba(233, 240, 250, 1));
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(73, 75, 154, 0.35);
+  overflow: hidden;
+  padding: 20px;
+  line-height: 1.7em;
+}
+.point span {
+  font-size: 1.0rem;
+}
+.circle_img {
+  border-radius: 50%;
+  width: 55%;
+  height: auto;
+  margin: 15px 0;
 }
 /*-------------TOPサービス事業内容----------------*/
 .sec_2 {
@@ -812,7 +906,7 @@ background-size: cover;*/
   padding: 70px 0;
 }
 .sec_2_wrap {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
 }
 .sec_title {
@@ -878,8 +972,8 @@ background-size: cover;*/
 .sec_title_ul::after {
   content: '';
   width: 100px;
-  height: 1px;
-  background: var(--gray);
+  height: 3px;
+  background: #eaeaea;
   position: absolute;
   top: 58px;
   right: 0;
@@ -916,7 +1010,7 @@ background-size: cover;*/
   margin: auto;
 }
 .services_list {
-  width: 80%;
+  width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -925,7 +1019,6 @@ background-size: cover;*/
   margin-top: 50px;
 }
 .services_list li {
-  width: calc(100%/2-25px);
   position: relative;
   overflow: hidden;
   height: auto;
@@ -948,9 +1041,10 @@ background-size: cover;*/
 }
 .services_img {
   overflow: hidden;
+  width: 550px;
+  height: 250px;
 }
 .services_img img {
-  height: auto;
   transition: transform .6s ease;
 }
 .services_img:hover img {
@@ -1002,7 +1096,7 @@ background-size: cover;*/
   padding: 100px 0 120px 0;
 }
 .sec_4_wrap {
-  width: 95%;
+  width: 1300px;
   margin: 0 auto;
 }
 .sec_4_wrap > .sec_title {}
@@ -1036,7 +1130,7 @@ background-size: cover;*/
   padding: 0 0 70px 0;
 }
 .sec_5_wrap {
-  width: 95%;
+  width: 1300px;
   margin: 0 auto;
 }
 .topics_list_flex {
@@ -1098,22 +1192,6 @@ background-size: cover;*/
 .res_sec_mission_h3 {
   display: none;
 }
-@media screen and (max-width: 1880px) {
-  .sec_mission_h3 {
-    display: none;
-  }
-  .res_sec_mission_h3 {
-    font-size: 2.0rem;
-    display: block;
-    font-size: 2.0rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: var(--blue3);
-  }
-  .sec_mission_text p {
-    line-height: 1.6em;
-  }
-}
 /*-------------TOPコンタクト----------------*/
 .contact {
   width: 100%;
@@ -1133,12 +1211,10 @@ background-size: cover;*/
   color: var(--blue3);
   font-weight: bold;
 }
-
-.contact_title_3{
-	font-weight: bold;
-	font-size: 1.3rem;
+.contact_title_3 {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
-
 .contact_title {
   width: 75%;
   margin: 0 auto;
@@ -1157,11 +1233,9 @@ footer {
 .footer_list {
   width: 55%;
 }
-
-.footer_logo{
-	margin-left: 50px;
+.footer_logo {
+  margin-left: 50px;
 }
-
 .footer_logo img {
   width: 150px;
 }
@@ -1598,6 +1672,7 @@ footer small {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 50px;
+	
 }
 /*--------------下層ページ会社情報---------------------------*/
 .res_company_table {
@@ -1611,7 +1686,7 @@ footer small {
   margin: 0 auto;
 }
 .company_wrap {
-  padding-bottom: 70px;
+  padding: 70px 0;
 }
 .company_table tr {
   border-bottom: solid var(--gray) 1px;
@@ -1633,6 +1708,14 @@ footer small {
   border-bottom: none;
 }
 /*--------------下層ページお問合せ---------------------------*/
+
+.contact_page{
+	background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.7' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
 .res_contact_wrap {
   display: none;
 }
@@ -1712,6 +1795,13 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   margin: auto;
 }
 /*-------------下層ページメンバー紹介---------------------------*/
+.member{
+	background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.7' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(26.6) translate(-962.41 -721.8)'%3E%3Cg fill='%23080969'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
 .member_wrap {
   width: 70%;
   margin: 0 auto;
@@ -1724,11 +1814,11 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   font-size: 2.0rem;
 }
 .ceo {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 .ceo_img {
   margin-right: 50px;
-  width: 700px;
+  width: 400px;
   height: auto;
   border: solid 1px #000;
 }
@@ -1844,15 +1934,29 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 }
 /*------------------*/
 .marker_2 {
-  display: inline;
-  background-image: linear-gradient(transparent 60%, #f4eb8f, #f4eb8f 40%);
+  background-image: linear-gradient(#f4eb8f 0%, #f4eb8f 100%);
   background-repeat: no-repeat;
   background-position: left bottom;
-	background-size: 0% 100%;
-	transition: 2s;
+  background-size: 0% 100%;
+  transition: 2s;
+  margin: 0;
+  padding: 0;
 } /*黄色マーカー*/
-
 .marker_2.on {
+  /* 横方向を100%にして、マーカーを引く */
+  background-size: 100% 100%;
+}
+/*------------------*/
+.marker_3 {
+  background-image: linear-gradient(#fff 0%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0% 100%;
+  transition: 2s;
+  margin: 0;
+  padding: 0;
+} /*白マーカー*/
+.marker_3.on {
   /* 横方向を100%にして、マーカーを引く */
   background-size: 100% 100%;
 }
@@ -2026,5 +2130,433 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   100% {
     background-size: 0em 0em;
     background-position: 100% 50%;
+  }
+}
+/*-------------ブレイクポイント----------------*/
+@media screen and (max-width: 1880px) {
+  .sec_mission_h3 {
+    display: none;
+  }
+  .res_sec_mission_h3 {
+    font-size: 2.0rem;
+    display: block;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--blue3);
+  }
+  .sec_mission_text p {
+    line-height: 1.6em;
+  }
+}
+@media screen and (max-width: 1880px) {
+  .sec_mission_h3 {
+    display: none;
+  }
+  .res_sec_mission_h3 {
+    font-size: 2.0rem;
+    display: block;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--blue3);
+  }
+  .sec_mission_text p {
+    line-height: 1.6em;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .nav {
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    background: #fff;
+    padding: 50px 70px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
+  .nav.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav_menu_ul {
+    display: none;
+  }
+  .nav_bg {
+    width: 100vw;
+    height: 100%;
+    background-color: var(--blue4);
+    z-index: 15;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    position: fixed;
+  }
+  .nav_bg.show {
+    opacity: 0.7;
+    visibility: visible;
+  }
+  /*----------------------------*/
+  .nav_wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .accordion {
+    display: block;
+    margin: 3em auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .option {
+    padding: 1rem 0;
+    position: relative;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  .title, .content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s;
+  }
+  .title {
+    cursor: pointer;
+    padding: 0;
+    display: block;
+    position: relative;
+  }
+  .title::after, .title::before {
+    content: "";
+    position: absolute;
+    right: 1.25em;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 2px;
+    height: 0.75em;
+    background-color: #999;
+    transition: all 0.3s;
+  }
+  .title::after {
+    transform: rotate(90deg);
+  }
+  .content {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .toggle:checked + .title + .content {
+    max-height: 500px;
+    transition: all 0.8s ease;
+  }
+  .toggle:checked + .title::before {
+    transform: rotate(90deg) !important;
+  }
+  .accordion ul {
+    margin-top: 20px;
+    background: var(--blue4);
+  }
+  .accordion li {
+    font-weight: 500;
+    padding: 1.2rem 1rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /*メインビジュアル*/
+  .main_bg {
+    height: 750px;
+  }
+  .curtain {
+    height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: var(--blue4);
+    animation: open-curtain 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.3s;
+  }
+  @keyframes open-curtain {
+    0% {
+      height: 750px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+  .logo2 img {
+    width: 250px;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: calc(50% - 150px);
+    z-index: -1;
+    animation: blur-anim 1.3s linear forwards;
+    animation-delay: 0.7s;
+    filter: blur(100px);
+  }
+  .mainvisual_text_wrap {
+    margin: 0 auto;
+  }
+  .main_side_img {
+    opacity: 0.5;
+  }
+  .mainvisual {
+    padding: 90px 0 0 0;
+  }
+  /*アワード*/
+  .award_text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+  .res_award_img {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+  }
+  .aimitu_img {
+    margin-left: 15px;
+  }
+  .sec_award {
+    padding: 60px 0 50px 0;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .sec_suppliers {
+    margin-top: 0;
+  }
+}
+/*私たちにお任せください*/
+@media screen and (max-width: 1200px) {
+  .sec_reason_1wr {
+    display: block;
+  }
+  .sec_reason_1wr li {
+    display: flex;
+    width: 80%;
+    height: auto;
+	  margin: 0 auto;
+	  margin-bottom: 10px;
+    text-align: start;
+    min-width: 600px;
+  }
+  .sec_reason_1wr li > div {
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin-left: 50px;
+  }
+  .sec_reason_1wr li > p {
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+  .sec_reason_1wr li > div > img {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 90px;
+    height: auto;
+  }
+  .reason_number_2 {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-size: 5.0rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0px 8px 9px #c4b59d, 0px -2px 1px #fff;
+    line-height: 0.6em;
+  }
+  .point_1, .point_2, .point_3, .point_4, .point_5 {
+    display: block;
+  }
+  .point_1 {
+    padding: 60px 50px 0px 0px;
+  }
+	.point_3, .point_4{
+		padding: 50px 50px 0px 0px;
+	}
+	
+  .point_2, .point_5 {
+    padding: 30px 50px 0px 0px;
+  }
+  /*わたしたちについて*/
+  .mission_break {
+    display: block;
+  }
+  .sec_reason_text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /*選ばれる理由*/
+  .point_wrap {
+    display: block;
+    margin: 0 auto;
+  }
+  .point {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  /*サービス一覧*/
+  .services_list {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+  }
+  .services_list li {
+    /*width: 600px;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .services_list li > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .services_list dt {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    margin: 5px 0;
+  }
+  .services_list dd {
+    line-height: 1.5em;
+  }
+  .services_list_detail {
+    padding: 10px 0 0 0;
+    position: relative;
+  }
+  .services_list_detail a {
+    font-size: 1.2rem;
+    line-height: 1.7em;
+    margin-left: 45px;
+  }
+  .services_list_detail span {}
+  .services_list_detail .arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -12px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    transition: .3s ease-in-out;
+    padding: 7px;
+    background: var(--blue3);
+  }
+  .services_list_detail a:hover .arrow {
+    left: 6px;
+  }
+  .services_list li:nth-last-child(even) {
+    margin-right: 0px;
+  }
+  .services_list li:nth-last-child(odd) {
+    margin-left: 0px;
+  }
+  .sec_4 {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 30px 0 100px 0;
+  }
+  .sec_4_wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .achievements_list_flex {
+    display: none;
+  }
+  .achievements_list {
+    width: 450px;
+    margin-top: 50px;
+  }
+  .achievements_list img {
+    width: 100%;
+  }
+  .achievements_list dl {
+    margin-left: 30px;
+  }
+  .achievements_list dt {
+    border: solid 1px #000;
+    width: 300px;
+    height: 250px;
+  }
+  .achievements_list dd {
+    margin: 10px;
+  }
+  /*-------------レスポンシブTOPトピックス----------------*/
+  .topics_list_wrap {
+    display: none;
+  }
+  .sec_5 {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+    /*background-color: var(--blue2);*/
+  }
+  .sec_5_wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .blog_list_flex {
+    display: none;
+  }
+  .blog_list {
+    width: 400px;
+    margin-top: 50px;
+  }
+  .blog_list img {
+    width: 100%;
+  }
+  .blog_list dl {
+    margin-left: 30px;
+  }
+  .blog_list dt {
+    border: solid 1px #000;
+    width: 300px;
+    height: 250px;
+  }
+  .blog_list dd {
+    margin: 10px;
+  }
+  .blog_btn {
+    display: block;
+  }
+  /*-------------スライダー----------------*/
+  .slider-wrapper {
+    background: #EEE;
+    display: block;
+    margin: 25px 0;
+  }
+  .slider-cell {
+    width: 500px;
+    height: 300px;
+    background: #8C8;
+    margin: 0 5px;
   }
 }
