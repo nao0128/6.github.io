@@ -16,9 +16,9 @@ header {
   margin: 0 auto;
 }
 .top_logo img {
-  width: 200px;
+  width: 110px;
   height: auto;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 .header_wrap {
   justify-content: space-between;
@@ -302,26 +302,7 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
   overflow: hidden;
 }
 /*----------------------------*/
-.d-demo__wrap {
-  display: flex;
-  overflow: hidden;
-  margin-bottom: -20px;
-}
-.d-demo__list {
-  display: flex;
-  list-style: none;
-  margin-bottom: -10px;
-}
-.d-demo__list--left {
-  animation: infinity-scroll-left 60s infinite linear 0.5s both;
-}
-.d-demo__item {
-  width: 926px;
-}
-.d-demo__item > img {
-  height: 70%;
-  width: auto;
-}
+
 /*-------------レスポンシブ企業一覧スライダー---------------*/
 .sec_suppliers {
   display: none;
@@ -380,9 +361,12 @@ _:-ms-lang(x)::-ms-backdrop, .d-demo {
 }
 .sec_problem_wrap ul {
   display: block;
+	margin: 0 auto;
 }
 .sec_problem_wrap ul li {
   margin-bottom: 10px;
+	width: 100%;
+	
 }
 .sec_problem_wrap ul:first-of-type {
   margin: 20px 0 10px 0;
@@ -1098,25 +1082,42 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   margin: 0 auto;
 	margin-bottom: 70px;
 }
+
+.ceo_text{
+	margin-top: 30px;
+}
+
 .ceo_text h2 {
   font-size: 2.0rem;
+	line-height: 0.8em;
 }
 .ceo {
   text-align: center;
 }
-.ceo_img {
-  width: 300px;
-  height: auto;
-  border: solid 1px #000;
-  margin: 0 auto;
+.ceo_img{
+	margin: 0 auto;
 }
+.ceo_img img{
+  width: 300px;
+  height: auto; 
+}
+
+
+
 .ceo_post {
   font-size: 1.0rem;
 }
+
 .staff li {
-  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
+	width: 150px;
 }
+
+.staff li:last-of-type{
+	margin-right: 0px;
+}
+
 .post {
   color: gray;
   font-size: 0.9rem;

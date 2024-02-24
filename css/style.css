@@ -291,7 +291,7 @@ header {
   transform: translateY(-8px) rotate(45deg);
 }
 .nav {
-  width: 80%;
+  width: 970px;
   position: fixed;
   top: 50px;
   right: 0;
@@ -309,7 +309,16 @@ header {
   width: 70%;
   max-width: 700px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 70px;
+}
+
+.nav_menu_ul{
+	width: 660px;
+}
+
+.nav_logo{
+	width: 100px;
+	height: auto;
 }
 .nav.show {
   opacity: 1;
@@ -793,6 +802,7 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   display: none;
 }
 .sec_reason_1wr li {
+	position: relative;
   width: calc(100%/3);
   height: auto;
   margin-right: 20px;
@@ -801,8 +811,20 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   text-align: center;
   border-radius: 5px;
   box-shadow: 0px 5px 15px 0px rgba(73, 75, 154, 0.35);
-  overflow: hidden;
+  
 }
+
+.check_icon{
+	width: 40px;
+	height: auto;
+	position: absolute;
+	top: 20px;
+	
+	right: 20px;
+	
+}
+
+
 .sec_reason_1wr li > div {
   overflow: hidden;
   position: relative;
@@ -1016,17 +1038,15 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
 .services_list {
   width: 1000px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 1em;
-  flex-wrap: wrap;
+  display: flex;
+	justify-content: center;
   margin-top: 50px;
 }
 .services_list li {
   position: relative;
   overflow: hidden;
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .services_list li:nth-last-child(even) {
   margin-right: 25px;
@@ -1045,7 +1065,7 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
 }
 .services_img {
   overflow: hidden;
-  width: 550px;
+  width: 400px;
   height: 250px;
 }
 .services_img img {
@@ -1061,14 +1081,14 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.08em;
-  margin: 5px 0;
+  margin:0 0 5px 0;
 }
 .services_list dd {
-  line-height: 1.4em;
+  
   font-size: 1rem;
 }
 .services_list_detail {
-  padding: 10px 0 0 0;
+  padding: 5px 0 0 0;
   position: relative;
 }
 .services_list_detail a {
@@ -1682,23 +1702,25 @@ footer small {
   display: none;
 }
 .company_table_wrap {
-  width: 85%;
+  width: 60%;
   margin: 0 auto;
 }
 .company_table {
+	width: 100%;
   margin: 0 auto;
 }
 .company_wrap {
   padding: 70px 0;
 }
 .company_table tr {
-  border-bottom: solid var(--gray) 1px;
+  border-bottom: solid var(--blue4) 2px;
   height: 110px;
 }
 .company_table td {
-  padding: 0px 0px;
+  padding: 0px 0px 0 10px;
 }
 .company_table th {
+	border-bottom: solid #1e90ff 2px;
   text-align: left;
   padding: 0px 0px;
   width: 30%;
@@ -1724,6 +1746,12 @@ footer small {
   margin: 0 auto;
   margin-top: 70px;
 }
+
+.contact_table_wrap{
+	max-width: 1000px;
+	margin:  0 auto;
+}
+
 .contact-form tr {
   height: 25px;
 }
@@ -1779,21 +1807,14 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   padding: 50px 0;
 }
 .download_img {
-  margin: 0 auto;
-  display: block;
-  width: 600px;
-  height: 350px;
-  border: solid #000 1px;
-  position: relative;
+	width: 600px;
+	margin: 0 auto;
   margin-bottom: 30px;
 }
 .download_img img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+	width: 600px;
+  height: auto;
+	margin: 0 auto;
 }
 /*-------------下層ページメンバー紹介---------------------------*/
 .member {
@@ -1803,7 +1824,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   background-size: cover;
 }
 .member_wrap {
-  width: 70%;
+  width: 800px;
   margin: 0 auto;
   padding-bottom: 150px;
 }
@@ -1812,29 +1833,67 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 }
 .ceo_text h2 {
   font-size: 2.0rem;
+	margin-top: -20px;
 }
+
+.ceo_text h2 span{
+	font-size: 1.0rem;
+}
+
 .ceo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
+.ceo::after{
+	
+}
+
+.ceo p{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 1.0rem;
+}
+
 .ceo_img {
-  margin-right: 50px;
-  width: 400px;
-  height: auto;
-  border: solid 1px #000;
+  margin-right: 40px;
 }
+
+.ceo_img img{
+	width: 300px;
+	height: auto;
+}
+
 .ceo_post {
   font-size: 1.0rem;
 }
 .staff li {
-  margin-left: 20px;
+  margin-right: 40px;
   text-align: center;
+	width: 150px;
 }
+
+.staff{
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+.staff li:last-child{
+	margin-right: 0px;
+}
+
 .post {
   color: gray;
   font-size: 0.9rem;
 }
+
+.staff_img img{
+	width: 150px;
+	height: auto;
+}
+
 .staff_name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 /*-------------下層ページトピックス一覧----------------------------*/
 .topics_wrap {
@@ -2203,6 +2262,12 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
     visibility: visible;
   }
   /*----------------------------*/
+	
+	.nav_logo{
+		width: 150px;
+		height: auto;
+	}
+	
   .nav_wrap {
     width: 100%;
     padding: 0;
@@ -2344,6 +2409,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 @media screen and (max-width: 1200px) {
   .sec_reason_1wr {
     display: block;
+	  
   }
   .sec_reason_1wr li {
     display: flex;
@@ -2414,7 +2480,7 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
     margin: 0 auto;
   }
   .point {
-    width: 60%;
+    width: 372px;
     margin: 0 auto;
     margin-bottom: 10px;
   }
@@ -2481,6 +2547,11 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   .services_list li:nth-last-child(odd) {
     margin-left: 0px;
   }
+	.services_img {
+  overflow: hidden;
+  width: 500px;
+  height: 250px;
+}
   .sec_4 {
     width: 100vw;
     margin: 0 auto;
