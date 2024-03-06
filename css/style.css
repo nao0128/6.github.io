@@ -949,14 +949,16 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   width: 100%;
   margin: 0 auto;
   padding: 70px 0;
+	
 }
 .sec_2_wrap {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
+	position: relative;
 }
 .sec_title {
   display: block;
-  position: relative;
+  
   z-index: 0;
   width: /*text-align: center;*/
 }
@@ -1082,17 +1084,38 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   margin: auto;
   width: 100%;
 }
+
 .services_img {
   overflow: hidden;
-  width: 400px;
-  height: 250px;
+  width: 500px;
+  height: auto;
 }
+
 .services_img img {
   transition: transform .6s ease;
+	width: 500px;
+	height: auto;
 }
+
 .services_img:hover img {
   transform: scale(1.1);
 }
+
+.services_list_dd p{
+	position: relative;
+	margin-left: 25px;
+}
+
+.services_list_dd p::before{
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: var(--blue3);
+	position: absolute;
+	top: 6px;
+	left: -20px;
+}
+
 .services_list dl {
   max-width: 600px;
 }
@@ -1119,18 +1142,18 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
 .services_list_detail .arrow {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5px;
   bottom: -12px;
   margin: auto;
   width: 25px;
   height: 25px;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   transition: .3s ease-in-out;
   padding: 7px;
   background: var(--blue3);
 }
 .services_list_detail a:hover .arrow {
-  left: 6px;
+  left: 15px;
 }
 /*-------------TOP事例CASE----------------*/
 .sec_4 {
