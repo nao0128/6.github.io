@@ -820,7 +820,7 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
 }
 
 .check_icon{
-	width: 35px;
+	width: 30px;
 	height: auto;
 	position: absolute;
 	top: 20px;
@@ -906,30 +906,32 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   text-align: center;
 }
 .sec_reason_wrap3 {
-  width: 70%;
+  
   margin: 0 auto;
 }
-.reason_number {
+/*.reason_number {
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--blue3);
-}
+}*/
 .point_wrap {
+	width: 1400px;
   display: flex;
+	margin: 0 auto;
   justify-content: center;
 }
 .point_wrap p {
   font-weight: bold;
 }
 .point {
-  width: calc(100%/3);
+  width: 400px;
   height: auto;
   margin-right: 20px;
   margin-bottom: 20px;
   background-image: linear-gradient(90deg, rgba(168, 202, 240, 1), rgba(233, 240, 250, 1));
   text-align: center;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   box-shadow: 0px 5px 15px 0px rgba(73, 75, 154, 0.35);
   overflow: hidden;
   padding: 20px;
@@ -938,12 +940,18 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
 .point span {
   font-size: 1.1rem;
 }
-.circle_img {
+/*.circle_img {
   border-radius: 50%;
   width: 55%;
   height: auto;
   margin: 15px 0;
+}*/
+
+.reason_img img{
+	width: 100%;
+	height: auto;
 }
+
 /*-------------TOPサービス事業内容----------------*/
 .sec_2 {
   width: 100%;
@@ -1007,7 +1015,10 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   text-align: center;
 }
 .sec_title_6 {
-  font-weight: bold;
+	font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
   font-size: 2.2rem;
   color: var(--blue3);
   margin-bottom: 30px;
@@ -2522,12 +2533,17 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
 }
 @media screen and (max-width: 1000px) {
   /*選ばれる理由*/
+	.sec_reason_wrap3{
+		width: 75%;
+	}	
+	
   .point_wrap {
+	width: 100%;  
     display: block;
     margin: 0 auto;
   }
   .point {
-    width: 372px;
+    width: 500px;
     margin: 0 auto;
     margin-bottom: 10px;
   }
