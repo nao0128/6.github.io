@@ -12,11 +12,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <!-------------------------------->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 <!-------------------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+<!-------------------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">	
+<!------------------------------------------------------------->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:500px)">
 <link href="css/responsive.css" rel="stylesheet" type="text/css"  media="screen and (max-width:501px)">
-<!-------------------------------->
+<!------------------------------------------------------------->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
@@ -50,21 +56,21 @@
     </ul>
     <ul class="nav_menu_ul nav_menu_ul3 flex">
       <div class="nav_menu_div">
-        <li class="nav_menu_li hov-parent1" id="js-hover1"><a href="#" class="hov-child__"><span>COMPANY</span><br>
+        <li class="nav_menu_li hov-parent1" id="js-hover1"><a class="hov-child__"><span>COMPANY</span><br>
           会社について</a>
           <div class="hov-child1">
             <ul>
               <!--<li><a href="index.html#mission" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社について</a></li>-->
               <li><a href="company.html#" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>会社情報</a></li>
-              <li><a href="company.html#members" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>メンバー紹介</a></li>
+              <li><a href="members.html"# class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>メンバー紹介</a></li>
             </ul>
           </div>
         </li>
       </div >
       <div class="nav_menu_div">
-        <li class="nav_menu_li hov-parent2" id="js-hover2"><a href="#" class="hov-child__"><span>SURVISE</span><br>
+        <li class="nav_menu_li hov-parent2" id="js-hover2"><a href="index.html#services" class="hov-child__"><span>SURVISE</span><br>
           サービス一覧</a>
-          <div class="hov-child2">
+          <!--<div class="hov-child2">
             <ul class="fl">
               <li><a href="index.html#services" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow arrow6"></span>サービス一覧</a></li>
               <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>営業代行支援</a></li>
@@ -76,7 +82,7 @@
               <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>フィールドセールス支援</a></li>
               <li><a href="" class="hov-child__"><span><img src="img/icon_arrow2.png" class="arrow"></span>セールスマーケティング支援</a></li>
             </ul>
-          </div>
+          </div>-->
         </li>
         <div style="clear: both;"></div>
       </div>
@@ -100,7 +106,8 @@
           </ul>
         </div>
       </div>
-      <div class="option">
+		<div class="option"> <a href="index.html#services" class="hov-child__">SERVICES</a> </div>
+      <!--<div class="option">
         <input type="checkbox" id="toggle2" class="toggle">
         <label class="title" for="toggle2">SURVISE</label>
         <div class="content">
@@ -113,7 +120,7 @@
             <li><a href="#" class="hov-child__">セールスマーケティング支援</a></li>
           </ul>
         </div>
-      </div>
+      </div>-->
       <div class="option"> <a href="topics.html#" class="hov-child__">TOPICS</a> </div>
       <div class="option"> <a href="contact2.html#" class="hov-child__">DOCUMENT</a> </div>
       <div class="option"> <a href="contact.html#" class="hov-child__">CONTACT</a> </div>
@@ -147,6 +154,10 @@
                   <input type="radio" name="select" value="資料請求" />
                   <span>資料請求</span></label></td>
             </tr>-->
+			<tr>
+              <th><p>会社名 <span class="required">必須 </span> </p></th>
+              <td><input class="form_txt" type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）株式会社RISING INNOVATION" required/></td>
+            </tr>  
             <tr>
               <th><p>お名前 <span class="required">必須 </span> </p></th>
               <td><input class="form_txt" type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）山田 太郎" required/></td>
@@ -155,6 +166,10 @@
               <th><p>フリガナ <span class="required">必須 </span> </p></th>
               <td><input class="form_txt" type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）ヤマダ タロウ" required/></td>
             </tr>
+			<tr>
+              <th><p>役職<span class="required">必須 </span> </p></th>
+              <td><input class="form_txt" type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="こちらにご記入をお願いいたします" required/></td>
+            </tr>  
             <tr>
               <th><p>電話番号</p></th>
               <td><input class="form_txt" type="tel" name="your-tel" value="" size="40" class="" aria-invalid="false" placeholder="例）050-0000-0000" /></td>
@@ -167,7 +182,7 @@
             <tr>
               <th><p>お問い合わせ内容 <span class="required">必須</p>
                 </span></th>
-              <td><textarea name="your-message" cols="40" rows="10" class="" aria-required="true" aria-invalid="false" placeholder="" required></textarea></td>
+              <td><textarea name="your-message" cols="40" rows="10" class="" aria-required="true" aria-invalid="false" placeholder="こちらにご記入をお願いいたします"  required></textarea></td>
             </tr>
           </table>
           <p class="btn-check">
@@ -193,6 +208,13 @@
             <input type="radio" name="select" value="資料請求" />
             <span>資料請求</span></label>
         </li>-->
+		<li>
+          <p>会社名</p>
+          <span class="required">必須 </span> </li>
+        <li>
+          <input class="res_form_txt" type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）株式会社RISING INNOVATION" required/>
+        </li>
+		<li class="contact_margin"></li>	
         <li>
           <p>お名前</p>
           <span class="required">必須 </span> </li>
@@ -205,8 +227,14 @@
           <span class="required">必須</span> </li>
         <li>
           <input class="res_form_txt" type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）ヤマダ タロウ" required/>
-        </li>
+        </li>	
         <li class="contact_margin"></li>
+		<li>
+          <p>役職</p>
+          <span class="required">必須</span> </li>
+        <li>
+          <input class="res_form_txt" type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="" required/>
+        </li>	
         <li class="contact_margin"></li>
         <li>
           <p>電話番号</p>
@@ -237,7 +265,30 @@
     </div>
     </div>
   </section>
-  <div class="sec_2_img"><img src="img/insert_img2.png"></div>
+  <!--<div class="sec_2_img"><img src="img/insert_img2.png"></div>-->
+<!---------------TOPコンタクト①------------------>
+<section class="contact tac" id="contact">
+  <div class="contact_title">
+    <p class="contact_title_3">受注に繋がる商談を今すぐ増やしませんか？</p>
+    <p class="contact_title_1 kirari-text">CONTACT</p>
+    <p class="contact_title_2 kirari-text">お問い合わせ</p>
+    <br>
+    <div class="flex jcc">
+      <div class="contact_btn">
+        <div class="eff-contact"></div>
+        <a href="tel:050-7586-3360">お電話でのご相談</a></div>
+      <div class="contact_btn2">
+        <div class="eff-contact2"></div>
+        <a href="contact.html#">営業のご相談(無料)</a></div>
+      <div class="contact_btn2">
+        <div class="eff-contact2"></div>
+        <a href="contact.html#">サービス資料(無料)</a></div>
+    </div>
+    <div id="services"></div>
+    <!---------------レスポンシブTOPコンタクト------------------>
+    <div class="res_btn_wrap2"><a class="res_top_btn2" href="contact.html#">営業のご相談(無料)</a> <a class="res_top_btn2" href="contact2.html#">サービス資料(無料)</a></div>
+  </div>
+</section>
 </main>
 <!---------------------フッター------------------------->
 <footer>
