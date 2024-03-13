@@ -792,10 +792,11 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   width: 70%;
 }
 .sec_reason_h3 {
-  font-size: 2.0rem;
+  font-size: 3.0rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: var(--blue3);
+  text-align: center;;
 }
 .sec_reason_text p {
   line-height: 2.0em;
@@ -1239,7 +1240,7 @@ IE11対策 _:-ms-lang(x)::-ms-backdrop, .d-demo {
   display: none;
 }
 .sec_mission_wrap {
-  width: 75%;
+  width: 1000px;
   margin: 0 auto;
 }
 .title_sec3 {
@@ -2099,14 +2100,14 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   background-image: linear-gradient(#f4eb8f 0%, #f4eb8f 100%);
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 0% 40%;
+  background-size: 0% 100%;
   transition: 2s;
   margin: 0;
   padding: 0;
 } /*黄色マーカー*/
 .marker_2.on {
   /* 横方向を100%にして、マーカーを引く */
-  background-size: 100% 40%;
+  background-size: 100% 100%;
 }
 /*------------------*/
 .marker_3 {
@@ -2571,6 +2572,10 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   /*わたしたちについて*/
   .mission_break {
     display: block;
+    
+  }
+  .sec_reason_h3 {
+    text-align: left;
   }
   .sec_reason_text {
     width: 100%;
